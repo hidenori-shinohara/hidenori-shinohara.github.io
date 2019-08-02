@@ -22,6 +22,8 @@ description: >
 url: "http://bencentra.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
+theme: minima
+
 
 # Build settings
 markdown: kramdown
