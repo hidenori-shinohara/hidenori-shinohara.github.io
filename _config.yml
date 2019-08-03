@@ -10,7 +10,7 @@ exclude:
 
 # Site settings
 title: Hidenoris
-subtitle: "Hidenori's blog"
+subtitle: "Math and stuff"
 email: hidenori.shinohara@duke.edu
 name: Hidenori Shinohara
 description: Math and stuff
@@ -44,7 +44,8 @@ jekyll-archives:
 # disqus_shortname: bencentra
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-142490820-1"
+
 
 # Category descriptions (for archive pages)
 descriptions:
