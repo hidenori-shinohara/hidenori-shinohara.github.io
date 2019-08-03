@@ -3,7 +3,6 @@ layout: post
 title:  "A space is simply connected iff any two points are connected by paths of a unique homotopy class"
 date:   2019-08-02
 author: Hidenori
-categories: math
 ---
 
 # Proposition
