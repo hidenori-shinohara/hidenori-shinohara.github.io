@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Connection between homotopies and base-of-change homomorphisms"
+title:  "Connection between homotopies and change-of-basepoint map"
 date:   2019-08-06
 author: Hidenori
 ---
