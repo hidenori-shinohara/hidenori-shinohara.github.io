@@ -33,4 +33,4 @@ Since $f(x) = y \in V$, $x \in f^{-1}(V)$.
 
 $\mathcal{B}$ is a basis for $X$, so there must exist a basis element $B \in \mathcal{B}$ such that $x \in B \subset f^{-1}(V)$.
 Then $f(x) \in f(B) \subset f(f^{-1}(V)) = V$.
-Therefore, $f(\mathcal{B})$ is a basis for $Y$ by [this exercise](hello).
+Therefore, $f(\mathcal{B})$ is a basis for $Y$ by Lemma 13.2 on P.80 (Munkres).
