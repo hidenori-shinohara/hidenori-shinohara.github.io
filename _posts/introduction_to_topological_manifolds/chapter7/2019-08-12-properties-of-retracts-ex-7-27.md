@@ -49,4 +49,15 @@ Therefore, $a = r(a) \in r(r^{-1}(U_{\alpha_k})) = U_{\alpha_k}$.
 We found a finite subcover of $K$, so $A$ is compact.
 
 ## 3
-TODO
+Let $A \subset B \subset X$ where $A$ is a retract of $B$, and $B$ is a retract of $X$.
+Let $r_1, r_2$ denote retractions of $X$ onto $B$ and $B$ onto $A$, respectively.
+Let $r = r_2 \circ r_1$.
+
+* $r$ is continuous since it is a composition of two continuous functions.
+* Let $a \in A$.
+  $r(a) = r_2(r_1(a))$.
+  $r_1(a) = a$ because $r_1$ is the identity map when restricted to $B$ and $a \in B$.
+  $r_2(a) = a$ because $r_2$ is the identity map when restricted to $A$.
+  Therefore, $r(a) = a$.
+
+Therefore, $r$ is a retraction of $X$ onto $A$, so $A$ is a retract of $X$.
