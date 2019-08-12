@@ -32,7 +32,21 @@ Therefore, $A$ has no separation since any pair of disjoint open sets whose unio
 Thus $A$ is connected.
 
 ## 2
-TODO
+Let $A$ be a retract of $X$.
+Let $K = \\{ U_{\alpha} \\}$ be an open cover of $A$.
+Let $r: X \rightarrow A$ be a retraction.
+Since $r$ is a retraction, $r^{-1}(U_{\alpha})$ is an open set for each $\alpha$.
+Since $X = r^{-1}(A)$, $\\{ r^{-1}(U_{\alpha}) \\}$ is an open cover of $X$.
+Since $X$ is compact, there exists $r^{-1}(U_{\alpha_1}), \cdots, r^{-1}(U_{\alpha_n})$ that cover $X$.
+
+We claim that $U_{\alpha_1}, \cdots, U_{\alpha_n}$ covers $A$.
+Let $a \in A$.
+Then $a \in X$, so $a \in r^{-1}(U_{\alpha_k})$ for some $k \in \\{ 1, 2, \cdots, n \\}$.
+Since $r$ is surjective, $r(r^{-1}(U_{\alpha_k}) = U_{\alpha_k}$.
+Since $r \circ i_A$ is the identity map on $A$, $r(a) = a$.
+Therefore, $a = r(a) \in r(r^{-1}(U_{\alpha_k})) = U_{\alpha_k}$.
+
+We found a finite subcover of $K$, so $A$ is compact.
 
 ## 3
 TODO
