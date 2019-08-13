@@ -57,4 +57,8 @@ Moreover, $F$ is a homotopy from $i_{\\{ x_0 \\}} \circ r$ to the identity map o
 Therefore, $\\{ x_0 \\}$ is a deformation retract of $X$.
 
 ## $3 \rightarrow 1$
-TODO
+Let $x \in X$ be given arbitrarily.
+Then $A = \\{ x \\}$ is a deformation retract of $X$.
+This implies the existence of a deformation retraction $r: X \rightarrow A$ such that $i_A \circ r$ is homotopic to the identity map of $X$.
+Since $A$ is a singleton, $r$ is the constant function that maps every point in $X$ to $x$.
+Thus the identity map of $X$ is homotopic to a constant map, so $X$ is contractible.
