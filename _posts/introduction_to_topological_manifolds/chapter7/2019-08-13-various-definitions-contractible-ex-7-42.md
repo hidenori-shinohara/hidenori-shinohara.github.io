@@ -33,7 +33,28 @@ Let $\psi: \\{ p \\} \rightarrow X$ be the inclusion map.
 Thus $X$ is homotopy equivalent to $\\{ p \\}$, a one-point space.
 
 ## $2 \rightarrow 3$
-TODO
+Suppose that $X$ is homotopy equivalent to a one-point space $Y = \\{ y \\}$.
+Let $x_0 \in X$.
+We will show that $\\{ x_0 \\}$ is a deformation retract of $X$.
+
+Let $f_1: \\{ x_0 \\} \rightarrow \\{ y \\}, f_2: \\{ y \\} \rightarrow \\{ x_0 \\}$.
+Then $f_1 \circ f_2$ and $f_2 \circ f_1$ are both the identity maps on $\\{ y \\}$ and $\\{ x_0 \\}$, respectively.
+Thus $\\{ x_0 \\}$ is homotopy equivalent to $\\{ y \\}$.
+
+Since [homotopy equivalence is an equivalence relation]({{ site.baseurl }}{% post_url /introduction_to_topological_manifolds/chapter7/2019-08-10-homotopy-equivalence-ex-7-36 %}), $X$ is homotopy equivalent to $\\{ x_0 \\}$.
+
+Then there exists a continuous map $F: X \times I \rightarrow X$ such that
+
+* $F(x, 0) = x_0$ for all $x \in X$.
+* $F(x, 1) = x$ for all $x \in X$.
+
+Let $r: X \rightarrow \\{ x_0 \\}$ be defined such that $r(x) = F(x, 0)$.
+* $r$ is a constant function, so it is continuous.
+* $r$ fixes $x_0$.
+
+Thus, $r$ is a retraction.
+Moreover, $F$ is a homotopy from $i_{\\{ x_0 \\}} \circ r$ to the identity map of $X$.
+Therefore, $\\{ x_0 \\}$ is a deformation retract of $X$.
 
 ## $3 \rightarrow 1$
 TODO
