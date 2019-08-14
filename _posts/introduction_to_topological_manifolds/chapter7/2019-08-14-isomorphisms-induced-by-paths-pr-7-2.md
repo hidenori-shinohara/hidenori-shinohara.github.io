@@ -59,5 +59,36 @@ $$
 Therefore, $\Phi_{g \cdot h} = \Phi_h \circ \Phi_g$.
 
 ## 2
+Let $[f] \in \pi_1(X, p)$ be chosen arbitrarily.
 
-TODO
+$$
+\begin{align*}
+  \psi_*(\Phi_g([f]))
+    &= \psi_*([\overline{g} \cdot f \cdot g]) \\
+    &= [\psi(\overline{g} \cdot f \cdot g)] \\
+    &= [(\psi \circ \overline{g}) \cdot (\psi \circ f) \cdot (\psi \circ g)] & \text{(as shown below)} \\
+    &= [\psi \circ \overline{g}] \cdot [\psi \circ f] \cdot [\psi \circ g] \\
+    &= [\overline{\psi \circ g}] \cdot [\psi \circ f] \cdot [\psi \circ g] & \text{(as shown below)} \\
+    &= \Phi_{\psi \circ g}([\psi \circ f]) \\
+    &= \Phi_{\psi \circ g}(\psi_*([f]))
+\end{align*}
+$$
+
+since, for any $t \in [0, 1]$,
+
+$$
+\begin{align*}
+  (\psi \circ (\overline{g} \cdot f \cdot g))(t)
+    &= \psi((\overline{g} \cdot f \cdot g)(t)) \\
+    &= \begin{cases}
+      \psi(\overline{g}(t)) & (t \in [0, 1/3]) \\
+      \psi(f(t)) & (t \in [1/3, 2/3]) \\
+      \psi(g(t)) & (t \in [2/3, 1])
+    \end{cases} \\
+    &= \psi(\overline{g}(t)) \cdot \psi(f(t)) \cdot \psi(g(t)),
+\end{align*}
+$$
+
+and
+
+$\overline{\psi \circ g}(t) = \psi(g(1 - t)) = \psi(\overline{g}(t)) = (\psi \circ \overline{g})(t)$.
