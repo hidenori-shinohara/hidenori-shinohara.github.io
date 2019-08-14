@@ -23,4 +23,41 @@ $$
 $$
 
 # Solution
+## 1
+Let $h$ be a path starting at $q$.
+We claim that $\overline{g \cdot h} = \overline{h} \cdot \overline{g}$.
+
+When $t \in [0, 1/2]$,
+
+$$
+\begin{align*}
+  \overline{g \cdot h}(t)
+    &= (g \cdot h)(1 - t) \\
+    &= h(2(1 - t) - 1) \\
+    &= h(1 - 2t) \\
+    &= \overline{h}(2t) \\
+    &= (\overline{h} \cdot \overline{g})(t).
+\end{align*}
+$$
+
+Similarly, when $t \in [1/2, 1]$, $\overline{g \cdot h}(t) = (\overline{h} \cdot \overline{g})(t)$.
+
+For any $[f] \in \pi_1(X, p)$,
+
+$$
+\begin{align*}
+  \Phi_{g \cdot h}([f])
+    &= [\overline{g \cdot h}] \cdot [f] \cdot [g \cdot h] \\ 
+    &= [\overline{h} \cdot \overline{g}] \cdot [f] \cdot [g \cdot h] \\ 
+    &= [\overline{h}] \cdot [\overline{g}] \cdot [f] \cdot [g] \cdot [h] \\ 
+    &= [\overline{h}] \cdot \Phi_g([f]) \cdot [h] \\ 
+    &= \Phi_h(\Phi_g([f])) \\
+    &= (\Phi_h \circ \Phi_g)([f]).
+\end{align*}
+$$
+
+Therefore, $\Phi_{g \cdot h} = \Phi_h \circ \Phi_g$.
+
+## 2
+
 TODO
