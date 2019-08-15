@@ -15,6 +15,7 @@ Suppose $X$ is contractible.
 TODO
 
 On the contrary, suppose $Y$ is contractible.
+Let a continuous function $f: X \rightarrow Y$ be given.
 Then there exists a fixed point $q \in Y$ and a function $H: Y \times I \rightarrow Y$ such that
 
 $$
