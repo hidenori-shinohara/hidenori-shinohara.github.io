@@ -33,4 +33,22 @@ $$
 
 Therefore, $\pi_1(X, p)$ is abelian.
 
-TODO
+On the other hand, suppose that $\pi_1(X, p)$ is abelian.
+Let $h_1, h_2$ be paths from $p$ to $q$.
+We will show that $\beta_{h_1}$ and $\beta_{h_2}$ are the same isomorphism.
+
+$h_1 \cdot \overline{h_2}$ is a loop at $p$.
+Thus $[h_1 \cdot \overline{h_2}] \in \pi_1(X, p)$.
+Since $\pi_1(X, p)$ is abelian, we know that $[f] \cdot [h_1 \cdot \overline{h_2}] = [h_1 \cdot \overline{h_2}] \cdot [f]$.
+
+$$
+\begin{align*}
+  [f] \cdot [h_1 \cdot \overline{h_2}] = [h_1 \cdot \overline{h_2}] \cdot [f]
+    &\implies [f \cdot h_1 \cdot \overline{h_2}] = [h_1 \cdot \overline{h_2} \cdot f] \\
+    &\implies [f \cdot h_1] = [h_1 \cdot \overline{h_2} \cdot f \cdot h_2] \\
+    &\implies [\overline{h_1} \cdot f \cdot h_1] = [\overline{h_2} \cdot f \cdot h_2] \\
+    &\implies \beta_{h_1}([f]) = \beta_{h_2}([f]).
+\end{align*}
+$$
+
+Therefore, all paths from $p$ to $q$ give the same isomorphism.
