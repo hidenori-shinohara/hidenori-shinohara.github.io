@@ -12,7 +12,24 @@ Show that if either $X$ or $Y$ is contractible, then every continuous map from $
 # Solution
 Suppose $X$ is contractible.
 
-TODO
+Let a continuous function $f: X \rightarrow Y$ be given.
+Then there exists a fixed point $p \in X$ and a function $H: X \times I \rightarrow X$ such that
+
+$$
+\begin{align*}
+  \forall x \in X, H(x, 0) &= x \\
+  \forall x \in X, H(x, 1) &= p.
+\end{align*}
+$$
+
+Define $G: X \times I \rightarrow Y$ by $G = f \circ H$.
+Then $G$ is a composition of two continuous functions, so $G$ is continuous.
+
+* $G(x, 0) = f(H(x, 0)) = f(x)$.
+* $G(x, 1) = f(H(x, 1)) = f(p)$.
+
+Thus $G$ is a homotopy from $f$ to the constant function that maps every element of $X$ to $f(p)$.
+Thus $f$ is homotopic to a constant function.
 
 On the contrary, suppose $Y$ is contractible.
 Let a continuous function $f: X \rightarrow Y$ be given.
