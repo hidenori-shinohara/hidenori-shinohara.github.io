@@ -42,6 +42,21 @@ Therefore, $\phi$ is indeed a homeomorphism.
 It is known that a homeomorphism induces an isomorphism between the fundamental groups.
 For instance, see Proposition 7.26 of Introduction to Topological Manifolds.
 
-
 ## 2
-TODO
+By 1, it suffices to show that $\pi_1(G, e)$ is abelian.
+Let $[f], [g] \in \pi_1(G, e)$.
+
+Then both $f$ and $g$ map $I$ into $G$ continuously.
+
+* $(s, t) \mapsto (f(s), g(t))$ is continuous since each component function is continuous.
+* $(f(s), g(t)) \mapsto f(s)g(t)$ is continuous since multiplication is continuous.
+
+Therefore, $F(s, t) = f(s)g(t)$ is continuous.
+
+* $F(s, 0) = f(s)e = f(s)$.
+* $F(1, s) = f(1)g(s) = g(s)$.
+* $F(0, s) = f(0)g(s) = g(s)$.
+* $F(s, 1) = f(s)g(1) = f(s)$.
+
+Therefore, by [the square lemma]({{ site.baseurl }}{% post_url /introduction_to_topological_manifolds/chapter7/2019-08-15-square-lemma-pr-7-4 %}), $[f \cdot g] = [g \cdot f]$.
+Hence, $[f][g] = [g][f]$, so $\pi_1(G, e)$ is abelian.
