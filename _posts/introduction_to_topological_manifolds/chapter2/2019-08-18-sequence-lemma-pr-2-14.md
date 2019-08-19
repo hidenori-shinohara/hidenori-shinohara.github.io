@@ -50,6 +50,25 @@ Then $B_k \subset U$ for some $k \in \mathbb{N}$.
 For all $n \geq k$, $x_n \in A \cap B_1 \cap \cdots \cap B_k \cap \cdots \cap B_n \subset B_k \subset U$.
 Thus $x_n$ converges to $x$.
 
+Note that the first part that states a limit of a sequence is in the boundary can be proved without first countability.
+This is true for any topological space.
+This lemma is important because of the other direction.
+When we say $x \in \overline{A}$, we expect that $x$ is in or "right next to" $A$.
+However, this is not always true.
+Consider $\mathbb{R}$ with the co-countable topology.
+Let $A = [0, 1]$.
+Let $C$ be a closed set containing $A$.
+Then $C^c$ is an open set disjoint from $A$.
+Since the complement of an non-empty open set must be countable, $C^c = \emptyset$.
+Thus the only closed set covering $A$ is $\mathbb{R}$, so the closure of $A$ is $\mathbb{R}$.
+This is "much bigger" than $A$.
+
+$2 \in \overline{A}$.
+Let $\\{ a_n \\}$ be a sequence in $A$.
+Let $U = \mathbb{R} \setminus \\{ a_n \mid n \in \mathbb{N} \\}$.
+Then $U$ is open because its complement is countable.
+$U$ must contain $2$ because $2 \notin \\{ a_n \mid n \in \mathbb{N} \\}$.
+Therefore, we found a neighborhood of $2$ which contains no term of $\\{ a_n \\}$, so no sequence in $A$ converges to $2$.
 
 ## 2
 TODO
