@@ -9,7 +9,7 @@ author: Hidenori
 Suppose $X$ is a first-countable space, $A$ is any subset of $X$, and $x$ is any point of $X$.
 
 1. $x \in \overline{A}$ if and only if $x$ is a limit point of a sequence of points in $A$.
-1. TODO
+1. $x \in \Int{A}$ if and only if every sequence in $X$ converging to $x$ is eventually in $A$.
 1. TODO
 1. TODO
 
@@ -71,7 +71,23 @@ $U$ must contain $2$ because $2 \notin \\{ a_n \mid n \in \mathbb{N} \\}$.
 Therefore, we found a neighborhood of $2$ which contains no term of $\\{ a_n \\}$, so no sequence in $A$ converges to $2$.
 
 ## 2
-TODO
+Suppose that every sequence in $X$ converging to $x$ is eventually in $A$.
+Let $B = \\{ B_1, B_2, \cdots \\}$ be a neighborhood basis for $X$ at $x$.
+We claim that there exists an $n \in \mathbb{N}$ such that $B_1 \cap B_2 \cap \cdots \cap B_n \subset A$.
+Suppose otherwise.
+
+That means that $\forall n \in \mathbb{N}$, $(B_1 \cap B_2 \cap \cdots \cap B_n) \setminus A \ne \emptyset$.
+For each $n \in \mathbb{N}$, let $a_n \in (B_1 \cap B_2 \cap \cdots \cap B_n) \setminus A$.
+Then we have a sequence $\\{ a_n \\}$.
+Let $U$ be a neighborhood of $x$.
+Since $B$ is a neighborhood basis for $X$ at $x$, there exists a $k \in \mathbb{N}$ such that $B_k \subset U$.
+Then $\forall n \geq k$, $a_n \in B_1 \cap B_2 \cap \cdots \cap B_n \subset B_k \subset U$.
+Therefore, $\\{ a_n \\}$ converges to $x$.
+This implies that $\\{ a_n \\}$ is eventually in $A$.
+However, we specially picked each $a_n$ from the complement of $A$.
+This is a contradiction, so there must exist an $n \in \mathbb{N}$ such that $B_1 \cap B_2 \cap \cdots \cap B_n \subset A$.
+$B_1 \cap \cdots \cap B_n$ is the intersection of $n$ open sets, so it is open.
+Thus it is a neighborhood of $x$ that is contained in $A$, so $x \in \Int{A}$.
 
 ## 3
 TODO
