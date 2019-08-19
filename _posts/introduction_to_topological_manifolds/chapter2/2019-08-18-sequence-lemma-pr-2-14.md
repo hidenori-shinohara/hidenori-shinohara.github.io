@@ -10,7 +10,7 @@ Suppose $X$ is a first-countable space, $A$ is any subset of $X$, and $x$ is any
 
 1. $x \in \overline{A}$ if and only if $x$ is a limit point of a sequence of points in $A$.
 1. $x \in \Int{A}$ if and only if every sequence in $X$ converging to $x$ is eventually in $A$.
-1. TODO
+1. $A$ is closed in $X$ if and only if $A$ contains every limit of every convergent sequence of points in $A$.
 1. TODO
 
 # Solution
@@ -90,7 +90,22 @@ $B_1 \cap \cdots \cap B_n$ is the intersection of $n$ open sets, so it is open.
 Thus it is a neighborhood of $x$ that is contained in $A$, so $x \in \Int{A}$.
 
 ## 3
-TODO
+Suppose $A$ is closed in $X$.
+Then $A = \overline{A}$.
+Let $\\{ a_n \\}$ be a convergent sequence in $A$.
+Let $x$ denote $\\{ a_n \\}$'s limit.
+By (1), $x \in \overline{A}$.
+Thus $x \in A$.
+Therefore, every limit of every convergent sequence of points in $A$ is in $A$.
+
+Suppose that $A$ contains every limit of every convergent sequence of points in $A$.
+Let $x \in \overline{A}$.
+By (1), $x$ is a limit point of a sequence of points in $A$.
+Thus $x \in A$.
+This implies that $\overline{A} \subset A$.
+By definition, $A \subset \overline{A}$, so $A = \overline{A}$.
+Therefore, $A$ is closed.
+
 
 ## 4
 TODO
