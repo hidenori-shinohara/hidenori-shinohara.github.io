@@ -11,7 +11,7 @@ Suppose $X$ is a first-countable space, $A$ is any subset of $X$, and $x$ is any
 1. $x \in \overline{A}$ if and only if $x$ is a limit point of a sequence of points in $A$.
 1. $x \in \Int{A}$ if and only if every sequence in $X$ converging to $x$ is eventually in $A$.
 1. $A$ is closed in $X$ if and only if $A$ contains every limit of every convergent sequence of points in $A$.
-1. TODO
+1. $A$ is open in $X$ if and only if every sequence in $X$ converging to a point of $A$ is eventually in $A$.
 
 # Solution
 ## 1
@@ -106,6 +106,17 @@ This implies that $\overline{A} \subset A$.
 By definition, $A \subset \overline{A}$, so $A = \overline{A}$.
 Therefore, $A$ is closed.
 
-
 ## 4
-TODO
+Suppose $A$ is open in $X$.
+Let $\\{ x_n \\}$ be a sequence of points in $X$.
+Let $a \in A$.
+Suppose $x_n$ converges to $a$.
+Since $A$ is open, $A = \Int{A}$.
+Thus $a \in \Int{A}$.
+This implies that $\\{ x_n \\}$ is eventually in $A$ by (2).
+
+On the contrary, suppose that every sequence in $X$ converging to a point of $A$ is eventually in $A$.
+Let $a \in A$.
+Then every sequence in $X$ converging to $a$ is eventually in $A$.
+By (2), $a \in \Int{A}$.
+This implies that $A = \Int{A}$, so $A$ is open.
