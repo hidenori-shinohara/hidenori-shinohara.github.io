@@ -8,6 +8,7 @@ author: Hidenori
 # Proposition
 Give an example of a topological embedding that is neither an open map nor a closed map.
 
+# Solution
 Let $A = [0, 1)$.
 Then the inclusion map $i_A: A \rightarrow \mathbb{R}$ is a topological embedding [as shown here]({{ site.baseurl }}{% post_url /introduction_to_topological_manifolds/chapter3/2019-08-20-inclusion-map-topological-embedding-ex-3-13%}).
 
