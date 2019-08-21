@@ -24,6 +24,7 @@ logo: "/assets/logo.png"
 
 
 # Build settings
+plugins: [jekyll-paginate]
 markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
