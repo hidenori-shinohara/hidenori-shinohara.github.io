@@ -7,12 +7,18 @@ author: Hidenori
 
 # Proposition
 Let $U \subset \mathbb{R}^n$ be an open subset.
-Let $f = (f_1, \cdots, f_k): U \rightarrow \mathbb{R}^k$ be any continuous map.
-Then $M = \\{ (x_1, \cdots, x_n, f_1(x), \cdots, f_k(x)) \mid x = (x_1, \cdots, x_n) \in U \\}$ is an $n$-manifold in $\mathbb{R}^{n + k}$.
+Let $f: U \rightarrow \mathbb{R}^k$ be any continuous map.
+Let $f_1, \cdots, f_k$ denote each coordinate function of $f$.
+
+Let $F: U \rightarrow \mathbb{R}^{n + k}$ denote the mapping $(x_1, \cdots, x_n) \mapsto (x_1, \cdots, x_n, f_1(x), \cdots, f_k(x))$.
+Let $M = F(U)$.
+
+* $F$ is a homeomorphism between $U$ and $M$.
+* $M$ is an $n$-manifold in $\mathbb{R}^{n + k}$.
 
 # Solution
-Let $F: U \rightarrow M$ denote the mapping $(x_1, \cdots, x_n) \mapsto (x_1, \cdots, x_n, f_1(x), \cdots, f_k(x))$.
-We claim that $F$ is a homeomorphism from $U$ into $M$.
+
+We will restrict $F$'s range to $U$.
 
 * Continuous?
     * Each component function is continuous, so $F$ is continuous.
