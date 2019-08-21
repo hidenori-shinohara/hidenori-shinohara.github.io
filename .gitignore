@@ -11,3 +11,5 @@ _site
 vendor/
 
 .jekyll-metadata
+
+.jekyll-cache
