@@ -18,7 +18,7 @@ Let $$(X_{\alpha})_{\alpha \in A}$$ be an indexed family of topological spaces.
 
 First, we will show some properties of disjoint union spaces.
 Let $$C \subset \coprod_{\alpha \in A} X_{\alpha}$$.
-For each $\alpha$, let $C_{\alpha} = \\{ x \mid (x, \beta) \in C, \beta = \alpha \\}$.
+For each $\alpha$, let $C_{\alpha} = i_{\alpha}(C)$.
 Then $C_{\alpha}$ denotes the intersection of $C$ with each $X_{\alpha}$.
 Moreover, $$C = \coprod_{\alpha \in A} C_{\alpha}$$ because
 
