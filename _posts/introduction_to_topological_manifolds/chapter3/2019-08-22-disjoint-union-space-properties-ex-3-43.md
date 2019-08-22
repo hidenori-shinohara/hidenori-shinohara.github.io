@@ -10,7 +10,7 @@ Let $$(X_{\alpha})_{\alpha \in A}$$ be an indexed family of topological spaces.
 
 1. A subset of $$\coprod_{\alpha \in A} X_{\alpha}$$ is closed if and only if its intersection with each $X_{\alpha}$ is closed.
 1. Each canonical injection $$i_{\alpha}: X_{\alpha} \rightarrow \coprod_{\alpha \in A} X_{\alpha}$$ is a topological embedding and an open and closed map.
-1. TODO
+1. If each $X_{\alpha}$ is Hausdorff, then so is $\coprod_{\alpha \in A} X_{\alpha}$.
 1. TODO
 1. TODO
 
@@ -115,7 +115,24 @@ Since each $C_{\alpha}$ is closed in their space, $i_{\alpha_0}(C)$ is closed by
 Therefore, $i_{\alpha_0}$ is a closed map.
 
 ## 3
-TODO
+Suppose that each $X_{\alpha}$ is Hausdorff.
+Let $(x_1, \alpha_1) \ne (x_2, \alpha_2) \in \coprod X_{\alpha}$ be given.
+
+* Case 1: $\alpha_1 \ne \alpha_2$.
+  We claim that $i_{\alpha_1}(X_{\alpha_1}), i_{\alpha_2}(X_{\alpha_2})$ separate $(x_1, \alpha_1), (x_2, \alpha_2)$.
+    * By (2), the inclusion maps are open.
+      Therefore, $i_{\alpha_1}(X_{\alpha_1}), i_{\alpha_2}(X_{\alpha_2})$ are open.
+    * Since $\alpha_1 \ne \alpha_2$, $i_{\alpha_1}(X_{\alpha_1}), i_{\alpha_2}(X_{\alpha_2})$ are disjoint.
+* Case 2: $\alpha_1 = \alpha_2$.
+  Then $x_1 \ne x_2$.
+  Since $X_{\alpha_1}$ is Hausdorff, there exist disjoint neighborhoods $U_1, U_2$ of $x_1, x_2$.
+  By (2), $i_{\alpha_1}(U_1), i_{\alpha_1}(U_2)$ are open.
+  Since $U_1, U_2$ are disjoint, $i_{\alpha_1}(U_1), i_{\alpha_1}(U_2)$ are disjoint.
+  Thus we found disjoint neighborhoods of $(x_1, \alpha_1), (x_2, \alpha_1)$.
+
+Therefore, $\coprod X_{\alpha}$ is Hausdorff.
+
+
 
 ## 4
 TODO
