@@ -9,7 +9,7 @@ author: Hidenori
 Let $$(X_{\alpha})_{\alpha \in A}$$ be an indexed family of topological spaces.
 
 1. A subset of $$\coprod_{\alpha \in A} X_{\alpha}$$ is closed if and only if its intersection with each $X_{\alpha}$ is closed.
-1. TODO
+1. Each canonical injection $$i_{\alpha}: X_{\alpha} \rightarrow \coprod_{\alpha \in A} X_{\alpha}$$ is a topological embedding and an open and closed map.
 1. TODO
 1. TODO
 1. TODO
@@ -64,7 +64,55 @@ This is equivalent to saying $(\coprod X_{\alpha}) \setminus C$ is open, so $C$ 
 
 
 ## 2
-TODO
+Let $\alpha_0$ be given.
+
+* Injective?
+    * For any $x, y \in X_{\alpha_0}$, $i_{\alpha_0}(x) = i_{\alpha_0}(y) \implies (x, \alpha_0) = (y, \alpha_0) \implies x = y$.
+* Continuous?
+    * Let $U \subset \coprod_{\alpha \in A} X_{\alpha}$ be an open subset.
+      Then the intersection $U_{\alpha}$ of $U$ with each $X_{\alpha}$ is open.
+      In particular, $U_{\alpha_0}$ is open in $X_{\alpha_0}$.
+
+      $$
+      \begin{align*}
+        (i_{\alpha_0})^{-1}(U)
+          &= (i_{\alpha_0})^{-1}(\coprod_{\alpha \in A} U_{\alpha}) \\
+          &= U_{\alpha_0}.
+      \end{align*}
+      $$
+
+      Therefore, $i_{\alpha_0}$ is continuous.
+
+Hence, $i_{\alpha_0}$ is a topological embedding.
+
+Let $U \subset X_{\alpha_0}$ be an open subset.
+Then $i_{\alpha_0}(U) = \coprod_{\alpha \in A} U_{\alpha}$ where
+
+$$
+\begin{align*}
+  U_{\alpha} &= \begin{cases}
+    U & (\alpha = \alpha_0) \\
+    \emptyset & (\alpha \ne \alpha_0).
+  \end{cases}
+\end{align*}
+$$
+
+Since each $U_{\alpha}$ is open in their space, $i_{\alpha_0}$ is an open map.
+
+Let $C \subset X_{\alpha_0}$ be a closed subset.
+Then $i_{\alpha_0}(C) = \coprod_{\alpha \in A} C_{\alpha}$ where
+
+$$
+\begin{align*}
+  C_{\alpha} &= \begin{cases}
+    C & (\alpha = \alpha_0) \\
+    \emptyset & (\alpha \ne \alpha_0).
+  \end{cases}
+\end{align*}
+$$
+
+Since each $C_{\alpha}$ is closed in their space, $i_{\alpha_0}(C)$ is closed by (1).
+Therefore, $i_{\alpha_0}$ is a closed map.
 
 ## 3
 TODO
