@@ -135,7 +135,25 @@ Therefore, $\coprod X_{\alpha}$ is Hausdorff.
 
 
 ## 4
-TODO
+Suppose that each $X_{\alpha}$ is first countable.
+Let $(x_0, \alpha_0) \in \coprod X_{\alpha}$.
+Then $x_0 \in X_{\alpha_0}$.
+Since $X_{\alpha_0}$ is first countable, there exists a sequence $\\{ U_i \\}$ of neighborhoods of $x_0$ in $X_{\alpha_0}$ such that any neighborhood of $x_0$ contains $U_i$ for some $i \in \mathbb{N}$.
+We claim that $i_{\alpha_0}(U_1), i_{\alpha_1}(U_2), \cdots$ is a local basis of $(x_0, \alpha_0)$.
+
+* $i_{\alpha_0}$ is an open map as shown in (2).
+* For each $i \in \mathbb{N}$, $U_i$ is a neighborhood of $x_0$.
+  Therefore, $(x_0, \alpha_0) \in i_{\alpha_0}(U_i)$.
+
+Let $U \subset \coprod X_{\alpha}$ be a neighborhood of $(x_0, \alpha_0)$.
+Since $U$ is open, the intersection of $U$ with $X_{\alpha_0}$, $U_{\alpha_0} = \\{ x \mid (x, \alpha) \in U, \alpha = \alpha_0 \\}$, is open in $X_{\alpha}$.
+Moreover, $(x_0, \alpha_0) \in U$, so $x_0 \in U_{\alpha_0}$.
+Therefore, $U_{\alpha_0}$ is a neighborhood of $x_0$.
+
+Since $U_1, \cdots$ is a local basis, $U_k \subset U_{\alpha_0}$ for some $k \in \mathbb{N}$.
+Then $i_{\alpha_0}(U_k) \subset i_{\alpha_0}(U_{\alpha_0}) \subset U$.
+
+Therefore, $i_{\alpha_0}(U_1), \cdots$ is a local basis of $(x_0, \alpha_0)$.
 
 ## 5
 TODO
