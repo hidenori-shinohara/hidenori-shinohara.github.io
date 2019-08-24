@@ -30,10 +30,27 @@ Hence, $\coprod X_{\alpha}$ is locally Euclidean.
 
 Suppose that $A$ is uncountable.
 Let $\mathscr{B}$ be be a basis for $$\coprod_{\alpha \in A} X_{\alpha}$$.
-For each $\alpha_0 \in A$, $i_{\alpha_0}(X_{\alpha_0})$ is a nonempty open subset of $\coprod X_{\alpha}$.
-Then $i_{\alpha_0}(X_{\alpha_0})$ is a union of basis elements.
-Since $i_{\alpha_0}(X_{\alpha_0})$ is nonempty, at least one of the basis elements must be nonempty.
-Let $B_{\alpha_0}$ denote such an element.
+Let $\phi: A \rightarrow \mathscr{B}$ be defined such that for all $\alpha \in A$
 
-TODO
+* $\phi(\alpha) \ne \emptyset$.
+* $\phi(\alpha) \subset i_{\alpha}(X_{\alpha})$.
 
+Since $i_{\alpha}$ is an open map, $i_{\alpha}(X_{\alpha})$ is open.
+Since $X_{\alpha}$ is nonempty, $i_{\alpha}(X_{\alpha})$ is nonempty.
+Thus, there must exist a nonempty basis element that is contained in $i_{\alpha}(X_{\alpha})$.
+This guarantees the existence of $\phi$.
+
+We claim that $\phi$ is injective.
+If it is, that implies that the cardinality of $\mathscr{B}$ is greater than or equal to that of $A$.
+
+Suppose $\phi(\alpha_1) = \phi(\alpha_2)$ for some $\alpha_1, \alpha_2 \in A$.
+
+Let $(x, \alpha) \in \phi(\alpha_1)$ be given.
+This is possible because $\phi(\alpha_1)$ must be nonempty.
+Since $\phi(\alpha_1) \subset i_{\alpha_1}(X_{\alpha_1})$, $\alpha = \alpha_1$.
+
+Using the same logic, since $(x, \alpha) \in \phi(\alpha_1) = \phi(\alpha_2)$, $\alpha = \alpha_2$.
+
+Therefore, $\alpha_1 = \alpha_2$.
+
+Since $\phi$ is injective and $A$ is uncountable, $\mathscr{B}$ must be uncountable.
