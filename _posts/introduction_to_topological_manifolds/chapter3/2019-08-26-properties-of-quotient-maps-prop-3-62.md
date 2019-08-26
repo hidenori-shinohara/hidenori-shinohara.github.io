@@ -7,7 +7,7 @@ author: Hidenori
 
 # Proposition
 1. Any composition of quotient maps is a quotient map.
-1. TODO
+1. An injective quotient map is a homeomorphism.
 1. TODO
 1. TODO
 1. TODO
@@ -25,7 +25,18 @@ Since $p^{-1}(q^{-1}(U)) = (q \circ p)^{-1}(U)$, $U$ is open if and only if $(q 
 Therefore, $q \circ p$ is a quotient map.
 
 ## 2
-TODO
+Let $q: X \rightarrow Y$ be an injective quotient map.
+
+* $q$ is injective.
+* Since $q$ is a quotient map, $q$ is surjective.
+* Since $q$ is a quotient map, $q$ is continuous.
+* Let $U \subset X$ be an open set.
+  Then $U = q^{-1}(q(U))$ because $q$ is injective.
+  Since $q$ is a quotient map, $q(U)$ must be open.
+  Therefore, $q$ is an open map.
+
+Therefore, $q$ is bijective, continuous, and open, so it is indeed a homeomorphism.
+
 
 ## 3
 TODO
