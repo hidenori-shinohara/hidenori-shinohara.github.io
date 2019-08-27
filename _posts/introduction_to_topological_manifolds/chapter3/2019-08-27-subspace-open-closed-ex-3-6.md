@@ -26,5 +26,15 @@ Then $S$ is a closed subset of $X$ and $X \setminus U$ is closed in $X$.
 Since the intersection of closed subsets is closed, $C = S \cap (X \setminus U)$ is closed in $X$.
 
 ## 2
-TODO
+Let $U \subset S$.
+Suppose $U$ is open in $X$.
+Then $U = S \cap U$, so $U$ is open in $S$.
+
+Let $C \subset S$.
+Suppose $C$ is closed in $X$.
+Then $X \setminus C$ is open in $X$.
+Thus $S \cap (X \setminus C)$ is open in $S$.
+$S \cap (X \setminus C) = S \setminus C$ because $S \subset X$.
+Then $S \setminus C$ is open in $S$.
+Thus $C$ is closed in $S$.
 
