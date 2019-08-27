@@ -8,7 +8,7 @@ author: Hidenori
 # Proposition
 1. Any composition of quotient maps is a quotient map.
 1. An injective quotient map is a homeomorphism.
-1. TODO
+1. If $q: X \rightarrow Y$ is a quotient map, a subset $K \subset Y$ is closed if and only if $q^{-1}(K)$ is closed in $X$.
 1. TODO
 1. TODO
 
@@ -39,7 +39,34 @@ Therefore, $q$ is bijective, continuous, and open, so it is indeed a homeomorphi
 
 
 ## 3
-TODO
+
+![Proposition (c)](/assets/introduction_to_topological_manifolds/chapter3/prop-3-62-c.jpg)
+The idea is that if $Y = A \cup B$ and $A \cap B = \emptyset$, $X = q^{-1}(A) \cup q^{-1}(B)$ and $q^{-1}(A) \cap q^{-1}(B) = \emptyset$.
+Therefore, $A$ is closed $\iff$ $B$ is open $\iff$ $q^{-1}(B)$ is open $\iff$ $q^{-1}(A)$ is closed.
+
+Suppose $q: X \rightarrow Y$ is a quotient map.
+Let $K \subset Y$ be given.
+
+$$
+\begin{align*}
+  q^{-1}(Y \setminus K)
+    &= q^{-1}(Y) \setminus q^{-1}(K) \\
+    &= X \setminus q^{-1}(K).
+\end{align*}
+$$
+
+Suppose $K$ is closed in $Y$.
+Then $Y \setminus K$ is open.
+Since $q$ is a quotient map, $q^{-1}(Y \setminus K)$ is open.
+Therefore, $X \setminus q^{-1}(K)$ is open, so $q^{-1}(K)$ is closed.
+
+On the contrary, suppose that $q^{-1}(K)$ is closed.
+Then $X \setminus q^{-1}(K)$ is open.
+This implies that $q^{-1}(Y \setminus K)$ is open.
+Since $q$ is a quotient map, $Y \setminus K$ is open.
+Therefore, $K$ is closed.
+
+
 
 ## 4
 TODO
