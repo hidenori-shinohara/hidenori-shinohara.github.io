@@ -9,7 +9,7 @@ author: Hidenori
 1. Any composition of quotient maps is a quotient map.
 1. An injective quotient map is a homeomorphism.
 1. If $q: X \rightarrow Y$ is a quotient map, a subset $K \subset Y$ is closed if and only if $q^{-1}(K)$ is closed in $X$.
-1. TODO
+1. If $q: X \rightarrow Y$ is a quotient map and $U \subset X$ is a saturated open or closed subset, then the restriction $q \mid_{U}: U \rightarrow q(U)$ is a quotient map.
 1. TODO
 
 # Solution
@@ -66,9 +66,21 @@ This implies that $q^{-1}(Y \setminus K)$ is open.
 Since $q$ is a quotient map, $Y \setminus K$ is open.
 Therefore, $K$ is closed.
 
-
-
 ## 4
+Let $U \subset X$ be a saturated open subset.
+Let $V \subset Y$ be given such that $q^{-1}(V) = U$.
+Since $q$ is a quotient map, $V$ must be open in $Y$.
+
+Since $q$ is continuous, the restriction $q \mid_U$ is continuous.
+Let $W \subset V$ be given.
+Since $W \subset V = q(U)$, $q^{-1}(W) \subset q^{-1}(V) = q^{-1}(q(U)) \subset U$.
+Therefore, $q^{-1}(W) \subset U$, so $(q\mid_U)^{-1}(W) = q^{-1}(W)$.
+
+Suppose that $(q\mid_U)^{-1}(W)$ is open in $U$.
+Since $U$ is open and $q^{-1}(W) = (q\mid_U)^{-1}(W)$, $q^{-1}(W)$ is open in $X$.
+Since $q$ is a quotient map, $W$ is open in $Y$.
+Therefore, $W$ is open in $V$, so $q\mid_U$ is indeed a quotient map.
+
 TODO
 
 ## 5
