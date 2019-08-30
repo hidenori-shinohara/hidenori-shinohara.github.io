@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""
+title:  "Open and closed subspaces"
 date:   2019-08-27
 author: Hidenori
 ---
