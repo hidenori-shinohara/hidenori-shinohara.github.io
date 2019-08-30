@@ -32,4 +32,7 @@ Therefore, $\mathcal{B}$ is a basis for $X$.
 (See Lemma 13.2 of Munkres)
 
 ## 2
-TODO
+For each $U \in \mathscr{U}$, let $\mathcal{B}_U$ denote a countable basis.
+The existence of such a basis is guaranteed because each $U \in \mathscr{U}$ is second countable.
+As shown above, the union of $\mathcal{B}_U$'s forms a basis for $X$.
+Since $\mathscr{U}$ is countable, it is the countable union of countable sets, so it is countable.
