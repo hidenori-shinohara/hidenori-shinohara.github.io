@@ -9,6 +9,7 @@ author: Hidenori
 Let $X$ be a topological space and let $A \subset X$ be any subset.
 
 1. A point is in $\Int{A}$ if and only if it has a neighborhood contained in $A$.
+1. A point is in $\Ext{A}$ if and only if it has a neighborhood contained in $X \setminus A$.
 
 # Solution
 ## 1
@@ -23,4 +24,18 @@ Let $U$ denote such a neighborhood.
 Then $U$ is an open subset of $X$ contained in $A$, so $U \subset \Int{A}$.
 Therefore, $x \in \Int{A}$.
 
+## 2
 
+Let $x \in X$.
+
+Suppose $x \in \Ext{A}$.
+Then $x \notin \overline{A}$.
+Since $\overline{A}$ is the intersection of all closed sets containing $A$, there exists a closed set $C \subset X$ such that $x \notin C$ and $A \subset C$.
+Then $C^c$ is a neighborhood of $x$ that is disjoint from $A$.
+In other words, $x \in C^c \subset X \setminus A$.
+
+On the other hand, suppose that $x$ has a neighborhood contained in $X \setminus A$.
+Let $U$ denote such a neighborhood.
+Then $U^c$ is a closed subset of $X$ containing $A$.
+Therefore, $\overline{A} \subset U^c$.
+This implies that $x \notin \overline{A}$, so $x \in \Ext{A}$.
