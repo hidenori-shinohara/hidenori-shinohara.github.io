@@ -40,3 +40,8 @@ If not, they shouldn't write your letter.
 
 You can (and you should) look for information online.
 But you should be getting as much advice as possible from your recommendation letter writers as well.
+
+# 5: Read OSU's guide to a SOP!
+
+[The Ohio State University](https://samms.osu.edu/sites/samms.osu.edu/files/SOP_Guide.pdf) has a collection of advice and actual SOPs.
+This helped me figure out how to structure my SOP.
