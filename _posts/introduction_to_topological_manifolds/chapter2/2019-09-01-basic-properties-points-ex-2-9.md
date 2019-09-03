@@ -10,6 +10,7 @@ Let $X$ be a topological space and let $A \subset X$ be any subset.
 
 1. A point is in $\Int{A}$ if and only if it has a neighborhood contained in $A$.
 1. A point is in $\Ext{A}$ if and only if it has a neighborhood contained in $X \setminus A$.
+1. A point is in $\partial A$ if and only if every neighborhood of it contains both a point of $A$ and a point of $X \setminus A$.
 
 # Solution
 ## 1
@@ -39,3 +40,19 @@ Let $U$ denote such a neighborhood.
 Then $U^c$ is a closed subset of $X$ containing $A$.
 Therefore, $\overline{A} \subset U^c$.
 This implies that $x \notin \overline{A}$, so $x \in \Ext{A}$.
+
+## 3
+
+Let $x \in X$.
+* $x \notin \Int{A}$ if and only if every neighborhood of $x$ is not contained in $A$ by (1).
+  In other words, $x \notin \Int{A}$ if and only if every neighborhood of $x$ contains a point in $X \setminus A$.
+* Since $x \notin \Ext{A}$, every neighborhood of $x$ is not contained in $X \setminus A$.
+  In other words, $x \notin \Ext{A}$ if and only if every neighborhood of $x$ contains a point in $A$.
+
+Let $x \in \partial A$.
+Then $x \notin \Int{A}$ and $x \notin \Ext{A}$.
+Therefore, every neighborhood of $x$ contains a point in $A$ and a point in $X \setminus A$.
+
+On the other hand, if every neighborhood of $x$ contains both a point of $A$ and a point of $X \setminus A$.
+Then $x \notin \Int{A}$ and $x \notin \Ext{A}$, so $x \notin \partial A$.
+
