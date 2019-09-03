@@ -11,6 +11,7 @@ Let $X$ be a topological space and let $A \subset X$ be any subset.
 1. A point is in $\Int{A}$ if and only if it has a neighborhood contained in $A$.
 1. A point is in $\Ext{A}$ if and only if it has a neighborhood contained in $X \setminus A$.
 1. A point is in $\partial A$ if and only if every neighborhood of it contains both a point of $A$ and a point of $X \setminus A$.
+1. A point is in $\overline{A}$ if and only if every neighborhood of it contains a point of $A$.
 
 # Solution
 ## 1
@@ -56,3 +57,7 @@ Therefore, every neighborhood of $x$ contains a point in $A$ and a point in $X \
 On the other hand, if every neighborhood of $x$ contains both a point of $A$ and a point of $X \setminus A$.
 Then $x \notin \Int{A}$ and $x \notin \Ext{A}$, so $x \notin \partial A$.
 
+## 4
+A point is in $\overline{A}$ if and only if it is not in $\Ext{A}$.
+A point is not in $\Ext{A}$ if and only if it does not have a neighborhood contained in $X \setminus A$ by (2).
+A point does not have a neighborhood contained in $X \setminus A$ if and only if every neighborhood of it contains a point in $A$.
