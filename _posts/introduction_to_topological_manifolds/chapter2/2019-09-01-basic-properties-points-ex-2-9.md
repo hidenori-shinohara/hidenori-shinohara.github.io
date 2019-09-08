@@ -12,6 +12,7 @@ Let $X$ be a topological space and let $A \subset X$ be any subset.
 1. A point is in $\Ext{A}$ if and only if it has a neighborhood contained in $X \setminus A$.
 1. A point is in $\partial A$ if and only if every neighborhood of it contains both a point of $A$ and a point of $X \setminus A$.
 1. A point is in $\overline{A}$ if and only if every neighborhood of it contains a point of $A$.
+1. $\overline{A} = A \cup \partial A = \Int{A} \cup \partial A$.
 
 # Solution
 ## 1
@@ -61,3 +62,37 @@ Then $x \notin \Int{A}$ and $x \notin \Ext{A}$, so $x \notin \partial A$.
 A point is in $\overline{A}$ if and only if it is not in $\Ext{A}$.
 A point is not in $\Ext{A}$ if and only if it does not have a neighborhood contained in $X \setminus A$ by (2).
 A point does not have a neighborhood contained in $X \setminus A$ if and only if every neighborhood of it contains a point in $A$.
+
+## 5
+We will first show that $\overline{A} = \Int{A} \cup \partial A$.
+
+* $\overline{A} \subset \Int{A} \cup \partial A$.
+
+Let $x \in \overline{A}$.
+Suppose $x \notin \Int{A}$.
+Then $x$ has no neighborhood contained in $A$.
+In other words, every neighborhood of $x$ contains a point of $X \setminus A$.
+
+Suppose that $x$ has a neighborhood $U$ that does not contain a point of $A$.
+Then $U^c$ is a closed subset of $X$ that contains $A$.
+Thus $\overline{A} \subset U^c$.
+However, $x \in \overline{A}$ and $x \notin U^c$, so this is impossible.
+Thus every neighborhood of $x$ contains a point of $A$.
+By (3), $x \in \partial A$.
+Therefore, $\overline{A} \subset \Int{A} \cup \partial A$.
+
+* $\Int{A} \cup \partial A \subset \overline{A}$.
+
+$\Int{A} \subset A \subset \overline{A}$.
+Let $x \in (\partial A) \setminus \Int{A}$.
+If there exists no such element, we are done.
+
+Suppose $x \notin \overline{A}$.
+Then there exists a closed set $C$ such that $A \subset C$ and $x \notin C$.
+Then $C^c$ is a neighborhood of $x$ that contains no points of $A$.
+However, this is impossible by (3) since $x$ is in $\partial A$.
+Therefore, $x \in \overline{A}$.
+
+Since $\Int{A} \subset A \subset \overline{A}$, $\Int{A} \cup \partial A \subset A \cup \partial A \subset \overline{A}$.
+Since $\Int{A} \cup \partial A = \overline{A}$, the three sets are equal to each other.
+
