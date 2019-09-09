@@ -165,7 +165,7 @@ The $k$-th exterior power of the cotangent bundle is the disjoint union
 
 $$
 \begin{align*}
-  \bigwedge^k T^*\mathbb{R}^n = \bigcup_{p \in \mathbb{R}^n} \bigwedge^k(T^*_p\mathbb{R}^n)
+  \bigwedge^k T^*\mathbb{R}^n = \coprod_{p \in \mathbb{R}^n} \bigwedge^k(T^*_p\mathbb{R}^n)
 \end{align*}
 $$
 
