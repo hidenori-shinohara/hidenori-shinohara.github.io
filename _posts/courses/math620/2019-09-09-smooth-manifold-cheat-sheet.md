@@ -88,9 +88,21 @@ There doesn't seem to be a name for $\mathfrak{X}(M)$.
   We call $\pi$ the *projection map*.
 * An element of $TM$ is denoted by $(p, X), X_p$, or simply $X$ for convenience. See P.57.
 
-# Cotangent bundle
+# Cotangent space
 
-$T_p^{*}M = L(T_pM, \mathbb{R})$ is the cotangent bundle on $M$.
+$T_p^{*}M = L(T_pM, \mathbb{R})$ is the cotangent space on $M$.
+
+Each element of $T_p^*M$ is called a (tangent) covector.
+See P.68.
+
+* Vector
+    * In this class, vector = derivation = arrow.
+* Covector
+    * A covector assigns a number to a vector.
+      One can think of this as a signed length, just like $\det$ gives a signed volume to a set of column vectors.
+
+
+
 
 # Local framing
 A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset \mathfrak{X}(U)$ such that $\{ x_{1, p}, \cdots, x_{n, p} \}$ is a basis of $T_pM$ for all $p \in U$.
