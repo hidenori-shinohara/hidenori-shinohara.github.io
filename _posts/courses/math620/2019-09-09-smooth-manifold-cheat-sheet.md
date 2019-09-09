@@ -182,14 +182,16 @@ The set of all $k$-forms is called $\mathcal{A}^k$ because $\mathcal{A}$ looks l
 This sorta makes sense because:
 
 * $\eta_p$ is in $\bigwedge^kT^*\mathbb{R}^n$.
-  $\eta_p$ is an alternating $k$-tensor, so it takes $k$ covectors.
-* $X_1, \cdots, X_k$ are vector fields, so $X_{1, p}, \cdots, X_{k, p}$ are covectors.
+  $\eta_p$ is an alternating $k$-tensor, so it takes $k$ vectors.
+* $X_1, \cdots, X_k$ are vector fields, so $X_{1, p}, \cdots, X_{k, p}$ are vectors.
 * Thus $\eta_p(X_{1, p}, \cdots, X_{k, p})$ is a real number. 
 
 I like the textbook's definition better.
 
 > A smooth section of $\bigwedge^kM$ is called a differential $k$-form, or just a $k$-form;
 > this is just a smooth tensor field whose value at each point is an alternating tensor.
+
+Note that the textbook uses $\bigwedge^k T\mathbb{R}^n$ to mean $\bigwedge^k T^*\mathbb{R}^n$ in this class.
 
 # Wedge product ($\wedge$)
 
