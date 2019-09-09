@@ -104,7 +104,7 @@ See P.68.
 
 # Cotangent bundle
 
-$TM = \coprod_{p \in M} T_pM$ is the cotangent bundle on $M$.
+$$T^*M = \coprod_{p \in M} T^*_pM$$ is the cotangent bundle on $M$.
 In other words, it is the collection of all covectors on $M$.
 
 # Local framing
@@ -153,3 +153,29 @@ $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
 * 1-form assigns a covector to each point.
   Thus $\mathscr{A}^1(U)$ is the set of all different ways to assign covectors to points.
   
+# $k$-forms
+
+The $k$-th exterior power of the cotangent bundle is the disjoint union
+
+$$
+\begin{align*}
+  \bigwedge^k T^*\mathbb{R}^n = \bigcup_{p \in \mathbb{R}^n} \bigwedge^k(T^*_p\mathbb{R}^n)
+\end{align*}
+$$
+
+A function $$\eta: \mathbb{R}^n \rightarrow \bigwedge^kT^*\mathbb{R}^n$$ is called a $k$-form if
+
+* $$\eta_p \in \bigwedge^kT_p^{*}\mathbb{R}^n$$.
+* Let $x_i \in \mathfrak{X}(\mathbb{R}^n)$ be given.
+  Then we can define $F: \mathbb{R}^n \rightarrow \mathbb{R}$ such that $F(p) = \eta_p(x_{1, p}, \cdots, x_{k, p})$.
+  Such an $F$ must be smooth for all $x_i$'s.
+
+The set of all $k$-forms is denoted by $\mathcal{A}^k$.
+The set of all $k$-forms is called $\mathcal{A}^k$ because $\mathcal{A}$ looks like $\bigwedge$ (See P.212).
+
+This sorta makes sense because:
+
+* $\eta_p$ is in $\bigwedge^kT^*\mathbb{R}^n$.
+  $\eta_p$ is an alternating $k$-tensor, so it takes $k$ covectors.
+* $x_1, \cdots, x_k$ are vector fields, so $x_{1, p}, \cdots, x_{k, p}$ are covectors.
+* Thus $\eta_p(x_{1, p}, \cdots, x_{k, p})$ is a real number. 
