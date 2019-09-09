@@ -166,9 +166,9 @@ $$
 A function $$\eta: \mathbb{R}^n \rightarrow \bigwedge^kT^*\mathbb{R}^n$$ is called a $k$-form if
 
 * $$\eta_p \in \bigwedge^kT_p^{*}\mathbb{R}^n$$.
-* Let $x_i \in \mathfrak{X}(\mathbb{R}^n)$ be given.
-  Then we can define $F: \mathbb{R}^n \rightarrow \mathbb{R}$ such that $F(p) = \eta_p(x_{1, p}, \cdots, x_{k, p})$.
-  Such an $F$ must be smooth for all $x_i$'s.
+* Let $X_i \in \mathfrak{X}(\mathbb{R}^n)$ be given.
+  Then we can define $F: \mathbb{R}^n \rightarrow \mathbb{R}$ such that $F(p) = \eta_p(X_{1, p}, \cdots, X_{k, p})$.
+  Such an $F$ must be smooth for all $X_i$'s.
 
 The set of all $k$-forms is denoted by $\mathcal{A}^k$.
 The set of all $k$-forms is called $\mathcal{A}^k$ because $\mathcal{A}$ looks like $\bigwedge$ (See P.212).
@@ -177,8 +177,8 @@ This sorta makes sense because:
 
 * $\eta_p$ is in $\bigwedge^kT^*\mathbb{R}^n$.
   $\eta_p$ is an alternating $k$-tensor, so it takes $k$ covectors.
-* $x_1, \cdots, x_k$ are vector fields, so $x_{1, p}, \cdots, x_{k, p}$ are covectors.
-* Thus $\eta_p(x_{1, p}, \cdots, x_{k, p})$ is a real number. 
+* $X_1, \cdots, X_k$ are vector fields, so $X_{1, p}, \cdots, X_{k, p}$ are covectors.
+* Thus $\eta_p(X_{1, p}, \cdots, X_{k, p})$ is a real number. 
 
 I like the textbook's definition better.
 
