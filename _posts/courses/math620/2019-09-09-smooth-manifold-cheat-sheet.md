@@ -22,8 +22,20 @@ Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subse
     * Let $(v, p) \in TU$. 
       Let $\gamma: (-\epsilon, \epsilon) \rightarrow U$ be a curve such that $\gamma'(0) = v$.
       Then $F_*(v) = (F \circ \gamma)'(0)$.
-    * Theorem
-        * For each $j \in \\{ 1, \cdots, n \\}$, $\displaystyle F_*\begin{pmatrix}\frac{\partial}{\partial x^j}\end{pmatrix} = \sum_{s=1}^{m} \frac{\partial F^s}{\partial x^j} \frac{\partial}{\partial y^s}$.
+* Theorem
+    * For each $j \in \\{ 1, \cdots, n \\}$, $\displaystyle F_*\begin{pmatrix}\frac{\partial}{\partial x^j}\end{pmatrix} = \sum_{s=1}^{m} \frac{\partial F^s}{\partial x^j} \frac{\partial}{\partial y^s}$.
+* Notes
+    * Let $Y$ be a smooth vector field on $U$.
+      Let $p \in U$ be given.
+      Then $Y_p \in T_pU \subset TU$.
+      Thus $$F_*(Y_p) \in TV$$.
+      
+      This implies that, for each $p \in U$, we get a derivation $$F_*(Y_p)$$ at $F(p)$.
+      In other words, for each $F(p) \in V$, we have a derivation $$F_*(Y_p)$$.
+      Does this sound like a vector field?
+      It does!
+      However, the map $$F(p) \mapsto F_*(Y_p)$$ is not necessarily a vector field on $V$.
+      For instance, if $F(U) \subsetneq V$, then we won't have a vector assigned to each point.
 
 # Vector fields
 
