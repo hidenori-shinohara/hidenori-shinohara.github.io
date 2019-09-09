@@ -23,7 +23,23 @@ Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subse
         * For each $j \in \\{ 1, \cdots, n \\}$, $\displaystyle F_*\begin{pmatrix}\frac{\partial}{\partial x^j}\end{pmatrix} = \sum_{s=1}^{m} \frac{\partial F^s}{\partial x^j} \frac{\partial}{\partial y^s}$.
 
 # Vector fields
-TODO
+
+* A vector field $Y$ on $M$ assigns a vector to each point in $M$.
+* Formally, a vector field is a function $Y: M \rightarrow TM$ such that, for all $p \in M$, $Y(p) = (p, X)$ for some $X \in T_pM$.
+* $Y(p)$ is often denoted by $Y_p$. See P.60.
+* Since $TM$ is a disjoint union, its elements is a pair $(p, X)$.
+  However, it seems that we often think of $Y_p$ as a derivation instead of a pair of a point and a derivation.
+* The textbook says "A vector field on $M$ is a section of $TM$", which I believe means the same thing.
+
+# Set of all smooth vector fields
+
+$\mathfrak{X}(M)$ denotes the set of all smooth vector fields on $M$.
+There doesn't seem to be a name for $\mathfrak{X}(M)$.
+
+* $\mathfrak{X}(M)$ is NOT a vector field. Each element in $\mathfrak{X}(M)$ is a vector field.
+* Reference
+    * Textbook P.60
+    * P.62 discusses notations
 
 # Fields
 An $X$ field on $Y$ = a function that assigns an element of $X$ to each point of $Y$ (in a smooth way).
