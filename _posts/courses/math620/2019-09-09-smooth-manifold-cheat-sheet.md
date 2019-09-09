@@ -42,7 +42,7 @@ There doesn't seem to be a name for $\mathfrak{X}(M)$.
     * P.62 discusses notations
 
 # Fields
-An $X$ field on $Y$ = a function that assigns an element of $X$ to each point of $Y$ (in a smooth way).
+A _*something*_ field on _*set*_  = a function that assigns _*something*_ to each point of _*set*_.
 
 * Examples
     * Vector field on $M$
