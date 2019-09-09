@@ -12,6 +12,16 @@ author: Hidenori
 
 * In this class, vectors and derivations seem to be synonyms.
 
+# Fields
+A _*something*_ field on _*set*_  = a function that assigns _*something*_ to each point of _*set*_.
+
+* Examples
+    * Vector field on $M$
+        * A function that assigns a vector to each point of $M$.
+
+# Star
+For any vector space $V$, $V^*$ denotes $L(V, \mathbb{R})$, the set of all linear maps from $V$ to $\mathbb{R}$.
+
 # Push forwards
 Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m$.
 
@@ -69,12 +79,6 @@ There doesn't seem to be a name for $\mathfrak{X}(M)$.
     * Textbook P.60
     * P.62 discusses notations
 
-# Fields
-A _*something*_ field on _*set*_  = a function that assigns _*something*_ to each point of _*set*_.
-
-* Examples
-    * Vector field on $M$
-        * A function that assigns a vector to each point of $M$.
 
 # Tangent Bundle
 
