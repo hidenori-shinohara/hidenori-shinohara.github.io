@@ -80,6 +80,12 @@ There doesn't seem to be a name for $\mathfrak{X}(M)$.
     * P.62 discusses notations
 
 
+# Tangent Space ($T_pM$)
+$T_pM$ denotes the set of all derivations at $p$.
+
+* $\\{ \partial_1, \cdots, \partial_n \\}$ is a basis of $T_p\mathbb{R}^n$.
+  This implies that every derivation in $\mathbb{R}^n$ can be expressed as a linear combination of partial derivatives.
+
 # Tangent Bundle ($TM$)
 
 * $TM = \coprod_{p \in M} T_pM$ is called the tangent bundle of $M$.
