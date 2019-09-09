@@ -129,3 +129,12 @@ This statement makes sense because:
 
 A local section assigns a covector to each point.
 In other words, a local section provides us with a way to assigned a signed length to each derivation.
+
+# Set of all 1-forms
+
+$\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
+
+* $\mathscr{A}^1(U)$ itself is not a 1-form.
+  It contains 1-forms.
+* $\mathscr{A}^1(U)$ is a vector space.
+
