@@ -84,6 +84,10 @@ A _*something*_ field on _*set*_  = a function that assigns _*something*_ to eac
   We call $\pi$ the *projection map*.
 * An element of $TM$ is denoted by $(p, X), X_p$, or simply $X$ for convenience. See P.57.
 
+# Cotangent bundle
+
+$T_p^{*}M = L(T_pM, \mathbb{R})$ is the cotangent bundle on $M$.
+
 # Local framing
 A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset \mathfrak{X}(U)$ such that $\{ x_{1, p}, \cdots, x_{n, p} \}$ is a basis of $T_pM$ for all $p \in U$.
 
