@@ -102,7 +102,7 @@ See P.68.
     * A covector assigns a number to a vector.
       One can think of this as a signed length, just like $\det$ gives a signed volume to a set of column vectors.
 
-# Cotangent bundle ($$T^*$$)
+# Cotangent bundle ($$T^*M$$)
 
 $$T^*M = \coprod_{p \in M} T^*_pM$$ is the cotangent bundle on $M$.
 In other words, it is the collection of all covectors on $M$.
