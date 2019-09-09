@@ -13,6 +13,7 @@ Let $X$ be a topological space and let $A \subset X$ be any subset.
 1. A point is in $\partial A$ if and only if every neighborhood of it contains both a point of $A$ and a point of $X \setminus A$.
 1. A point is in $\overline{A}$ if and only if every neighborhood of it contains a point of $A$.
 1. $\overline{A} = A \cup \partial A = \Int{A} \cup \partial A$.
+1. $\Int{A}$ and $\Ext{A}$ are open in $X$, while $\overline{A}$ and $\partial{A}$ are closed in $X$.
 
 # Solution
 ## 1
@@ -96,3 +97,9 @@ Therefore, $x \in \overline{A}$.
 Since $\Int{A} \subset A \subset \overline{A}$, $\Int{A} \cup \partial A \subset A \cup \partial A \subset \overline{A}$.
 Since $\Int{A} \cup \partial A = \overline{A}$, the three sets are equal to each other.
 
+## 6
+$\Int{A}$ is the union of open sets, so it is open.
+$\overline{A}$ is the intersection of closed sets, so it is closed.
+
+$\Ext{A} = X \setminus \overline{A}$, so $\Ext{A}$ is open.
+This implies $\Int{A} \cup \Ext{A}$ is open, so $\partial A = X \setminus (\Int{A} \cup \Ext{A})$ is open.
