@@ -119,7 +119,7 @@ A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset
 # Local section
 This is also called a smooth 1-form.
 A map $\eta: U \rightarrow T^*M$ is called a local section of $T^*M$ over $U$ if $\pi \circ \eta = \Id_U$.
-In other words, each $\eta$ assigns a covector of $p$ to $p$, instead of a covector of a different point.
+In other words, $\eta$ assigns a covector of $p$ to $p$, instead of a covector of a different point.
 
 It is said to be smooth if $\forall X \in \mathfrak{X}(U)$, $p \mapsto \eta_p(X_p)$ is smooth.
 This statement makes sense because:
@@ -127,5 +127,5 @@ This statement makes sense because:
 * $\eta$ assigns a covector to each point, so $\eta_p$ is a covector.
 * Thus $\eta_p(X_p)$ means that we pass a vector to a covector.
 
-
-
+A local section assigns a covector to each point.
+In other words, a local section provides us with a way to assigned a signed length to each derivation.
