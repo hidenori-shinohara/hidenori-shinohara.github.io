@@ -62,7 +62,9 @@ $\mathfrak{X}(M)$ denotes the set of all smooth vector fields on $M$.
 There doesn't seem to be a name for $\mathfrak{X}(M)$.
 
 * $\mathfrak{X}(M)$ is NOT a vector field. Each element in $\mathfrak{X}(M)$ is a vector field.
-* $\mathfrak{X}(M)$ is a vector *space*.
+* $\mathfrak{X}(M)$ is a vector *space* over $\mathbb{R}$.
+* Moreover, $\mathfrak{X}(M)$ is a module over $\mathscr{C}^{\infty}(M)$.
+    * $\forall Y \in \mathfrak{X}(M), \forall f \in \mathscr{C}^{\infty}(M), \forall p \in M, (fY)(p) = f(p)Y_p$.
 * Reference
     * Textbook P.60
     * P.62 discusses notations
