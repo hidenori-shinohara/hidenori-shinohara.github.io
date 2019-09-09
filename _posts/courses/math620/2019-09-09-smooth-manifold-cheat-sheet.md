@@ -114,6 +114,8 @@ A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset
 * It makes sense that $\{ x_{1, p}, \cdots, x_{n, p} \}$ might be a basis of $T_pM$ because $T_pM$ is the set of all derivations at $p$, and $x_{i, p}$ is a derivation at $p$.
 * $\{ \frac{\partial}{\partial x^1}, \cdots, \frac{\partial}{\partial x^n} \} \subset \mathfrak{X}(U)$ is a global framing.
 
+![Local framing](/assets/courses/math620/framing.jpeg)
+
 # Local section
 This is also called a smooth 1-form.
 A map $\eta: U \rightarrow T^*M$ is called a local section of $T^*M$ over $U$ if $\pi \circ \eta = \Id_U$.
