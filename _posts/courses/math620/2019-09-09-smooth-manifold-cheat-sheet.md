@@ -83,3 +83,10 @@ A _*something*_ field on _*set*_  = a function that assigns _*something*_ to eac
 * Let $\pi: TM \rightarrow M$ be defined such that $\pi(p, X) = p$ for each $(p, X) \in TM$.
   We call $\pi$ the *projection map*.
 * An element of $TM$ is denoted by $(p, X), X_p$, or simply $X$ for convenience. See P.57.
+
+# Local framing
+A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset \mathfrak{X}(U)$ such that $\{ x_{1, p}, \cdots, x_{n, p} \}$ is a basis of $T_pM$ for all $p \in U$.
+
+* $x_1, \cdots, x_n$ are vector fields, so $x_{1, p}$ is a derivation at $p \in U$.
+* It makes sense that $\{ x_{1, p}, \cdots, x_{n, p} \}$ might be a basis of $T_pM$ because $T_pM$ is the set of all derivations at $p$, and $x_{i, p}$ is a derivation at $p$.
+* $\{ \frac{\partial}{\partial x^1}, \cdots, \frac{\partial}{\partial x^n} \} \subset \mathfrak{X}(U)$ is a global framing.
