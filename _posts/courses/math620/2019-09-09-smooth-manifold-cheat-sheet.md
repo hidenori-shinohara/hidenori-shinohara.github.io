@@ -179,3 +179,10 @@ This sorta makes sense because:
   $\eta_p$ is an alternating $k$-tensor, so it takes $k$ covectors.
 * $x_1, \cdots, x_k$ are vector fields, so $x_{1, p}, \cdots, x_{k, p}$ are covectors.
 * Thus $\eta_p(x_{1, p}, \cdots, x_{k, p})$ is a real number. 
+
+I like the textbook's definition better.
+
+> A smooth section of $\bigwedge^kM$ is called a differential $k$-form, or just a $k$-form;
+> this is just a smooth tensor field whose value at each point is an alternating tensor.
+
+
