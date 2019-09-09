@@ -136,5 +136,7 @@ $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
 
 * $\mathscr{A}^1(U)$ itself is not a 1-form.
   It contains 1-forms.
-* $\mathscr{A}^1(U)$ is a vector space.
-
+* $\mathscr{A}^1(U)$ is a vector space over $\mathscr{C}^{\infty}(U)$.
+* 1-form assigns a covector to each point.
+  Thus $\mathscr{A}^1(U)$ is the set of all different ways to assign covectors to points.
+  
