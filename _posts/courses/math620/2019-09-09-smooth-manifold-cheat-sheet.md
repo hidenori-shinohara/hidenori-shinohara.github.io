@@ -50,3 +50,11 @@ A _*something*_ field on _*set*_  = a function that assigns _*something*_ to eac
 * Examples
     * Vector field on $M$
         * A function that assigns a vector to each point of $M$.
+
+# Tangent Bundle
+
+* $TM = \coprod_{p \in M} T_pM$ is called the tangent bundle of $M$.
+* See P.57.
+* Let $\pi: TM \rightarrow M$ be defined such that $\pi(p, X) = p$ for each $(p, X) \in TM$.
+  We call $\pi$ the *projection map*.
+* An element of $TM$ is denoted by $(p, X), X_p$, or simply $X$ for convenience. See P.57.
