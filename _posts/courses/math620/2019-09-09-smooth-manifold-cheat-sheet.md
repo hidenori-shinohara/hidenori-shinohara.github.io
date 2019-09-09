@@ -5,6 +5,9 @@ date:   2019-09-09
 author: Hidenori
 ---
 
+* TOC
+{:toc}
+
 # Vectors and derivations
 
 * In this class, vectors and derivations seem to be synonyms.
