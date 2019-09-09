@@ -37,6 +37,16 @@ Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subse
       However, the map $$F(p) \mapsto F_*(Y_p)$$ is not necessarily a vector field on $V$.
       For instance, if $F(U) \subsetneq V$, then we won't have a vector assigned to each point.
 
+# Pull backs
+Let $F: M \rightarrow N, p \in M$.
+Then the pullback $$F^*: T^*_{F(p)}M \rightarrow T^*_p N$$ associated with $F$ is defined by
+
+$$
+\begin{align*}
+  \forall \zeta \in T^*_{F(p)}(N), X \in T_pM, (F^* \zeta)(X) = \zeta(F_*X).
+\end{align*}
+$$
+
 # Vector fields
 
 * A vector field $Y$ on $M$ assigns a vector to each point in $M$.
