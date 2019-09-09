@@ -113,3 +113,17 @@ A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset
 * $x_1, \cdots, x_n$ are vector fields, so $x_{1, p}$ is a derivation at $p \in U$.
 * It makes sense that $\{ x_{1, p}, \cdots, x_{n, p} \}$ might be a basis of $T_pM$ because $T_pM$ is the set of all derivations at $p$, and $x_{i, p}$ is a derivation at $p$.
 * $\{ \frac{\partial}{\partial x^1}, \cdots, \frac{\partial}{\partial x^n} \} \subset \mathfrak{X}(U)$ is a global framing.
+
+# Local section
+This is also called a smooth 1-form.
+A map $\eta: U \rightarrow T^*M$ is called a local section of $T^*M$ over $U$ if $\pi \circ \eta = \Id_U$.
+In other words, each $\eta$ assigns a covector of $p$ to $p$, instead of a covector of a different point.
+
+It is said to be smooth if $\forall X \in \mathfrak{X}(U)$, $p \mapsto \eta_p(X_p)$ is smooth.
+This statement makes sense because:
+* $X$ is a vector field, so $X_p$ is a vector.
+* $\eta$ assigns a covector to each point, so $\eta_p$ is a covector.
+* Thus $\eta_p(X_p)$ means that we pass a vector to a covector.
+
+
+
