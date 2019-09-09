@@ -22,7 +22,7 @@ A _*something*_ field on _*set*_  = a function that assigns _*something*_ to eac
 # Star
 For any vector space $V$, $V^*$ denotes $L(V, \mathbb{R})$, the set of all linear maps from $V$ to $\mathbb{R}$.
 
-# Push forwards
+# Push forwards ($F_*$ and $dF$)
 Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m$.
 
 * $dF$ and $F_*$ are called push forwards of $F$.
@@ -47,7 +47,7 @@ Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subse
       However, the map $$F(p) \mapsto F_*(Y_p)$$ is not necessarily a vector field on $V$.
       For instance, if $F(U) \subsetneq V$, then we won't have a vector assigned to each point.
 
-# Pull backs
+# Pull backs ($F_*$)
 Let $F: M \rightarrow N, p \in M$.
 Then the pullback $$F^*: T^*_{F(p)}M \rightarrow T^*_p N$$ associated with $F$ is defined by
 
@@ -66,7 +66,7 @@ $$
   However, it seems that we often think of $Y_p$ as a derivation instead of a pair of a point and a derivation.
 * The textbook says "A vector field on $M$ is a section of $TM$", which I believe means the same thing.
 
-# Set of all smooth vector fields
+# Set of all smooth vector fields ($\mathfrak{X}(M)$)
 
 $\mathfrak{X}(M)$ denotes the set of all smooth vector fields on $M$.
 There doesn't seem to be a name for $\mathfrak{X}(M)$.
@@ -80,7 +80,7 @@ There doesn't seem to be a name for $\mathfrak{X}(M)$.
     * P.62 discusses notations
 
 
-# Tangent Bundle
+# Tangent Bundle ($TM$)
 
 * $TM = \coprod_{p \in M} T_pM$ is called the tangent bundle of $M$.
 * See P.57.
@@ -89,7 +89,7 @@ There doesn't seem to be a name for $\mathfrak{X}(M)$.
 * An element of $TM$ is denoted by $(p, X), X_p$, or simply $X$ for convenience. See P.57.
 * It is the collection of all vectors on $M$.
 
-# Cotangent space
+# Cotangent space ($T_p^*M$)
 
 $T_p^{*}M = L(T_pM, \mathbb{R})$ is the cotangent space at $p$.
 
@@ -102,7 +102,7 @@ See P.68.
     * A covector assigns a number to a vector.
       One can think of this as a signed length, just like $\det$ gives a signed volume to a set of column vectors.
 
-# Cotangent bundle
+# Cotangent bundle ($$T^*$$)
 
 $$T^*M = \coprod_{p \in M} T^*_pM$$ is the cotangent bundle on $M$.
 In other words, it is the collection of all covectors on $M$.
@@ -143,7 +143,7 @@ This statement makes sense because:
 A local section assigns a covector to each point.
 In other words, a local section provides us with a way to assigned a signed length to each derivation.
 
-# Set of all 1-forms
+# Set of all 1-forms ($\mathscr{A}^1(U)$)
 
 $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
 
@@ -153,7 +153,7 @@ $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
 * 1-form assigns a covector to each point.
   Thus $\mathscr{A}^1(U)$ is the set of all different ways to assign covectors to points.
   
-# $k$-forms
+# $k$-forms ($\bigwedge^k(T^*_p\mathbb{R}^n), \mathcal{A}^k$)
 
 The $k$-th exterior power of the cotangent bundle is the disjoint union
 
@@ -185,4 +185,12 @@ I like the textbook's definition better.
 > A smooth section of $\bigwedge^kM$ is called a differential $k$-form, or just a $k$-form;
 > this is just a smooth tensor field whose value at each point is an alternating tensor.
 
+# Wedge product ($\wedge$)
+
+$$
+\begin{align*}
+  (\mu^1 \wedge \cdots \wedge \mu^k)(v_1, \cdots, v_k)
+    &= \sum_{\sigma \in S^k} \sgn(\sigma)\mu^{\sigma_1}(v_1) \cdots \mu^{\sigma_k}(v_k).
+\end{align*}
+$$
 
