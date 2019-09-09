@@ -108,6 +108,8 @@ $TM = \coprod_{p \in M} T_pM$ is the cotangent bundle on $M$.
 In other words, it is the collection of all covectors on $M$.
 
 # Local framing
+There are different types of local framings, but they are very similar.
+## Local framing of a tangent bundle
 A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset \mathfrak{X}(U)$ such that $\{ x_{1, p}, \cdots, x_{n, p} \}$ is a basis of $T_pM$ for all $p \in U$.
 
 * $x_1, \cdots, x_n$ are vector fields, so $x_{1, p}$ is a derivation at $p \in U$.
@@ -115,6 +117,17 @@ A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset
 * $\{ \frac{\partial}{\partial x^1}, \cdots, \frac{\partial}{\partial x^n} \} \subset \mathfrak{X}(U)$ is a global framing.
 
 ![Local framing](/assets/courses/math620/framing.jpeg)
+
+## Local framing of a cotangent bundle
+$\\{ \eta^1, \cdots, \eta^n \\} \subset \mathscr{A}^1(U)$ is called a local framing of $T^kM$ if $\forall p \in U$, $\\{ \eta^1_p, \cdots, \eta^n_p \\}$ is a basis of $$T_p^*M$$.
+
+This sorta makes sense because:
+
+* For each $i$, $\eta^i$ is a 1-form.
+  In other words, $\eta^i$ assigns a covector to each point.
+* $\eta^i_p$ is a covector for each $i$ and $p \in U$, so $\\{ \eta^1_p, \cdots, \eta^n_p \\}$ is a set of covectors at $p$.
+* $$T_p^*M$$ is the collection of all covectors at $p$, so $\\{ \eta^1_p, \cdots, \eta^n_p \\}$ is indeed a subset of $$T_p^*M$$.
+
 
 # Local section
 This is also called a smooth 1-form.
