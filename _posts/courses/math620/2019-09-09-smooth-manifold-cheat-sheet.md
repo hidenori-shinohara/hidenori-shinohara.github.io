@@ -139,7 +139,7 @@ This sorta makes sense because:
 * $$T_p^*M$$ is the collection of all covectors at $p$, so $\\{ \eta^1_p, \cdots, \eta^n_p \\}$ is indeed a subset of $$T_p^*M$$.
 
 
-# Local section
+# Local section (1-form)
 This is also called a smooth 1-form.
 A map $\eta: U \rightarrow T^*M$ is called a local section of $$T^*M$$ over $U$ if $\pi \circ \eta = \Id_U$.
 In other words, $\eta$ assigns a covector of $p$ to $p$, instead of a covector of a different point.
