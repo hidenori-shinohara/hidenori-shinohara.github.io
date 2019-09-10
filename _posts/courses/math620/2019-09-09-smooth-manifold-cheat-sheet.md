@@ -202,3 +202,29 @@ $$
 \end{align*}
 $$
 
+# Pullback of a $k$-form
+Let $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m, \eta \in \mathscr{A}^k(V), F: U \rightarrow V$.
+We will define $$F^*\eta$$ to be a $k$-form on $V$.
+In other words, $$F^*\eta \in \mathscr{A}^k(V)$$.
+
+Let $p \in U$.
+Then $(F^*\eta)_p$ is defined such that
+
+$$
+\begin{align*}
+  \forall v_1, \cdots, v_k \in T_pU, (F^*\eta)_p(v_1, \cdots, v_k) = \eta_{F(p)}(F_* v_1, \cdots, F_* v_k).
+\end{align*}
+$$
+
+This sorta makes sense because:
+
+* $v_1, \cdots, v_k$ are vectors in $U$.
+* The push-forward $$F_*$$ maps $T_pU$ into $T_pV$.
+  In other words, $$F_*$$ maps a vector in $U$ to a vector in $V$.
+* $$F_* v_1, \cdots, F_* v_k$$ are vectors in $V$.
+* $\eta$ is a $k$-form, which is an assignment of an alternating $k$-tensor to each point of $V$.
+  So, $\eta_{F(p)}$ is an alternating $k$-tensor of $V$.
+* Thus $\eta_{F(p)}$ takes $F_* v_1, \cdots, F_* v_k$ as arguments, and returns a real number.
+  So, $(v_1, \cdots, v_k) \mapsto \eta_{F(p)}(F_* v_1, \cdots, F_* v_k)$ is an alternating $k$-tensor.
+* This means $F^*\eta \in \mathscr{A}^k(V)$.
+ 
