@@ -227,4 +227,5 @@ This sorta makes sense because:
 * Thus $\eta_{F(p)}$ takes $F_* v_1, \cdots, F_* v_k$ as arguments, and returns a real number.
   So, $(v_1, \cdots, v_k) \mapsto \eta_{F(p)}(F_* v_1, \cdots, F_* v_k)$ is an alternating $k$-tensor.
 * This means $F^*\eta \in \mathscr{A}^k(V)$.
- 
+* With this definition, $F^*$ maps $\mathscr{A}^k(U)$ into $\mathscr{A}^k(V)$.
+  In other words, $k$-forms pull back to $k$-forms.
