@@ -159,7 +159,7 @@ $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
 * 1-form assigns a covector to each point.
   Thus $\mathscr{A}^1(U)$ is the set of all different ways to assign covectors to points.
   
-# $k$-forms ($\bigwedge^k(T^*_p\mathbb{R}^n), \mathcal{A}^k$)
+# $k$-forms ($\bigwedge^k(T^*_p\mathbb{R}^n), \mathscr{A}^k$)
 
 The $k$-th exterior power of the cotangent bundle is the disjoint union
 
@@ -176,8 +176,8 @@ A function $$\eta: \mathbb{R}^n \rightarrow \bigwedge^kT^*\mathbb{R}^n$$ is call
   Then we can define $F: \mathbb{R}^n \rightarrow \mathbb{R}$ such that $F(p) = \eta_p(X_{1, p}, \cdots, X_{k, p})$.
   Such an $F$ must be smooth for all $X_i$'s.
 
-The set of all $k$-forms is denoted by $\mathcal{A}^k$.
-The set of all $k$-forms is called $\mathcal{A}^k$ because $\mathcal{A}$ looks like $\bigwedge$ (See P.212).
+The set of all $k$-forms is denoted by $\mathscr{A}^k$.
+The set of all $k$-forms is called $\mathscr{A}^k$ because $\mathscr{A}$ looks like $\bigwedge$ (See P.212).
 
 This sorta makes sense because:
 
