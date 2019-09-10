@@ -206,6 +206,13 @@ $$
 \end{align*}
 $$
 
+$$
+\begin{align*}
+  (\tau \wedge \omega)(v_1, \cdots, v_{k + l})
+    &= \frac{1}{k!l!} \sum_{\sigma \in S_{k + l}} \sgn(\sigma)(\tau(v_{\sigma_1}, \cdots, v_{\sigma_k})\omega(v_{\sigma_{k + 1}}, \cdots, v_{\sigma_{k + l}})).
+\end{align*}
+$$
+
 # Pullback of a $k$-form
 Let $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m, \eta \in \mathscr{A}^k(V), F: U \rightarrow V$.
 We will define $$F^*\eta$$ to be a $k$-form on $V$.
