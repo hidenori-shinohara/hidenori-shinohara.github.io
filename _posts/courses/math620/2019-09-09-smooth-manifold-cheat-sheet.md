@@ -223,7 +223,7 @@ $$
 This sorta makes sense because:
 
 * $v_1, \cdots, v_k$ are vectors in $U$.
-* The push-forward $$F_*$$ maps $T_pU$ into $T_pV$.
+* The [push-forward](#push-forwards-f_-and-df) $$F_*$$ maps $T_pU$ into $T_pV$.
   In other words, $$F_*$$ maps a vector in $U$ to a vector in $V$.
 * $$F_* v_1, \cdots, F_* v_k$$ are vectors in $V$.
 * $\eta$ is a $k$-form, which is an assignment of an alternating $k$-tensor to each point of $V$.
