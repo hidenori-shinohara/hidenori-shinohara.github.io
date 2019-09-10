@@ -219,6 +219,7 @@ $$
 \end{align*}
 $$
 
+
 This sorta makes sense because:
 
 * $v_1, \cdots, v_k$ are vectors in $U$.
@@ -229,6 +230,6 @@ This sorta makes sense because:
   So, $\eta_{F(p)}$ is an alternating $k$-tensor of $V$.
 * Thus $\eta_{F(p)}$ takes $F_* v_1, \cdots, F_* v_k$ as arguments, and returns a real number.
   So, $(v_1, \cdots, v_k) \mapsto \eta_{F(p)}(F_* v_1, \cdots, F_* v_k)$ is an alternating $k$-tensor.
-* This means $F^*\eta \in \mathscr{A}^k(V)$.
+* This means $F^*\eta \in \mathscr{A}^k(U)$, and $$(F^*\eta)_p \in \bigwedge^k(T_pU)$$.
 * With this definition, $F^*$ maps $\mathscr{A}^k(V)$ into $\mathscr{A}^k(U)$.
   In other words, $k$-forms pull back to $k$-forms.
