@@ -25,9 +25,12 @@ For any vector space $V$, $V^*$ denotes $L(V, \mathbb{R})$, the set of all linea
 # Push forwards ($F_*$ and $dF$)
 Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m$.
 
-* $dF$ and $F_*$ are called push forwards of $F$.
+* $F_*$ is called push forwards of $F$.
     * There are two different definitions of push forwards.
-* $dF = F_*: TU \rightarrow TV$.
+        * The other (simpler) definition is:
+        * Given $F: M \rigtharrow N$, $F_*: T_pM \rightarrow T_{F(p)}N$ is defined such that $(F_*X)(f) = X(f \circ F)$.
+* $F_*: TU \rightarrow TV$.
+    * The lecture notes say $dF = F_*$, but I'm not sure what that means.
 * Definition
     * Let $(v, p) \in TU$. 
       Let $\gamma: (-\epsilon, \epsilon) \rightarrow U$ be a curve such that $\gamma'(0) = v$.
