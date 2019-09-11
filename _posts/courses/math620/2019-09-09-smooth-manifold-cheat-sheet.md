@@ -256,3 +256,7 @@ This sorta makes sense because:
 * With this definition, $F^*$ maps $\mathscr{A}^k(V)$ into $\mathscr{A}^k(U)$.
   In other words, $k$-forms pull back to $k$-forms.
 * $\displaystyle F^*(dy^s) = \frac{\partial F^s}{\partial x^i} dx^i$. 
+
+## Diffeomorphisms
+
+A diffeomorphism between manifolds $M$ and $N$ is a smooth map $F: M \rightarrow N$ that has a smooth inverse.
