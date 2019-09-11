@@ -8,19 +8,31 @@ author: Hidenori
 * TOC
 {:toc}
 
-# Vectors and derivations
+# Notes
+## Vectors and derivations
 
 * In this class, vectors and derivations seem to be synonyms.
 
-# Fields
+## Fields
 A _*something*_ field on _*set*_  = a function that assigns _*something*_ to each point of _*set*_.
 
 * Examples
     * Vector field on $M$
         * A function that assigns a vector to each point of $M$.
-
-# Star
+## Star
 For any vector space $V$, $V^*$ denotes $L(V, \mathbb{R})$, the set of all linear maps from $V$ to $\mathbb{R}$.
+
+## Functions
+There seem to be two types of functions in this class:
+1. Assignment function
+    * They assign a certain mathematical object to each point.
+1. Signed length meter
+    * They take 1 or more values and return a real number.
+    * They can be seen as a generalization of the determinant function.
+      The determinant function gets $n$ column vectors and returns the signed volume of the parallelepiped.
+      For instance, we have a covector, which takes a vector (=derivation) and returns a number.
+      This can be seen as finding the length of the vector.
+
 
 # Push forwards ($F_*$ and $dF$)
 Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m$.
@@ -241,3 +253,4 @@ This sorta makes sense because:
 * This means $F^*\eta \in \mathscr{A}^k(U)$, and $$(F^*\eta)_p \in \bigwedge^k(T_pU)$$.
 * With this definition, $F^*$ maps $\mathscr{A}^k(V)$ into $\mathscr{A}^k(U)$.
   In other words, $k$-forms pull back to $k$-forms.
+* $\displaystyle F^*(dy^s) = \frac{\partial F^s}{\partial x^i} dx^i$. 
