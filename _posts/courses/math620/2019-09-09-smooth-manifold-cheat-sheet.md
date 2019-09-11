@@ -19,6 +19,7 @@ A _*something*_ field on _*set*_  = a function that assigns _*something*_ to eac
 * Examples
     * Vector field on $M$
         * A function that assigns a vector to each point of $M$.
+
 ## Star
 For any vector space $V$, $V^*$ denotes $L(V, \mathbb{R})$, the set of all linear maps from $V$ to $\mathbb{R}$.
 
