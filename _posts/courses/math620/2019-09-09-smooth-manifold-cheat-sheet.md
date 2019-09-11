@@ -34,8 +34,9 @@ There seem to be two types of functions in this class:
       For instance, we have a covector, which takes a vector (=derivation) and returns a number.
       This can be seen as finding the length of the vector.
 
+# Definitions
 
-# Push forwards ($F_*$ and $dF$)
+## Push forwards ($F_*$ and $dF$)
 Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m$.
 
 * $F_*$ is called a push forward of $F$.
@@ -64,7 +65,7 @@ Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subse
       However, the map $$F(p) \mapsto F_*(Y_p)$$ is not necessarily a vector field on $V$.
       For instance, if $F(U) \subsetneq V$, then we won't have a vector assigned to each point.
 
-# Pull backs ($F_*$)
+## Pull backs ($F_*$)
 Let $F: M \rightarrow N, p \in M$.
 Then the pullback $$F^*: T^*_{F(p)}M \rightarrow T^*_p N$$ associated with $F$ is defined by
 
@@ -74,7 +75,7 @@ $$
 \end{align*}
 $$
 
-# Vector fields
+## Vector fields
 
 * A vector field $Y$ on $M$ assigns a vector to each point in $M$.
 * Formally, a vector field is a function $Y: M \rightarrow TM$ such that, for all $p \in M$, $Y(p) = (p, X)$ for some $X \in T_pM$.
@@ -83,7 +84,7 @@ $$
   However, it seems that we often think of $Y_p$ as a derivation instead of a pair of a point and a derivation.
 * The textbook says "A vector field on $M$ is a section of $TM$", which I believe means the same thing.
 
-# Set of all smooth vector fields ($\mathfrak{X}(M)$)
+## Set of all smooth vector fields ($\mathfrak{X}(M)$)
 
 $\mathfrak{X}(M)$ denotes the set of all smooth vector fields on $M$.
 There doesn't seem to be a name for $\mathfrak{X}(M)$.
@@ -97,13 +98,13 @@ There doesn't seem to be a name for $\mathfrak{X}(M)$.
     * P.62 discusses notations
 
 
-# Tangent Space ($T_pM$)
+## Tangent Space ($T_pM$)
 $T_pM$ denotes the set of all derivations at $p$.
 
 * $\\{ \partial_1, \cdots, \partial_n \\}$ is a basis of $T_p\mathbb{R}^n$.
   This implies that every derivation in $\mathbb{R}^n$ can be expressed as a linear combination of partial derivatives.
 
-# Tangent Bundle ($TM$)
+## Tangent Bundle ($TM$)
 
 * $TM = \coprod_{p \in M} T_pM$ is called the tangent bundle of $M$.
 * See P.57.
@@ -112,7 +113,7 @@ $T_pM$ denotes the set of all derivations at $p$.
 * An element of $TM$ is denoted by $(p, X), X_p$, or simply $X$ for convenience. See P.57.
 * It is the collection of all vectors on $M$.
 
-# Cotangent space ($T_p^*M$)
+## Cotangent space ($T_p^*M$)
 
 $T_p^{*}M = L(T_pM, \mathbb{R})$ is the cotangent space at $p$.
 
@@ -125,12 +126,12 @@ See P.68.
     * A covector assigns a number to a vector.
       One can think of this as a signed length, just like $\det$ gives a signed volume to a set of column vectors.
 
-# Cotangent bundle ($$T^*M$$)
+## Cotangent bundle ($$T^*M$$)
 
 $$T^*M = \coprod_{p \in M} T^*_pM$$ is the cotangent bundle on $M$.
 In other words, it is the collection of all covectors on $M$.
 
-# Local framing
+## Local framing
 There are different types of local framings, but they are very similar.
 ## Local framing of a tangent bundle
 A local framing of $TM$ over $U$ is a collection $\{ x_1, \cdots, x_n \} \subset \mathfrak{X}(U)$ such that $\{ x_{1, p}, \cdots, x_{n, p} \}$ is a basis of $T_pM$ for all $p \in U$.
@@ -152,7 +153,7 @@ This sorta makes sense because:
 * $$T_p^*M$$ is the collection of all covectors at $p$, so $\\{ \eta^1_p, \cdots, \eta^n_p \\}$ is indeed a subset of $$T_p^*M$$.
 
 
-# Local section (1-form)
+## Local section (1-form)
 This is also called a smooth 1-form.
 A map $\eta: U \rightarrow T^*M$ is called a local section of $$T^*M$$ over $U$ if $\pi \circ \eta = \Id_U$.
 In other words, $\eta$ assigns a covector of $p$ to $p$, instead of a covector of a different point.
@@ -166,7 +167,7 @@ This statement makes sense because:
 A local section assigns a covector to each point.
 In other words, a local section provides us with a way to assigned a signed length to each derivation.
 
-# Set of all 1-forms ($\mathscr{A}^1(U)$)
+## Set of all 1-forms ($\mathscr{A}^1(U)$)
 
 $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
 
@@ -176,7 +177,7 @@ $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
 * 1-form assigns a covector to each point.
   Thus $\mathscr{A}^1(U)$ is the set of all different ways to assign covectors to points.
   
-# $k$-forms ($\bigwedge^k(T^*_p\mathbb{R}^n), \mathscr{A}^k$)
+## $k$-forms ($\bigwedge^k(T^*_p\mathbb{R}^n), \mathscr{A}^k$)
 
 The $k$-th exterior power of the cotangent bundle is the disjoint union
 
@@ -210,7 +211,7 @@ I like the textbook's definition better.
 
 Note that the textbook uses $\bigwedge^k T\mathbb{R}^n$ to mean $\bigwedge^k T^*\mathbb{R}^n$ in this class.
 
-# Wedge product ($\wedge$)
+## Wedge product ($\wedge$)
 
 $$
 \begin{align*}
@@ -226,7 +227,7 @@ $$
 \end{align*}
 $$
 
-# Pullback of a $k$-form
+## Pullback of a $k$-form
 Let $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m, \eta \in \mathscr{A}^k(V), F: U \rightarrow V$.
 We will define $$F^*\eta$$ to be a $k$-form on $V$.
 In other words, $$F^*\eta \in \mathscr{A}^k(V)$$.
