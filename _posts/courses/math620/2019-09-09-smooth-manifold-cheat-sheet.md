@@ -84,6 +84,11 @@ $$
   However, it seems that we often think of $Y_p$ as a derivation instead of a pair of a point and a derivation.
 * The textbook says "A vector field on $M$ is a section of $TM$", which I believe means the same thing.
 
+## Covector fields $df$
+Let $f$ be a smooth map on $M$.
+
+Then $df$ denotes a covector field.
+
 ## Set of all smooth vector fields ($\mathfrak{X}(M)$)
 
 $\mathfrak{X}(M)$ denotes the set of all smooth vector fields on $M$.
