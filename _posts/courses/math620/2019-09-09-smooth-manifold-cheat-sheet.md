@@ -169,7 +169,8 @@ This sorta makes sense because:
 
 
 ## Local section (1-form)
-This is also called a smooth 1-form.
+A 1-form is a smooth covector field.
+
 A map $\eta: U \rightarrow T^*M$ is called a local section of $$T^*M$$ over $U$ if $\pi \circ \eta = \Id_U$.
 In other words, $\eta$ assigns a covector of $p$ to $p$, instead of a covector of a different point.
 
