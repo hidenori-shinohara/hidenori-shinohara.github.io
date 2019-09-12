@@ -89,6 +89,16 @@ Let $f$ be a smooth map on $M$.
 
 Then $df$ denotes a covector field.
 
+This is defined such that $\forall p \in M, \forall X_p \in T_pM, df_p(X_p) = X_pf$.
+
+This sorta makes sense because
+
+* $df$ is a covector field.
+* $df_p$ is a covector, so it takes a vector.
+* $X_p$ is a vector, so it takes a smooth map.
+* Thus $X_pf$ is a real number.
+* This means $df_p$ takes a vector and returns a real number, which is exactly what a covector should do.
+
 ## Set of all smooth vector fields ($\mathfrak{X}(M)$)
 
 $\mathfrak{X}(M)$ denotes the set of all smooth vector fields on $M$.
@@ -264,4 +274,8 @@ This sorta makes sense because:
 
 ## Diffeomorphisms
 
-A diffeomorphism between manifolds $M$ and $N$ is a smooth map $F: M \rightarrow N$ that has a smooth inverse.
+A diffeomorphism $U \subset \mathbb{R}^n$ to $V \subset \mathbb{R}^n$ is a smooth map $F = (f^1, \cdots, f^n) : U \rightarrow V$ that has a smooth inverse.
+
+Some formulas
+* Chain rule: $\displaystyle \frac{\partial}{\partial x^a} = \frac{\partial f^i}{\partial x^a}\frac{\partial}{\partial y^i}$ where $y_i = f^i(x)$.
+    * If we let $G = F^{-1}$, then $\displaystyle \frac{\partial}{\partial y^a} = \frac{\partial g^j}{\partial y^a}\frac{\partial}{\partial x^j}$.
