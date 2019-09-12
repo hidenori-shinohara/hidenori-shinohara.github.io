@@ -168,7 +168,11 @@ This sorta makes sense because:
 * $$T_p^*M$$ is the collection of all covectors at $p$, so $\\{ \eta^1_p, \cdots, \eta^n_p \\}$ is indeed a subset of $$T_p^*M$$.
 
 
-## Local section (1-form)
+## 0-form ($\mathscr{A}^0(U)$)
+A 0-form is just a real-valued, smooth function.
+$\mathscr{A}^k(U) = \mathscr{C}^k(U)$.
+
+## Local section, 1-form ($\mathscr{A}^1(U)$).
 A 1-form is a smooth covector field.
 
 A map $\eta: U \rightarrow T^*M$ is called a local section of $$T^*M$$ over $U$ if $\pi \circ \eta = \Id_U$.
@@ -183,14 +187,12 @@ This statement makes sense because:
 A local section assigns a covector to each point.
 In other words, a local section provides us with a way to assigned a signed length to each derivation.
 
-## Set of all 1-forms ($\mathscr{A}^1(U)$)
-
 $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
 
 * $\mathscr{A}^1(U)$ itself is not a 1-form.
   It contains 1-forms.
 * $\mathscr{A}^1(U)$ is a vector space over $\mathscr{C}^{\infty}(U)$.
-* 1-form assigns a covector to each point.
+* A 1-form assigns a covector to each point.
   Thus $\mathscr{A}^1(U)$ is the set of all different ways to assign covectors to points.
   
 ## $k$-forms ($\bigwedge^k(T^*_p\mathbb{R}^n), \mathscr{A}^k$)
