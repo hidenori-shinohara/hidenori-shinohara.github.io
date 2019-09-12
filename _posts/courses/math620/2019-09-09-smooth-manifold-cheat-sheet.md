@@ -197,6 +197,19 @@ $\mathscr{A}^1(U)$ is the set of all 1-forms on $U$.
   
 ## $k$-forms ($\bigwedge^k(T^*_p\mathbb{R}^n), \mathscr{A}^k$)
 
+[The best explanation I've found](https://math.stackexchange.com/questions/2858098/what-is-a-differential-form) is:
+
+> A differential $k$-form tells us how to measure $k$-dimensional volume according to that coordinate system.
+
+And this is how the textbook defines it.
+
+> A smooth section of $\bigwedge^kM$ is called a differential $k$-form, or just a $k$-form;
+> this is just a smooth tensor field whose value at each point is an alternating tensor.
+
+In other words, it is an alternating $k$-tensor field.
+
+Lastly, this is how it is defined in class.
+
 The $k$-th exterior power of the cotangent bundle is the disjoint union
 
 $$
@@ -221,11 +234,6 @@ This sorta makes sense because:
   $\eta_p$ is an alternating $k$-tensor, so it takes $k$ vectors.
 * $X_1, \cdots, X_k$ are vector fields, so $X_{1, p}, \cdots, X_{k, p}$ are vectors.
 * Thus $\eta_p(X_{1, p}, \cdots, X_{k, p})$ is a real number. 
-
-I like the textbook's definition better.
-
-> A smooth section of $\bigwedge^kM$ is called a differential $k$-form, or just a $k$-form;
-> this is just a smooth tensor field whose value at each point is an alternating tensor.
 
 Note that the textbook uses $\bigwedge^k T\mathbb{R}^n$ to mean $\bigwedge^k T^*\mathbb{R}^n$ in this class.
 
