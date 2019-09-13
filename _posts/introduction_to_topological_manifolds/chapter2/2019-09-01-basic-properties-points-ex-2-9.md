@@ -14,6 +14,11 @@ Let $X$ be a topological space and let $A \subset X$ be any subset.
 1. A point is in $\overline{A}$ if and only if every neighborhood of it contains a point of $A$.
 1. $\overline{A} = A \cup \partial A = \Int{A} \cup \partial A$.
 1. $\Int{A}$ and $\Ext{A}$ are open in $X$, while $\overline{A}$ and $\partial{A}$ are closed in $X$.
+1. The following are equivalent:
+    * $A$ is open in $X$.
+    * $A = \Int{A}$.
+    * $A$ contains none of its boundary points.
+    * Every point of $A$ has a neighborhood contained in $A$.
 
 # Solution
 ## 1
@@ -103,3 +108,20 @@ $\overline{A}$ is the intersection of closed sets, so it is closed.
 
 $\Ext{A} = X \setminus \overline{A}$, so $\Ext{A}$ is open.
 This implies $\Int{A} \cup \Ext{A}$ is open, so $\partial A = X \setminus (\Int{A} \cup \Ext{A})$ is open.
+
+## 7
+If $A$ is open in $X$, every point has a neighborhood contained in $A$.
+Thus every point of $A$ is in $\Int{A}$, so $A = \Int{A}$.
+
+Suppose $A = \Int{A}$.
+Let $x$ be a boundary point of $A$.
+By (3), every neighborhood of $x$ contains both a point of $A$ and a point of $X \setminus A$.
+By (1), $x$ is not a point of $\Int{A}$.
+Thus $A$ contains none of its boundary point.
+
+Suppose $A$ contains none of its boundary points.
+Let $x \in A$.
+Then every neighborhood of $x$ contains $x$, which is a point of $A$.
+Since $x$ is not a boundary point, there exists a neighborhood of $x$ that doesn't contain a point of $X \setminus A$.
+In other words, there exists a neighborhood of $x$ that is completely contained in $A$.
+Therefore, $A$ is open.
