@@ -36,7 +36,7 @@ There seem to be two types of functions in this class:
 
 # Definitions
 
-## Push forwards ($F_*$ and $dF$)
+## Push forwards ($F_*$)
 Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subset \mathbb{R}^m$.
 
 * $F_*$ is called a push forward of $F$.
@@ -45,7 +45,6 @@ Let $F: U \rightarrow V$ be a smooth map where $U \subset \mathbb{R}^n, V \subse
         * Given $F: M \rightarrow N$, $$F_*: T_pM \rightarrow T_{F(p)}N$$ is defined such that $$(F_*X)(f) = X(f \circ F)$$ for any $X \in T_pM$ and $f \in \mathscr{C}^{\infty}(N)$.
         * $F_*$ takes a derivation $X$ in $M$ and turn that into another derivation in $N$.
 * $F_*: TU \rightarrow TV$.
-    * The lecture notes say $dF = F_*$, but I'm not sure what that means.
 * Definition
     * Let $(v, p) \in TU$. 
       Let $\gamma: (-\epsilon, \epsilon) \rightarrow U$ be a curve such that $\gamma'(0) = v$.
@@ -272,7 +271,7 @@ $$
 This sorta makes sense because:
 
 * $v_1, \cdots, v_k$ are vectors in $U$.
-* The [push-forward](#push-forwards-f_-and-df) $$F_*$$ maps $T_pU$ into $T_pV$.
+* The [push-forward](#push-forwards-f_) $$F_*$$ maps $T_pU$ into $T_pV$.
   In other words, $$F_*$$ maps a vector in $U$ to a vector in $V$.
 * $$F_* v_1, \cdots, F_* v_k$$ are vectors in $V$.
 * $\eta$ is a $k$-form, which is an assignment of an alternating $k$-tensor to each point of $V$.
