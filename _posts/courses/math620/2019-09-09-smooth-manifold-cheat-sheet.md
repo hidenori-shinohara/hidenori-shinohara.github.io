@@ -108,7 +108,7 @@ This sorta makes sense because
 * $X_p$ is a vector, so it takes a smooth map.
 * Thus $X_pf$ is a real number.
 * This means $df_p$ takes a vector and returns a real number, which is exactly what a covector should do.
-* $df = \frac{\partial f}{\partial x^i} \vert_i dx^i$.
+* $df = \sum_{i} \frac{\partial f}{\partial x^i} \vert_i dx^i$.
 
 ## Set of all smooth vector fields ($\mathfrak{X}(M)$)
 
