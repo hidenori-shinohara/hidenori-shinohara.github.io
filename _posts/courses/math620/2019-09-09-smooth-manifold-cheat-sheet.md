@@ -309,5 +309,4 @@ Then
 * $$dx^i = G^*(dx^i)$$.
 * $$dy^i = F^*(dy^i)$$.
 
-*Note*: I know these look wrong because it looks like $$G^*$$ and $$F^*$$ are the identity, but this is what I have on my notes and some other classmates'.
-I think that this should be $$dy^i = G^*(dx^i), dx^i = F^*(dy^i)$$.
+*Note*: I know these look wrong because it looks like $$G^*$$ and $$F^*$$ are the identity, but apparently this is right.
