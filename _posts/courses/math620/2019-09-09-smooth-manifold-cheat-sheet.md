@@ -74,6 +74,15 @@ $$
 \end{align*}
 $$
 
+Let $F: \mathbb{R}^n \rightarrow \mathbb{R}^m$.
+Then
+
+$$
+\begin{align*}
+  F^*(dy^s) = \frac{\partial f^s}{\partial x^j} dx^j.
+\end{align*}
+$$
+
 ## Vector fields
 
 * A vector field $Y$ on $M$ assigns a vector to each point in $M$.
