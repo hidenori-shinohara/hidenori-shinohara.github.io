@@ -290,3 +290,23 @@ A diffeomorphism $U \subset \mathbb{R}^n$ to $V \subset \mathbb{R}^n$ is a smoot
 Some formulas
 * Chain rule: $\displaystyle \frac{\partial}{\partial x^a} = \frac{\partial f^i}{\partial x^a}\frac{\partial}{\partial y^i}$ where $y_i = f^i(x)$.
     * If we let $G = F^{-1}$, then $\displaystyle \frac{\partial}{\partial y^a} = \frac{\partial g^j}{\partial y^a}\frac{\partial}{\partial x^j}$.
+
+## Change of coordinates with framings
+Let
+
+$$
+\begin{align*}
+  \Big\{ \frac{\partial}{\partial x^i} \Big\}^{n}_{i=1}, \Big\{ \frac{\partial}{\partial y^i} \Big\}^{n}_{i=1}
+\end{align*}
+$$
+
+be two framings of $\mathbb{R}^n$, and let $$\{ dx^i \}_{i=1}^n$$ and $$\{ dy^i \}_{i=1}^n$$ of $$T^*\mathbb{R}^n$$.
+Let $$F: \mathbb{R}^n_x \rightarrow \mathbb{R}^n_y, G: \mathbb{R}^n_y \rightarrow \mathbb{R}^n_x$$.
+
+Then
+
+* $$dx^i = G^*(dx^i)$$.
+* $$dy^i = F^*(dy^i)$$.
+
+*Note*: I know these look wrong because it looks like $$G^*$$ and $$F^*$$ are the identity, but this is what I have on my notes and some other classmates'.
+I think that this should be $$dy^i = G^*(dx^i), dx^i = F^*(dy^i)$$.
