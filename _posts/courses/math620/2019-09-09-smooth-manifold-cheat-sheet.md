@@ -306,7 +306,5 @@ Let $$F: \mathbb{R}^n_x \rightarrow \mathbb{R}^n_y, G: \mathbb{R}^n_y \rightarro
 
 Then
 
-* $$dx^i = G^*(dx^i)$$.
-* $$dy^i = F^*(dy^i)$$.
-
-*Note*: I know these look wrong because it looks like $$G^*$$ and $$F^*$$ are the identity, but apparently this is right.
+* $$dx^i = \frac{\partial g^i}{\partial y^j} dy^j = dg^i$$.
+* $$dy^j = \frac{\partial f^j}{\partial x^i} dx^i = df^j$$.
