@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ""
+title:  "A bijective continuous map is a homeomorphism if and only if it is open or closed"
 date:   2019-09-05
 author: Hidenori
 ---
