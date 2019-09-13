@@ -114,6 +114,7 @@ This sorta makes sense because
 
 $d: \mathscr{A}^k(U) \rightarrow \mathscr{A}^{k + 1}(U)$ is defined by $d\eta = d(\eta_I dx^I)$.
 
+* $d\eta = \frac{\partial\eta_I}{\partial x^j} dx^j \wedge dx^I$.
 * Let $V \subset \mathbb{R}^m, U \subset \mathbb{R}^n$.
   Let $\phi: V \rightarrow U$.
   Let $\eta \in \mathscr{A}^k(U)$.
