@@ -90,6 +90,7 @@ Let $f$ be a smooth map on $M$.
 Then $df$ denotes a covector field.
 
 This is defined such that $\forall p \in M, \forall X_p \in T_pM, df_p(X_p) = X_pf$.
+Or for any $X \in \mathfrak{X}(M)$, $df(X) = X(f)$.
 
 This sorta makes sense because
 
