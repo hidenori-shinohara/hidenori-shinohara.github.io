@@ -85,6 +85,7 @@ $$
 
 ## Covector fields $df$
 Let $f$ be a smooth map on $M$.
+($f \in \mathscr{C}^{\infty}(M)$.)
 
 Then $df$ denotes a covector field.
 
