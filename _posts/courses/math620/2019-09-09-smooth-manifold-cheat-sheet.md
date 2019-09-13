@@ -110,6 +110,15 @@ This sorta makes sense because
 * This means $df_p$ takes a vector and returns a real number, which is exactly what a covector should do.
 * $df = \sum_{i} \frac{\partial f}{\partial x^i} \vert_i dx^i$.
 
+## Exterior differentiation
+
+$d: \mathscr{A}^k(U) \rightarrow \mathscr{A}^{k + 1}(U)$ is defined by $d\eta = d(\eta_I dx^I)$.
+
+* Let $V \subset \mathbb{R}^m, U \subset \mathbb{R}^n$.
+  Let $\phi: V \rightarrow U$.
+  Let $\eta \in \mathscr{A}^k(U)$.
+  $$d(\phi^* \eta) = \phi^*(d\eta)$$.
+
 ## Set of all smooth vector fields ($\mathfrak{X}(M)$)
 
 $\mathfrak{X}(M)$ denotes the set of all smooth vector fields on $M$.
