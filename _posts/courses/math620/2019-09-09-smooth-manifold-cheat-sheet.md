@@ -119,6 +119,7 @@ $d: \mathscr{A}^k(U) \rightarrow \mathscr{A}^{k + 1}(U)$ is defined by $d\eta = 
   Let $\phi: V \rightarrow U$.
   Let $\eta \in \mathscr{A}^k(U)$.
   $$d(\phi^* \eta) = \phi^*(d\eta)$$.
+* $d(\omega \wedge \eta) = (d\omega) \wedge \eta + (-1)^k \omega \wedge d\eta$.
 
 ## Set of all smooth vector fields ($\mathfrak{X}(M)$)
 
