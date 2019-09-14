@@ -112,7 +112,7 @@ This sorta makes sense because
 
 ## Exterior differentiation
 
-$d: \mathscr{A}^k(U) \rightarrow \mathscr{A}^{k + 1}(U)$ is defined by $d\eta = d(\eta_I dx^I)$.
+$d: \mathscr{A}^k(U) \rightarrow \mathscr{A}^{k + 1}(U)$ is defined by $d\eta = d(\eta_I dx^I) := d(\eta_I) \wedge dx^I$.
 
 * $d\eta = \frac{\partial\eta_I}{\partial x^j} dx^j \wedge dx^I$.
 * Let $V \subset \mathbb{R}^m, U \subset \mathbb{R}^n$.
