@@ -58,3 +58,15 @@ In other words, the hypersurface $X$ is the union of two hypersurfaces $X_1, X_2
 With this example, it is believable that $A$ has zero divisors (not nilpotents) if and only if $X$ is a union of two hypersurfaces.
 
 This is apparently a general pattern according to Undergraduate Commutative Algebra (See P.4)
+
+# Example 4
+Let $f = x_1^2 + 3$
+Let $f_1 = f, f_2 = f - 1$, and let $F = f_1f_2$.
+Then $(f + (F))^2 = f^2 + (F) = f + (F)$, so $f + (F)$ is a nontrivial idempotent.
+
+Then $X_1 = V(f_1) = \\{ (\pm \sqrt{-2}, b) \mid b \in \mathbb{C} \\}$ and $X_2 = V(f_2) = \\{ (\pm \sqrt{-3}, b) \mid b \in \mathbb{C} \\}$.
+It is easy to see that $X = V(f) = X_1 \cup X_2$.
+Moreover, $X_1 \cap X_2 = \emptyset$, so $X = X_1 \coprod X_2$.
+
+$\mathbb{C}[x_1, x_2]/(f_1) \times \mathbb{C}[x_1, x_2]/(f_2)$ is isomorphic to $\mathbb{C}[x_1, x_2]/(F)$ because $\phi(f + (f_1), g + (f_2)) = fg + (F)$ is an isomorphism.
+
