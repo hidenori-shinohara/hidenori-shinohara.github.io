@@ -20,6 +20,8 @@ Given maps $X \rightarrow Y \rightarrow Z$ such that both $Y \rightarrow Z$ and 
 * Separate the various parts of the hypothesis.
     * Covering maps are probably used to find a bunch of copies of $U$.
 * Find the connection between the hypothesis and the conclusion.
+    * The problem sorta makes sense because we are thinking of doing something like $p = q^{-1} \circ (q \circ p)$, which is a covering map.
+      Of course, it's not that simple because $q$ may not be bijective, and even if that's true, the composition of two covering maps may not be a covering map.
 * Look at the conclusion! And try to think of a familiar theorem having the same or a similar conclusion.
 * Keep only a part of the hypothesis, drop the other part; is the conclusion still valid?
 * Could you derive something useful from the hypothesis?
@@ -32,6 +34,7 @@ Given maps $X \rightarrow Y \rightarrow Z$ such that both $Y \rightarrow Z$ and 
       Let $W_{\beta_0}$ be the one that contains $z_0$.
       Let $V = p(W_{\beta_0})$.
       Then $V$ is a neighborhood of $y_0$ that is evenly covered by $p$?
+      How can I use the local path connectedness of $U$?
 * Could you think of another hypothesis from which you could easily derive the conclusion?
 * Could you change the hypothesis, or the conclusion, or both if necessary, so that the new hypothesis and the new conclusion are nearer to each other?
     * If $p$ is the identity map, this problem is trivial.
