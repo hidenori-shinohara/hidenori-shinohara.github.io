@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Hidenoris
-subtitle: "Math and stuff"
+title: "Math and stuff"
+subtitle: ""
 email: hidenori.shinohara@duke.edu
 name: Hidenori Shinohara
 description: Math and stuff
