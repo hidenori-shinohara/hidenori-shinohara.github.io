@@ -13,29 +13,29 @@ Rewrite each of the following polynomials, ordering the terms using the lex orde
 
 # Solution
 ## 1
-* lex: $z - z^2 + 3y + 2x + x^2 + x^3$.
-    * $\LM(f) = z$.
-    * $\LT(f) = z$.
+* lex: $x^3 + x^2 + 2x + 3y - z^2 + z$.
+    * $\LM(f) = x^3$.
+    * $\LT(f) = x^3$.
     * $\multideg(f) = 3$.
-* grlex: $z + 3y + 2x - z^2 + x^2 + x^3$.
-    * $\LM(f) = z$.
-    * $\LT(f) = z$.
+* grlex: $x^3 + x^2 - z^2 + 2x - 3y + z$.
+    * $\LM(f) = x^3$.
+    * $\LT(f) = x^3$.
     * $\multideg(f) = 3$.
-* grevlex: $2x + 3y + z + x^2  - z^2 + x^3$.
-    * $\LM(f) = x$.
-    * $\LT(f) = 2x$.
+* grevlex: $x^3 - z^2 + x^2 + z - 3y + 2x$.
+    * $\LM(f) = x^3$.
+    * $\LT(f) = x^3$.
     * $\multideg(f) = 3$.
 
 ## 2
-* lex: $xyz^3 - xy^4 + 2x^2y^8 -3x^5yz^4$.
-    * $\LM(f) = xyz^3$.
-    * $\LT(f) = xyz^3$.
+* lex: $-3x^5yz^4 + 2x^2y^8 - xy^4 + xyz^3$.
+    * $\LM(f) = x^5yz^4$.
+    * $\LT(f) = -3x^5yz^4$.
     * $\multideg(f) = 10$.
-* grlex: $xyz^3 - xy^4 + 2x^2y^8 -3x^5yz^4$.
-    * $\LM(f) = z$.
-    * $\LT(f) = z$.
+* grlex: $-3x^5yz^4 + 2x^2y^8 - xy^4 + xyz^3$.
+    * $\LM(f) = x^5yz^4$.
+    * $\LT(f) = -3x^5yz^4$.
     * $\multideg(f) = 10$.
-* grevlex: $-xy^4 + xyz^3 - 3x^5yz^4 + 2x^2y^8$.
-    * $\LM(f) = xy^4$.
-    * $\LT(f) = -xy^4$.
+* grevlex: $2x^2y^8 - 3x^5yz^4 + xyz^3 - xy^4$.
+    * $\LM(f) = x^2y^8$.
+    * $\LT(f) = 2x^2y^8$.
     * $\multideg(f) = 10$.
