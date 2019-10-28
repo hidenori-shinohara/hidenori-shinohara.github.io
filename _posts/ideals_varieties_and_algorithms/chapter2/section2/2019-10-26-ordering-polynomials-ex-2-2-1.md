@@ -35,7 +35,7 @@ Rewrite each of the following polynomials, ordering the terms using the lex orde
     * $\LM(f) = x^5yz^4$.
     * $\LT(f) = -3x^5yz^4$.
     * $\multideg(f) = 10$.
-* grevlex: $2x^2y^8 - 3x^5yz^4 + xyz^3 - xy^4$.
+* grevlex: $2x^2y^8 - 3x^5yz^4 - xy^4 + xyz^3$.
     * $\LM(f) = x^2y^8$.
     * $\LT(f) = 2x^2y^8$.
     * $\multideg(f) = 10$.
