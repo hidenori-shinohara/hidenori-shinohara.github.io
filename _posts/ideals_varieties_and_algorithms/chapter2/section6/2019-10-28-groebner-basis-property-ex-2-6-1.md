@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Basic property of a Grobner basis"
+title:  "Basic property of a Groebner basis"
 date:   2019-10-28
 author: Hidenori
 ---
