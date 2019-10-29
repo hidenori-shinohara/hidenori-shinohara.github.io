@@ -1,0 +1,1 @@
+GroebnerBasis([2*x - 1, 3*y + z - 1, 40*z**2 - 8*z - 23], x, y, z, domain='ZZ', order='lex')
