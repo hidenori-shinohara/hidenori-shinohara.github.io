@@ -3,4 +3,7 @@ then
   bundle update;
 fi
 
-bundle exec jekyll serve -w --incremental --port=4010
+# It is necessary to build first because Jekyll's incremental feature is not very smart.
+# More specifically, when a new post is added, Jekyll doesn't regenerate index.html.
+jekyll build;
+bundle exec jekyll serve -w --incremental --port=4010;
