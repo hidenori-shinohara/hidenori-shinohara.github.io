@@ -1,0 +1,1 @@
+GroebnerBasis([a + x - y, x + 2*y + z, x**2 - 2*x*y + y**2 - y], a, z, y, x, domain='ZZ', order='lex')
