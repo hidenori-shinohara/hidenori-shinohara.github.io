@@ -14,6 +14,8 @@ Find a system of equations defining the image of $\phi$.
 
 $V = \\{ (a, a) \mid a \in \mathbb{R} \\}$.
 Thus $\phi(V) = \\{ (a^2 - a, a^2, a - 3a^2) \mid a \in \mathbb{R} \\}$.
+Then we can regard $G(a) = (a^2 - a, a^2, a - 3a^2)$ to be a polynomial mapping from $\mathbb{R}$ into $\mathbb{R}^3$.
+Then $\phi(V) = G(\mathbb{R})$.
 
     from sympy import *
     from sympy.polys.orderings import monomial_key
