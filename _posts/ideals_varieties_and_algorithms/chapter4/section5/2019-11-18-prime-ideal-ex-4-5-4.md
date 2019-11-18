@@ -29,4 +29,8 @@ If $\cap_{i=1}^{n} I_i \subset P$, then by the inductive hypothesis, $I_i \subse
 
 By mathematical induction, the proposition is true for all $n \geq 2$.
 
-TODO(Second part)
+Suppose $P = \cap_{i=1}^{n} I_i$.
+Then by the argument above, $I_{i_0} \subset P$ for some ${i_0}$.
+Since $P \subset \cap_{i=1}^{n} I_i$, $P \subset I_{i_0}$.
+Therefore, $P = I_{i_0}$.
+
