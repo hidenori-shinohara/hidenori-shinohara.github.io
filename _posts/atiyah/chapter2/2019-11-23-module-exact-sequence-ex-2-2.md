@@ -30,7 +30,7 @@ Therefore, $\phi$ is a surjective module homomorphism.
 
 We claim that $\ker{\phi} =  a \otimes M$.
 
-* Suppose $\phi(x \oplus y) = 0$.
+* Suppose $\phi(x \otimes y) = 0$.
   Then $xy + aM = 0$ and thus $xy \in aM$.
   This implies $xy = x'y'$ for some $x' \in a$ and $y' \in M$.
   $$
