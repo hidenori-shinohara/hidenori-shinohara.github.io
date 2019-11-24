@@ -17,7 +17,7 @@ $$
 where $g_{ij} = T(w_i, w_j)$.
 
 # Solution
-Let $v_1, \cdots, v_n$ be an orthonormal basis.
+Let $v_1, \cdots, v_n$ be an orthonormal basis such that $[v_1, \cdots, v_n] = \mu$.
 Then there exist $a_{ij}$ such that $w_i = \sum_{j} a_{ij} w_j$.
 
 $$
