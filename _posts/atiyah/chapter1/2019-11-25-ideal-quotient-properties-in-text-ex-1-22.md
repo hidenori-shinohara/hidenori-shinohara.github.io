@@ -49,3 +49,16 @@ Therefore, $((a:b):c) = (a:bc)$.
 We showed that $((a:b):c) = (a:bc)$.
 This implies $(a:cb) = ((a:c):b)$.
 Since $(a:bc) = (a:cb)$, we have $((a:b):c) = (a:bc) = (a:cb) = ((a:c):b)$.
+
+## 4
+For any $x \in A$,
+
+$$
+\begin{align*}
+  x \in (\cap_i a_i:b)
+    &\iff xb \subset \cap_i a_i \\
+    &\iff \forall i, xb \subset a_i \\
+    &\iff \forall i, x \subset (a_i:b) \\
+    &\iff x \subset \cap_i (a_i:b).
+\end{align*}
+$$
