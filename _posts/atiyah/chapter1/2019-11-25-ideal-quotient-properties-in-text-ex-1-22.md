@@ -62,3 +62,23 @@ $$
     &\iff x \subset \cap_i (a_i:b).
 \end{align*}
 $$
+
+## 5
+For any $x \in A$,
+
+$$
+\begin{align*}
+  x \in (a:\sum_i b_i)
+    &\iff x(\sum_i b_i) \subset a \\
+    &\implies \forall i, xb_i \subset a \\
+    &\iff \forall i, x \subset (a:b_i) \\
+    &\iff x \subset \cap_i(a:b_i).
+\end{align*}
+$$
+
+Therefore, it suffices to show that $\forall i, xb_i \subset a \implies x(\sum_i b_i) \subset a$.
+Let $y_{i_1} + \cdots + y_{i_n} \in \sum_i b_i$ be given where $y_{i_j} \in b_{i_j}$.
+For each $j$, since $xb_{i_j} \subset a$, $xy_{i_j} \in a$.
+Since $a$ is closed under finite addition, $xy_{i_1} + \cdots + xy_{i_n} \in a$.
+Therefore, $\forall i, xb_i \subset a \implies x(\sum_i b_i) \subset a$, so $(a:\sum_i b_i) = \cap_i(a:b_i)$.
+
