@@ -12,6 +12,22 @@ author: Hidenori
 # Solution
 
 ## 1
+Let $p \in \mathbb{R}^n$ be given.
+Let $v_p \in \mathbb{R}^n_p$ be given.
+
+$$
+\begin{align*}
+  (g \circ f)_{\ast}(v_p)
+    &= (D(g \circ f)(p)(v))_{(g \circ f)(p)} \\
+    &= \Big(\big((Dg)(f(p)) \circ (Df(p))\big)(v)\Big)_{g(f(p))} \\
+    &= \Big((Dg)(f(p))((Df(p))(v))\Big)_{g(f(p))} \\
+    &= g_{\ast}\big(((Df(p))(v))_{f(p)}\big) \\
+    &= g_{\ast}(f_{\ast}(v_p)) \\
+    &= (g_{\ast} \circ f_{\ast})(v_p)).
+\end{align*}
+$$
+
+
 Let $k \in \mathbb{N}$ be given.
 Let $\omega \in \mathcal{T}^k(\mathbb{R}^p)$ be given.
 
@@ -28,7 +44,6 @@ $$
 
 Therefore, $(g \circ f)^{\ast} = f^{\ast} \circ g^{\ast}$.
 
-TODO
 
 ## 2
 TODO
