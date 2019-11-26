@@ -6,7 +6,7 @@ author: Hidenori
 ---
 
 # Proposition
-1. If $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ and $g: \mathbb{R}^m \rightarrow \mathbb{R}^p$, show that $(g \circ f)_{\ast} = g_{\ast} \circ f_{\ast}$ and $(g \circ f)^{\ast} = f^{\ast} \circ g^{\ast}$.
+1. If $f: \mathbb{R}^n \rightarrow \mathbb{R}^m$ and $g: \mathbb{R}^m \rightarrow \mathbb{R}^p$, show that $$(g \circ f)_{\ast} = g_{\ast} \circ f_{\ast}$$ and $(g \circ f)^{\ast} = f^{\ast} \circ g^{\ast}$.
 1. If $f, g: \mathbb{R}^n \rightarrow \mathbb{R}$, show that $d(f \cdot g) = f \cdot dg + g \cdot df$.
 
 # Solution
