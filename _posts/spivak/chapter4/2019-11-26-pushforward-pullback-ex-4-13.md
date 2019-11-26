@@ -46,4 +46,7 @@ Therefore, $(g \circ f)^{\ast} = f^{\ast} \circ g^{\ast}$.
 
 
 ## 2
-TODO
+Since $f, g$ are 0-forms, $f \cdot g = f \wedge g$ as mentioned on P.89[Spivak].
+$d(f \wedge g) = df \wedge g + f \wedge dg$ by Theorem 4-10(2)[Spivak].
+$df \wedge g = g \wedge df$ [P.79, Spivak].
+Then $d(fg) = d(f \wedge g) = g \wedge df + f \wedge dg = gdf + fdg$.
