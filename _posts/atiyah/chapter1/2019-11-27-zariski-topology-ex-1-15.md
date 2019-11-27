@@ -59,3 +59,28 @@ $$
 \end{align*}
 $$
 
+## 4
+Since $ab \subset a$ and $ab \subset b$, $ab \subset a \cap b$.
+Therefore, $V(a \cap b) \subset V(ab)$.
+
+Let $p \in V(ab)$.
+Then $ab \subset p$.
+Let $x \in a \cap b$.
+Then $x^2 \in ab \subset p$, so $x \in p$.
+Therefore, $a \cap b \subset p$, so $p \in V(a \cap b)$.
+
+This shows $V(ab) = V(a \cap b)$.
+
+Since $a \cap b \subset a$ and $a \cap b \subset b$, $V(a) \subset V(a \cap b)$ and $V(b) \subset V(a \cap b)$.
+Thus, $V(a) \cup V(b) \subset V(a \cap b)$.
+
+Let $p \in V(a \cap b)$.
+If $a \subset p$, then $p \in V(a)$.
+Suppose otherwise.
+Let $x \in b$ and $y \in a \setminus p$.
+Then $xy \in a \cap b \subset p$.
+Since $p$ is prime and $y \notin p$, $x \in p$.
+Therefore, $b \subset p$, so $p \in V(b)$.
+
+Thus we have $p \in V(a) \cup V(b)$, so we have $V(a) \cup V(b) = V(a \cap b)$.
+
