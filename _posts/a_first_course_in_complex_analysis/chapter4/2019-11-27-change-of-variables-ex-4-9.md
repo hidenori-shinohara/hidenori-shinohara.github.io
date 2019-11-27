@@ -21,3 +21,12 @@ $$
     &= \int_{a}^{b} f(\gamma(t))\gamma'(t) dt.
 \end{align*}
 $$
+
+$$
+\begin{align*}
+  \int_c^d \abs{\sigma'(t)} dt
+    &= \int_c^d \abs{\gamma'(\tau(t))}\abs{\tau'(t)} dt \\
+    &= \int_c^d \abs{\gamma'(\tau(t))}\tau'(t) dt & \text{($\tau$ is increasing.)} \\
+    &= \int_a^b \abs{\gamma'(t)} dt & \text{(Theorem A.6)}.
+\end{align*}
+$$
