@@ -26,7 +26,6 @@ Prove that
 
 Therefore, $V(a) = V(E)$.
 
-## 2
 Since $a \subset r(a)$, $V(r(a)) \subset V(a)$.
 
 Let $p \in V(a)$.
@@ -44,5 +43,19 @@ Therefore, $x$ must be in $p$.
 This means $r(a) \subset p$, so $p \in V(r(a))$.
 Therefore, $V(r(a)) = V(a)$.
 
+## 2
+Since every prime ideal contains $0$, $V(0) = X$.
+Since every prime ideal is a proper ideal, no prime ideal contains $1$.
+Thus $V(1) = \emptyset$.
 
+## 3
+
+$$
+\begin{align*}
+  p \in V(\cup_{i \in I} E_i)
+    &\iff \forall i \in I, E_i \subset p \\
+    &\iff \forall i \in I, p \in V(E_i) \\
+    &\iff p \in \cap_{i \in I} V(E_i).
+\end{align*}
+$$
 
