@@ -33,3 +33,9 @@ Therefore, all closed sets in $\Spec(\mathbb{Z})$ are:
 * any finite set of the form $\\{ (p_1), \cdots, (p_n) \\}$,
 * $\\{ (0) \\}$, 
 * $\Spec(\mathbb{Z})$.
+
+## $\Spec(\mathbb{R})$
+
+The only ideals of $\mathbb{R}$ are $(0)$ and $\mathbb{R}$ because $\mathbb{R}$ is a field.
+Thus the only prime ideal is $(0)$.
+
