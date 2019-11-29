@@ -78,3 +78,7 @@ Therefore, all closed sets in $\Spec(\mathbb{R}[x])$ are:
 * any finite set of the form $\\{ (p_1(x)), \cdots, (p_n(x)) \\}$ where each $p_i(x)$ is irreducible.
 * $\\{ (0) \\}$, 
 * $\Spec(\mathbb{R}[x])$.
+
+## $\Spec(\mathbb{Z}[x])$
+
+I can't figure out how to solve this, but [The red book of varieties and schemes, 2nd ed., p. 75] has the answer.
