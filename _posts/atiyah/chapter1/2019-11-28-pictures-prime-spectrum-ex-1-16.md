@@ -61,3 +61,20 @@ Therefore, all closed sets in $\Spec(\mathbb{C}[x])$ are:
 * any finite set of the form $\\{ (x - a_1), \cdots, (x - a_n) \\}$,
 * $\\{ (0) \\}$, 
 * $\Spec(\mathbb{C}[x])$.
+
+## $\Spec(\mathbb{R}[x])$.
+This case is similar to $\Spec(\mathbb{C}[x])$.
+$\mathbb{R}[x]$ is a PID.
+
+An ideal $(p(x))$ is prime if and only if $p(x)$ is irreducible.
+
+Let $E \subset \mathbb{R}[x]$.
+Suppose $E \ne \emptyset$ and $E \ne (0)$.
+Then given an irreducible polynomial $p(x) \in \mathbb{R}[x]$, $(p(x)) \in V(E)$ if and only if $p(x)$ divides all polynomials in $E$.
+If $E$ contains a nonzero polynomial, it has finitely many factors (up to associate).
+
+Therefore, all closed sets in $\Spec(\mathbb{R}[x])$ are:
+
+* any finite set of the form $\\{ (p_1(x)), \cdots, (p_n(x)) \\}$ where each $p_i(x)$ is irreducible.
+* $\\{ (0) \\}$, 
+* $\Spec(\mathbb{R}[x])$.
