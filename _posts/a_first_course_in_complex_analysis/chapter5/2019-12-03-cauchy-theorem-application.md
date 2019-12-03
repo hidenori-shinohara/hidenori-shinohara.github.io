@@ -27,3 +27,7 @@ Using the same idea as above, the integral equals $2\pi i f'(\pi i) = 6\pi i\exp
 Let $f(z) = \sin(2z)$.
 Using the same idea, the integral equals $2\pi i f'(\pi) = 2$.
 
+## 4
+Let $f(z) = \exp(z)\cos(z)$.
+$f'(z) = \exp(z)(\cos(z) - \sin(z))$ and $f''(z) = -2\sin(z)\exp(z)$.
+Therefore, the integral equals $2\pi i f''(\pi) = 0$.
