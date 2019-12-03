@@ -24,3 +24,6 @@ Let $f(z) = \exp(3z)$.
 Using the same idea as above, the integral equals $2\pi i f'(\pi i) = 6\pi i\exp(3\pi i)$.
 
 ## 3
+Let $f(z) = \sin(2z)$.
+Using the same idea, the integral equals $2\pi i f'(\pi) = 2$.
+
