@@ -6,7 +6,7 @@ author: Hidenori
 ---
 
 # Proposition
-If $A$ is absolutely flat, every prime ideal is maximal.
+If $A$ is absolutely flat, every primary ideal is maximal.
 
 # Solution
 We will use the results of Exercise 2.28 and [1.10](/2019/11/27/nilradical-properties-ex-1-10) [Atiyah].
