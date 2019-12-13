@@ -20,6 +20,9 @@ Deduce the following properties of the cross product in $\mathbb{R}^3$.
 1. $v \times w = (v^2w^3 - v^3w^2)e_1 + (v^3w^1 - v^1w^3)e_2 + (v^1w^2 - v^2w^1)e_3$.
 1. $\abs{v \times w} = \abs{v} \cdot \abs{w} \cdot \abs{\sin \theta}$, where $\theta = \angle (v, w)$.
    $\ev{v \times w, v} = \ev{v \times w, w} = 0$.
+1. $\ev{v, w \times z} = \ev{w, z \times v} = \ev{z, v \times w}$.
+   $v \times (w \times z) = \ev{v, z}w - \ev{v, w}z$.
+   $(v \times w) \times z = \ev{v, z}w - \ev{w, z}v$.
 
 # Solution
 ## 1
@@ -55,7 +58,8 @@ $$
 
 ## 3
 
-TODO(Finish the first part of subproblem 3)
+Part 2 shows that in $\mathbb{R}^3$, the definition of the cross product in the textbook is the same as the cross product in elementary linear algebra.
+The property that $\abs{v \times w} = \abs{v} \cdot \abs{w} \cdot \abs{\sin \theta}$ comes from elementary algebra.
 
 $$
 \begin{align*}
@@ -64,3 +68,22 @@ $$
 $$
 
 Similarly, $\ev{v \times w, w} = 0$.
+
+## 4
+
+$$
+\begin{align*}
+  \ev{v, w \times z}
+    &= \det\begin{bmatrix} v \\ w \\ z \end{bmatrix} \\
+    &= \det\begin{bmatrix} w \\ z \\ v \end{bmatrix} \\
+    &= \ev{w, v \times z} \\
+    &= \det\begin{bmatrix} w \\ z \\ v \end{bmatrix} \\
+    &= \det\begin{bmatrix} z \\ v \\ w \end{bmatrix} \\
+    &= \ev{z, v \times w}.
+\end{align*}
+$$
+
+TODO(Finish the other part of this subproblem)
+
+## 5
+TODO
