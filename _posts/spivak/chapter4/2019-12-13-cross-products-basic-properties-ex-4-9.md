@@ -17,7 +17,7 @@ Deduce the following properties of the cross product in $\mathbb{R}^3$.
    \end{matrix}
    \end{align*}
    $$
-1. TODO
+1. $v \times w = (v^2w^3 - v^3w^2)e_1 + (v^3w^1 - v^1w^3)e_2 + (v^1w^2 - v^2w^1)e_3$.
 
 # Solution
 ## 1
@@ -43,4 +43,10 @@ For instance, the permutation $(12)$ gives us $e_2 \times e_1 = \sgn((12)) e_3 =
 
 ## 2
 
-TODO
+$$
+\begin{align*}
+  \det(\begin{bmatrix} v \\ w \\ a \end{bmatrix})
+    &= (v^2w^3 - v^3w^2)a_1 + (v^3w^1 - v^1w^3)a_2 + (v^1w^2 - v^2w^1)a_3 \\
+    &= \ev{a, (v^2w^3 - v^3w^2)e_1 + (v^3w^1 - v^1w^3)e_2 + (v^1w^2 - v^2w^1)e_3}.
+\end{align*}
+$$
