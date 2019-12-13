@@ -18,6 +18,8 @@ Deduce the following properties of the cross product in $\mathbb{R}^3$.
    \end{align*}
    $$
 1. $v \times w = (v^2w^3 - v^3w^2)e_1 + (v^3w^1 - v^1w^3)e_2 + (v^1w^2 - v^2w^1)e_3$.
+1. $\abs{v \times w} = \abs{v} \cdot \abs{w} \cdot \abs{\sin \theta}$, where $\theta = \angle (v, w)$.
+   $\ev{v \times w, v} = \ev{v \times w, w} = 0$.
 
 # Solution
 ## 1
@@ -50,3 +52,15 @@ $$
     &= \ev{a, (v^2w^3 - v^3w^2)e_1 + (v^3w^1 - v^1w^3)e_2 + (v^1w^2 - v^2w^1)e_3}.
 \end{align*}
 $$
+
+## 3
+
+TODO(Finish the first part of subproblem 3)
+
+$$
+\begin{align*}
+  \ev{v \times w, v} = \det\begin{bmatrix} v \\ w \\ v \end{bmatrix} = 0.
+\end{align*}
+$$
+
+Similarly, $\ev{v \times w, w} = 0$.
