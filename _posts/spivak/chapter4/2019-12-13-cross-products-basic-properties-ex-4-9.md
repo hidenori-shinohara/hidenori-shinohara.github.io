@@ -23,6 +23,7 @@ Deduce the following properties of the cross product in $\mathbb{R}^3$.
 1. $\ev{v, w \times z} = \ev{w, z \times v} = \ev{z, v \times w}$.
    $v \times (w \times z) = \ev{v, z}w - \ev{v, w}z$.
    $(v \times w) \times z = \ev{v, z}w - \ev{w, z}v$.
+1. $\abs{v \times w} = \sqrt{\ev{v, v} \cdot \ev{w, w} - \ev{v, w}^2}$.
 
 # Solution
 ## 1
@@ -86,4 +87,17 @@ $$
 TODO(Finish the other part of this subproblem)
 
 ## 5
-TODO
+
+$$
+\begin{align*}
+  \ev{v, v} \cdot \ev{w, w} - \ev{v, w}^2
+    &= (v_1^2 + v_2^2 + v_3^2)(w_1^2 + w_2^2 + w_3^2) - (v_1w_1 + v_2w_2 + v_3w_3)^2 \\
+    &= \sum_{i, j} v_i^2w_j^2 - \sum_{i, j}(v_iw_i)(v_jw_j) \\
+    &= \sum_{i \ne j} v_i^2w_j^2 - 2\sum_{i < j}(v_iw_i)(v_jw_j) \\
+    &= \sum_{i < j} [v_i^2w_j^2 - 2(v_iw_i)(v_jw_j) + v_j^2w_i^2] \\
+    &= \sum_{i < j} (v_iw_j - v_jw_i)^2 \\
+    &= (v_2w_3 - v_3w_2)^2 + (v_3w_1 - v_1w_3)^2 + (v_1w_2 - v_2w_1)^2 \\
+    &= \abs{\ev{v_2w_3 - v_3w_2, v_3w_1 - v_1w_3, v_1w_2 - v_2w_1}} \\
+    &= \abs{v \times w}.
+\end{align*}
+$$
