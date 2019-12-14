@@ -25,5 +25,11 @@ We will consider different cases:
 
 Therefore, the equation for a circle or line if and only if $\beta^2 + \gamma^2 > 4\alpha\delta$.
 
-TODO(Finish the second part of the problem)
+$$
+\begin{align*}
+  \alpha(x^2 + y^2) + \beta x + \gamma y + \delta = 0
+    &\iff \alpha + \beta \frac{x}{x^2 + y^2} + \gamma \frac{y}{x^2 + y^2} + \delta \frac{1}{x^2 + y^2} = 0 \\
+    &\iff \alpha + \beta u + \gamma v + \delta(u^2 + v^2) = 0.
+\end{align*}
+$$
 
