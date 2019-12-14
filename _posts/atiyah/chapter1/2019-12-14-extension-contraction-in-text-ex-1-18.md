@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Properties of contraction and extension"
+title:  "Properties of contraction and extension(WIP)"
 date:   2019-12-14
 author: Hidenori
 ---
@@ -10,6 +10,7 @@ If $a_1, a_2$ are ideals of $A$ and if $b_1, b_2$ are ideals of $B$, then
 
 1. $(a_1 + a_2)^e = a_1^e + a_2^e, (b_1 + b_2)^c \supset b_1^c + b_2^c$.
 1. $(a_1 \cap a_2)^2 \subset a_1^e \cap a_2^e, (b_1 \cap b_2)^c = b_1^c \cap b_2^c$.
+1. $(a_1a_2)^e = a_1^ea_2^e, (b_1b_2)^c \supset b_1^cb_2^c$.
 1. TODO
 
 # Solution
@@ -67,4 +68,19 @@ Therefore, $f(x) \in b_1$ and $f(x) \in b_2$.
 Thus $f(x) \in b_1 \cap b_2$, so $x \in (b_1 \cap b_2)^c$.
 
 ## 3
+$$
+\begin{align*}
+  (a_1a_2)^e
+    &= Bf(a_1a_2) \\
+    &= Bf(a_1)f(a_2) \\
+    &= BBf(a_1)f(a_2) \\
+    &= Bf(a_1)Bf(a_1) \\
+    &= a_1^ea_2^e.
+\end{align*}
+$$
+
+
+TODO (Finish the other part)
+
+## 4
 TODO
