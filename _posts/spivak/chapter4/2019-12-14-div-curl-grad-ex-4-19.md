@@ -42,7 +42,27 @@ $$
 
 where $\grad f = D_1f \cdot e_1 + D_2f \cdot e_2 + D_3f \cdot e_3$.
 
-TODO
+
+$$
+\begin{align*}
+  d\omega^1_F
+    &= d(F^1dx + F^2dy + F^3dz) \\
+    &= (D_2F^3 - D_3F^2)dy \wedge dz + (D_1F^3 - D_3F^1)dx \wedge dz + (D_1F^2 - D_2F^1)dy \wedge dz \\
+    &= \omega^2_{\curl F}
+\end{align*}
+$$
+
+where $\curl F = (D_2F^3 - D_3F^2)e_1 + (D_1F^3 - D_3F^1)e_2 + (D_1F^2 - D_2F^1)e_3$.
+
+$$
+\begin{align*}
+  d(\omega^2_F)
+    &= d(F^1 dy \wedge dz + F^2 dz \wedge dx + F^3 dx \wedge dy) \\
+    &= D_1F^1 dx \wedge dy \wedge dz + D_2F^2 dy \wedge dz \wedge dx + D_3F^3 dz \wedge dx \wedge dy \\
+    &= (D_1F^1 + D_2F^2 + D_3F^3) dx \wedge dy \wedge dz \\
+    &= (\div F) dx \wedge dy \wedge dz.
+\end{align*}
+$$
 
 ## 2
 TODO
