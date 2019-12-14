@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Equation for a circle or line(WIP)"
+title:  "Equation for a circle or line"
 date:   2019-12-14
 author: Hidenori
 ---
