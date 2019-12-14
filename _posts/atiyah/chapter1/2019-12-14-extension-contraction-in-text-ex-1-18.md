@@ -46,7 +46,10 @@ $$
 Then each $y_i$ is in $B$ and each $x_i$ is in $a_1 + a_2$.
 Thus $\sum_{i=1}^{n + m} y_i f(x_i) \in (a_1 + a_2)^e$.
 
-TODO(Finish the contraction part)
+Let $x_1 + x_2 \in b_1^c + b_2^c$ be given.
+Then $f(x_1) \in b_1$ and $f(x_2) \in b_2$.
+Thus $f(x_1) + f(x_2) \in b_1 + b_2$, so $x_1 + x_2 \in (b_1 + b_2)^c$.
+Therefore, $b_1^c + b_2^c \subset (b_1 + b_2)^c$.
 
 ## 2
 TODO
