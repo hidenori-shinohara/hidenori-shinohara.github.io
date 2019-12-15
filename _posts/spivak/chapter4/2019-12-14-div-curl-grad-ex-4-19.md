@@ -24,7 +24,15 @@ $$
      d(\omega^2_p) &= (\div F) dx \wedge dy \wedge dz.
    \end{align*}
    $$
-1. TODO
+1. Use (1) to prove that
+
+   $$
+   \begin{align*}
+     \curl \grad f &= 0, \\
+     \div \curl f &= 0.
+   \end{align*}
+   $$
+
 1. TODO
 
 # Solution
@@ -65,7 +73,20 @@ $$
 $$
 
 ## 2
-TODO
+
+$$
+\begin{align*}
+  \omega^2_{\curl(\grad F)}
+    &= d(\omega^1_{\grad F}) \\
+    &= d(dF) \\
+    &= d^2F = 0. \\
+  \div(\curl F) dx \wedge dy \wedge dz
+    &= d(\omega^2_{\curl F}) \\
+    &= d(d(\omega^1_F)) \\
+    &= d^2(\omega^1_F) \\
+    &= 0.
+\end{align*}
+$$
 
 ## 3
 TODO
