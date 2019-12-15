@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Properties of contraction and extension(WIP)"
+title:  "Properties of contraction and extension"
 date:   2019-12-14
 author: Hidenori
 ---
@@ -12,7 +12,7 @@ If $a_1, a_2$ are ideals of $A$ and if $b_1, b_2$ are ideals of $B$, then
 1. $(a_1 \cap a_2)^2 \subset a_1^e \cap a_2^e, (b_1 \cap b_2)^c = b_1^c \cap b_2^c$.
 1. $(a_1a_2)^e = a_1^ea_2^e, (b_1b_2)^c \supset b_1^cb_2^c$.
 1. $(a_1:a_2)^e \subset (a_1^e:a_2^e), (b_1:b_2)^c \subset (b_1^c:b_2^c)$.
-1. TODO
+1. $r(a)^e \subset r(a^e), r(b)^c = r(b^c)$.
 
 # Solution
 ## 1
@@ -114,5 +114,32 @@ $$
     &\implies xf^{-1}(b_2) \subset f^{-1}(b_1) \\
     &\implies x \in (f^{-1}(b_1):f^{-1}(b_2)) \\
     &\implies x \in (b_1^c:b_2^c).
+\end{align*}
+$$
+
+## 5
+
+$$
+\begin{align*}
+  bf(x) \in r(a)^e
+    &\implies x \in r(a) \\
+    &\implies x^m \in a & (m \in \mathbb{N})\\
+    &\implies f(x^m) \in f(a) \\
+    &\implies (f(x))^m \in f(a) \subset a^e \\
+    &\implies (f(x))^m \in a^e \\
+    &\implies f(x) \in r(a^e) \\
+    &\implies bf(x) \in r(a^e).
+\end{align*}
+$$
+
+$$
+\begin{align*}
+  x \in r(b)^c
+    &\iff f(x) \in r(b) \\
+    &\iff \exists m \in \mathbb{N}, f(x)^m \in b \\
+    &\iff \exists m \in \mathbb{N}, f(x^m) \in b \\
+    &\iff \exists m \in \mathbb{N}, x^m \in f^{-1}(b) \\
+    &\iff \exists m \in \mathbb{N}, x^m \in b^c \\
+    &\iff x \in r(b^c).
 \end{align*}
 $$
