@@ -22,11 +22,37 @@ Let $z \in P$ be fixed.
 Construct an $A$-bilinear map $f_z: M \times N \rightarrow M \otimes_A (N \otimes_B P)$ such that $f_z(x, y) = x \otimes (y \otimes z)$.
 TODO: Show $f_z$ is $A$-bilinear.
 
+$f_z$ is $A$-bilinear because
+
+$$
+\begin{align*}
+  f_z(ax + x', y)
+    &= (ax + x') \otimes (y \otimes z) \\
+    &= ax \otimes (y \otimes z) + x' \otimes (y \otimes z) \\
+    &= a(x \otimes (y \otimes z)) + x' \otimes (y \otimes z) \\
+    &= af_z(x, y) + f_z(x', y),
+\end{align*}
+$$
+
+and
+
+$$
+\begin{align*}
+  f_z(x, ay + y')
+    &= x \otimes ((ay + y') \otimes z) \\
+    &= x \otimes ((ay \otimes z) + (y' \otimes z)) \\
+    &= (x \otimes a(y \otimes z)) + x \otimes (y \otimes z) \\
+    &= a(x \otimes (y \otimes z)) + x \otimes (y \otimes z) \\
+    &= af_z(x, y) + f_z(x, y').
+\end{align*}
+$$
+
 By the universal property of a tensor product, there exists a unique $A$-linear map $\tilde{f}_z$ such that the following diagram commutes:
 
 ![Universal Property 1](/assets/atiyah/chapter2/in-text-exercise-2-15-1.jpeg)
 
 It is clear that $\tilde{f}_z$ is the map $x \otimes y \mapsto x \otimes (y \otimes z)$, so $\tilde{f}_z$ is also $B$-linear.
+TODO: Why is $\tilde{f}_z$ that map?
 TODO: Show $\tilde{f}_z$ is $B$-linear.
 
 This argument works for any $z \in P$, so we can construct $\tilde{f}_z$ for each $z \in P$.
