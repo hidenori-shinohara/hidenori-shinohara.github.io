@@ -80,8 +80,13 @@ $$
 \end{align*}
 $$
 
+Since $(b_1b_2)^c$ is closed under addition and every element in $b_1^cb_2^c$ is a finite sum of elements of the form $xy$ where $x \in b_1^c$ and $y \in b_2^c$,
+it suffices to show that each $xy$ is in $(b_1b_2)^c$.
 
-TODO (Finish the other part)
+* $x \in b_1^c \implies x \in f^{-1}(b_1) \implies f(x) \in b_1$.
+* $y \in b_2^c \implies y \in f^{-1}(b_2) \implies f(y) \in b_2$.
+
+Therefore, $f(xy) = f(x)f(y) \in b_1b_2$, so $xy \in f^{-1}(b_1b_2) = (b_1b_2)^c$.
 
 ## 4
 Let $bf(x) \in (a_1:a_2)^e$ where $b \in B$ and $x \in (a_1:a_2)$.
