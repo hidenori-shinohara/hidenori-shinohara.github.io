@@ -11,6 +11,7 @@ If $a_1, a_2$ are ideals of $A$ and if $b_1, b_2$ are ideals of $B$, then
 1. $(a_1 + a_2)^e = a_1^e + a_2^e, (b_1 + b_2)^c \supset b_1^c + b_2^c$.
 1. $(a_1 \cap a_2)^2 \subset a_1^e \cap a_2^e, (b_1 \cap b_2)^c = b_1^c \cap b_2^c$.
 1. $(a_1a_2)^e = a_1^ea_2^e, (b_1b_2)^c \supset b_1^cb_2^c$.
+1. $(a_1:a_2)^e \subset (a_1^e:a_2^e), (b_1:b_2)^c \subset (b_1^c:b_2^c)$.
 1. TODO
 
 # Solution
@@ -83,4 +84,30 @@ $$
 TODO (Finish the other part)
 
 ## 4
-TODO
+Let $bf(x) \in (a_1:a_2)^e$ where $b \in B$ and $x \in (a_1:a_2)$.
+
+$$
+\begin{align*}
+  xa_2 \subset a_1
+    &\implies f(xa_2) \subset f(a_1) \\
+    &\implies f(x)f(a_2) \subset f(a_1) \\
+    &\implies B(f(x)f(a_2)) \subset Bf(a_1) \\
+    &\implies f(x)(Bf(a_2)) \subset Bf(a_1) \\
+    &\implies f(x)a_2^e \subset a_1^e \\
+    &\implies f(x) \in (a_1^e:a_2^e) \\
+    &\implies bf(x) \in (a_1^e:a_2^e).
+\end{align*}
+$$
+
+$$
+\begin{align*}
+  x \in (b_1:b_2)^c
+    &\implies f(x) \in (b_1:b_2) \\
+    &\implies f(x)b_2 \in b_1 \\
+    &\implies f^{-1}(f(x)b_2) \subset f^{-1}(b_1) \\
+    &\implies xf^{-1}(b_2) \subset f^{-1}(f(x)b_2) \subset f^{-1}(b_1) \\
+    &\implies xf^{-1}(b_2) \subset f^{-1}(b_1) \\
+    &\implies x \in (f^{-1}(b_1):f^{-1}(b_2)) \\
+    &\implies x \in (b_1^c:b_2^c).
+\end{align*}
+$$
