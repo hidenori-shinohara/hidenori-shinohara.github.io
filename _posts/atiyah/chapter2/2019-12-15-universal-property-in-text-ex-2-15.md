@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An application of the universal property of a tensor product(WIP)"
+title:  "An application of the universal property of a tensor product"
 date:   2019-12-15
 author: Hidenori
 ---
@@ -20,7 +20,6 @@ We will check if $(M \otimes_A N) \otimes_B P$ and $M \otimes_A (N \otimes_B P)$
 
 Let $z \in P$ be fixed.
 Construct an $A$-bilinear map $f_z: M \times N \rightarrow M \otimes_A (N \otimes_B P)$ such that $f_z(x, y) = x \otimes (y \otimes z)$.
-TODO: Show $f_z$ is $A$-bilinear.
 
 $f_z$ is $A$-bilinear because
 
@@ -51,22 +50,43 @@ By the universal property of a tensor product, there exists a unique $A$-linear 
 
 ![Universal Property 1](/assets/atiyah/chapter2/in-text-exercise-2-15-1.jpeg)
 
-It is clear that $\tilde{f}_z$ is the map $x \otimes y \mapsto x \otimes (y \otimes z)$, so $\tilde{f}_z$ is also $B$-linear.
-TODO: Why is $\tilde{f}_z$ that map?
-TODO: Show $\tilde{f}_z$ is $B$-linear.
+Since the diagram above commutes and $\tilde{f}_z$ is $A$-linear, $$\tilde{f}_z(\sum_{i=1}^{n} x_i \otimes y_i) = \sum_{i=1}^{n} (x_i \otimes (y_i \otimes z))$$.
+$\tilde{f}_z$ is also $B$-linear because
 
-This argument works for any $z \in P$, so we can construct $\tilde{f}_z$ for each $z \in P$.
+$$
+\begin{align*}
+  \tilde{f}_z(b(\sum x_i \otimes y_i) + (\sum x'_j \otimes y'_j))
+    &= \tilde{f}_z((\sum x_i \otimes by_i) + (\sum x'_j \otimes y'_j)) \\
+    &= \sum (x_i \otimes (by_i \otimes z)) + \sum (x'_j \otimes (y'_j \otimes z)) \\
+    &= \sum (x_i \otimes b(y_i \otimes z)) + \sum (x'_j \otimes (y'_j \otimes z)) \\
+    &= b\sum (x_i \otimes (y_i \otimes z)) + \sum (x'_j \otimes (y'_j \otimes z)) \\
+    &= b\tilde{f}_z(\sum x_i \otimes y_i) + \tilde{f}_z(\sum x'_j \otimes y'_j).
+\end{align*}
+$$
 
-Let $f: (M \otimes_A N) \times P \rightarrow M \otimes_A (N \otimes_B P)$ be defined such that $f((x, y), z) = \tilde{f}_z(x, y)$.
-$f$ is a $B$-bilinear map.
-TODO: Show $f$ is $B$-bilinear.
+This argument works for any $z \in P$.
+
+Let $f: (M \otimes_A N) \times P \rightarrow M \otimes_A (N \otimes_B P)$ be defined such that $f(\sum x_i \otimes y_i, z) = \tilde{f}_z(\sum x_i \otimes y_i)$.
+$f$ is a $B$-bilinear map becasue
+
+$$
+\begin{align*}
+  f(b\sum x_i \otimes y_i + \sum x'_i \otimes y'_i, z)
+    &= f(\sum x_i \otimes by_i + \sum x'_i \otimes y'_i, z) \\
+    &= \tilde{f}_z(\sum x_i \otimes by_i + \sum x'_i \otimes y'_i ) \\
+    &= \sum x_i \otimes (by_i \otimes z) + \sum x'_i \otimes (y'_i \otimes z) \\
+    &= \sum x_i \otimes b(y_i \otimes z) + \sum x'_i \otimes (y'_i \otimes z) \\
+    &= b(\sum x_i \otimes (y_i \otimes z)) + \sum x'_i \otimes (y'_i \otimes z) \\
+    &= bf(\sum x_i \otimes y_i) + f(\sum x'_i \otimes y'_i).
+\end{align*}
+$$
+
 By the universal property of a tensor product, there exists a unique $B$-linear map $\tilde{f}$ such that the following diagram commutes:
 
 ![Universal Property 2](/assets/atiyah/chapter2/in-text-exercise-2-15-2.jpeg)
 
-It is clear that $\tilde{f}((x \otimes y) \otimes z) = x \otimes (y \otimes z)$.
+Based on the diagram and the fact that $\tilde{f}$ is $B$-linear, $$\tilde{f}(\sum_i (\sum_j x_{i, j} \otimes y_{i, j}) \otimes z_i) = \sum_i (\sum_j x_{i, j} \otimes (y_{i, j} \otimes z_{i}))$$.
+For simplicity, we will just write $\tilde{f}((x \otimes y) \otimes z) = x \otimes (y \otimes z)$ because there exists exactly one $B$-linear map that satisfies this.
 Moreover, it is easy to see that $\tilde{f}$ is $A$-linear.
-TODO: Show $\tilde{f}$ is $A$-linear. Is this claim even true?
 
-A similar argument shows that $\tilde{g}(x \otimes (y \otimes z)) = (x \otimes y) \otimes z$ is both $A$-linear an $B$-linear.
-Since $f$ and $g$ are the inverse of each other, $f$ is both an $A$-module isomorphism and $B$-module isomorphism.
+A similar argument shows that the inverse map of $f$ is both $A$-linear and $B$-linear, so $f$ is both an $A$-module isomorphism and $B$-module isomorphism.
