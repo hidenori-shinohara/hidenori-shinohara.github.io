@@ -40,11 +40,12 @@ Therefore, the choice of orientation $\mu_x$ is independent of the choice of a c
 
 * Is the orientation consistent?
 
-Let $f: W \rightarrow \mathbb{R}^n$ and $a, b \in W$ be given.
+Let $f: W \rightarrow \mathbb{R}^n$ be a coordinate system in $\mathcal{C}$.
+Let $a, b \in W$ be given.
 Then $f$ is a coordinate system around $a$ and $b$.
 Thus by the definition of $\mu$ and the above argument regarding independence of a choice, $$[f_*((e_1)_a), \cdots, f_*((e_1)_a)] = \mu_{f(a)}$$ and $$[f_*((e_1)_b), \cdots, f_*((e_1)_b)] = \mu_{f(b)}$$.
 Therefore, the orientation is consistent.
 
 * Is $f$ orientation preserving for each $f \in \mathcal{C}$?
 
-TODO
+By the definition of $\mu$ and the above argument regarding independence of a choice, $$[f_*((e_1)_a), \cdots, f_*((e_1)_a)] = \mu_{f(a)}$$ for all $a \in W$ if $f \in \mathcal{C}$.
