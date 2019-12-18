@@ -30,3 +30,8 @@ $$
 $$
 
 Therefore, $(a + x)(\sum_{i=0}^{n-1} a^i(-x)^{n-1-i})/a^n = 1$, so $a + x$ is a unit.
+
+(Alternative solution for the second part)
+Let $a$ be a unit and $x$ be a nilpotent element with $x^n = 0$ for some $n \in \mathbb{N}$.
+Then $x / a$ is nilpotent, so $1 + x / a$ is a unit.
+Thus $a(1 + x / a) = a + x$ is a unit.
