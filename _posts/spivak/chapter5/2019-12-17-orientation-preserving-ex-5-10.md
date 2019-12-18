@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Orientation preserving(WIP)"
+title:  "Orientation preserving"
 date:   2019-12-17
 author: Hidenori
 ---
