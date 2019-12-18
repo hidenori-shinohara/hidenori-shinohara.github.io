@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mobius transformations(WIP)"
+title:  "Mobius transformations"
 date:   2019-12-18
 author: Hidenori
 ---
@@ -89,4 +89,5 @@ $$
 $$
 
 ## 3
-TODO
+$f$ simply rotates the complex plane by 45 degrees.
+Thus $f(z) = e^{\pi i / 2}z = z(1 + i) / \sqrt{2}$.
