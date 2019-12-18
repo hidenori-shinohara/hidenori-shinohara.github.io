@@ -17,24 +17,26 @@ Show that there is a unique orientation of $M$ such that $f$ is orientation-pres
 Let $x \in M$.
 Let $f \in \mathcal{C}$ be a coordinate system around $x$ such that $f:W \rightarrow \mathbb{R}^n$.
 Let $a = f^{-1}(x) \in \mathbb{R}^k$.
-Let $\mu_x = [f_*((e_1)_a), \cdots, f_*((e_k)_a)]$.
+Let $$\mu_x = [f_*((e_1)_a), \cdots, f_*((e_k)_a)]$$.
 
 Using the procedure above, we can define $\mu_x$ for each $x \in M$.
 
 * Is this independent of the choice of $f$?
+
 Let $x \in M$ and $f, g \in \mathcal{C}$ be coordinate systems around $x$.
+Let $a, b$ be chosen such that $f(a) = g(b) = x$.
 Then $f^{-1} \circ g$ maps $\mathbb{R}^k$ into itself and $\det(f^{-1} \circ g)' > 0$, so
 
 $$
 \begin{align*}
-  &[(f^{-1} \circ g)_*((e_1)_a), \cdots, (f^{-1} \circ g)_*((e_k)_a)] = [(e_1)_{f^{-1}(g(a))}, \cdots, (e_1)_{f^{-1}(g(a))}] \\
-  &\implies [f_*(f^{-1} \circ g)_*((e_1)_a), \cdots, f_*(f^{-1} \circ g)_*((e_k)_a)] = [f_*(e_1)_{f^{-1}(g(a))}, \cdots, f_*(e_1)_{f^{-1}(g(a))}] \\
-  &\implies [g_*((e_1)_a), \cdots, g_*((e_k)_a)] = [f_*(e_1)_{f^{-1}(g(a))}, \cdots, f_*(e_1)_{f^{-1}(g(a))}]
+  &[(f^{-1} \circ g)_*((e_1)_b), \cdots, (f^{-1} \circ g)_*((e_k)_b)] = [(e_1)_{f^{-1}(g(b))}, \cdots, (e_1)_{f^{-1}(g(b))}] \\
+  &\implies [f_*(f^{-1} \circ g)_*((e_1)_b), \cdots, f_*(f^{-1} \circ g)_*((e_k)_b)] = [f_*((e_1)_{f^{-1}(g(b))}), \cdots, f_*((e_1)_{f^{-1}(g(b))})] \\
+  &\implies [g_*((e_1)_b), \cdots, g_*((e_k)_b)] = [f_*((e_1)_{a}), \cdots, f_*((e_1)_{a})]
 
 \end{align*}
 $$
 
-TODO(Finish this!)
+Therefore, the choice of orientation $\mu_x$ is independent of the choice of a coordinate system.
 
 * Is the orientation consistent?
 
