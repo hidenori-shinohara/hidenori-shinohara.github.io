@@ -11,7 +11,7 @@ Let $f = a_0 + a_1x + \cdots + a_nx^n \in A[x]$.
 Prove that
 
 1. $f$ is a unit in $A[x] \iff a_0$ is a unit in $A$ and $a_1, \cdots, a_n$ are nilpotent.
-1. TODO
+1. $f$ is nilpotent $\iff a_0, a_1, \cdots, a_n$ are nilpotent.
 1. TODO
 1. TODO
 
@@ -52,7 +52,22 @@ $a_0 + a_1x$ is a unit [because it is a sum of a unit and a nilpotent element](/
 By repeatedly applying this property, we obtain that $a_0 + a_1x + \cdots + a_nx^n$ is a unit.
 
 ## 2
-TODO
+First, we will prove a general statement about nilpotent elements in a ring.
+We claim that the sum of two nilpotent elements is nilpotent.
+Let $a, b$ be nilpotent with $a^n = b^m = 0$.
+Then $(a + b)^{n + m} = \sum_{i=0}^{n+m} \binom_{n + m}{i}a^ib^{n+m-i} = 0$ because $i \geq n$ or $n + m - i \geq m$.
+
+By induction, the sum of finitely many nilpotent elements is nilpotent.
+Therefore, if $a_0, a_1, \cdots, a_n$ are nilpotent, $f = a_0 + a_1x + \cdots + a_nx^n$ is nilpotent.
+
+Suppose $f$ is nilpotent.
+If the degree of $f$ is 0, then this is obvious.
+Suppose that we have shown this property for degree $< n$ and suppose the degree of $f$ is $n$ and $f^m = 0$.
+
+The coefficient of $x^{nm}$ in $f^m$ is $a_n^m$.
+Thus the leading coefficient of $f$ must be nilpotent.
+Since the sum of two nilpotent elements is nilpotent, $f + (-a_nx^n)$ is nilpotent.
+By the inductive hypothesis, $a_0, \cdots, a_{n - 1}$ are nilpotent.
 
 ## 3
 TODO
