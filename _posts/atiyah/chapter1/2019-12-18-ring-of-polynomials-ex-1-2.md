@@ -12,7 +12,7 @@ Prove that
 
 1. $f$ is a unit in $A[x] \iff a_0$ is a unit in $A$ and $a_1, \cdots, a_n$ are nilpotent.
 1. $f$ is nilpotent $\iff a_0, a_1, \cdots, a_n$ are nilpotent.
-1. TODO
+1. $f$ is a zero-divisor $\iff$ there exists $a \ne 0$ in $A$ such that $af = 0$.
 1. TODO
 
 # Solution
@@ -70,7 +70,28 @@ Since the sum of two nilpotent elements is nilpotent, $f + (-a_nx^n)$ is nilpote
 By the inductive hypothesis, $a_0, \cdots, a_{n - 1}$ are nilpotent.
 
 ## 3
-TODO
+If $af = 0$ for some $a \ne 0$ in $A$, then $f$ is a zero divisor in $A[x]$.
+Suppose $f$ is a zero divisor in $A[x]$.
+Then $\Ann(f) \subset A[x]$ is nonempty and contains at least one nonzero element.
+Let $g$ be a nonzero element in $\Ann(f)$ of the least degree.
+Let $m = \deg(g)$.
+If $m = 0$, then $g$ is an element in $A$ and we are done.
+Suppose otherwise.
+Let $a_0 + a_1x + \cdots + a_nx^n, b_0 + b_1x + \cdots + b_mx^m$ denote $f, g$, respectively, where $a_n \ne 0$ and $b_m \ne 0$.
+We claim that $a_{n - r}g = 0$ for each $r = 0, \cdots, n$.
+* Case 1: $r = 0$.
+  * Then $fg = 0$, so $a_nb_m$, the coefficient of $x^{n + m}$, must be 0.
+    Then the degree of $a_ng$ is at most $m - 1$.
+    Then $a_ng$ must be 0 because $g$ has the least degree among all the nonzero elements in $\Ann(f)$.
+* Case 2: Suppose we have shown that $a_{n - r}g = 0$ for each $r = 0, \cdots, k - 1$ for some $k$.
+  * Then $a_nb_{m - k} + \cdots + a_{n - k}b_m$, the coefficient of $x^{n + m - k}$, must be 0.
+    By the inductive hypothesis, $a_nb_{m - k} = \cdots = a_{n - k + 1}b_{m + 1} = 0$.
+    Thus $a_{n - k}b_m$ must be 0.
+    Then the degree of $a_{n - k}g$ is at most $m - 1$, so $a_{n - k}g$ must be 0 for the same reason as above.
+By induction, $a_{n - r}g = 0$ for each $r = 0, \cdots, n$.
+In particular, this means $a_ib_m = 0$ for each $i$.
+
+Therefore, $b_m \ne 0$ and $b_mf = 0$.
 
 ## 4
 TODO
