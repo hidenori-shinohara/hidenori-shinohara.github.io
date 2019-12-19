@@ -55,7 +55,7 @@ By repeatedly applying this property, we obtain that $a_0 + a_1x + \cdots + a_nx
 First, we will prove a general statement about nilpotent elements in a ring.
 We claim that the sum of two nilpotent elements is nilpotent.
 Let $a, b$ be nilpotent with $a^n = b^m = 0$.
-Then $(a + b)^{n + m} = \sum_{i=0}^{n+m} \binom_{n + m}{i}a^ib^{n+m-i} = 0$ because $i \geq n$ or $n + m - i \geq m$.
+Then $$(a + b)^{n + m} = \sum_{i=0}^{n+m} \binom{n + m}{i}a^ib^{n+m-i} = 0$$ because $i \geq n$ or $n + m - i \geq m$.
 
 By induction, the sum of finitely many nilpotent elements is nilpotent.
 Therefore, if $a_0, a_1, \cdots, a_n$ are nilpotent, $f = a_0 + a_1x + \cdots + a_nx^n$ is nilpotent.
