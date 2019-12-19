@@ -84,7 +84,20 @@ $$
 \end{align*}
 $$
 
-TODO(Finish the other part of this subproblem)
+For each $i = 1, 2, 3$,
+
+$$
+\begin{align*}
+  (v \times (w \times z))^i
+    &= v^{i + 1}(w \times z)^{i - 1} - v^{i - 1}(w \times z)^{i + 1} \\
+    &= v^{i + 1}(w^iz^{i + 1} - w^{i + 1}z^i) - v^{i - 1}(w^{i - 1}z^i - w^iz^{i - 1}) \\
+    &= (v^{i - 1}z^{i - 1} + v^iz^i + v^{i + 1}z^{i + 1})w^i - (v^{i - 1}w^{i - 1} + v^iw^i + v^{i + 1}w^{i + 1})z^i \\
+    &= \ev{v, z}w^i - \ev{v, w}z^i.
+\end{align*}
+$$
+
+TODO(Finish the last part)
+
 
 ## 5
 
