@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ring of polynomials(WIP)"
+title:  "Ring of polynomials"
 date:   2019-12-18
 author: Hidenori
 ---
