@@ -47,6 +47,12 @@ Then $U_{\epsilon_1}, \cdots$ cover $M$ and the total area is less than $\delta$
 Therefore, $M$ has measure 0.
 
 ## 2
-TODO
+
+TODO(Prove the first part)
+
+Let $M = [0, 1)$.
+Then $M$ is a 1-dimensional manifold-with-boundary and its point-set-topology-boundary is $\\{ 0, 1 \\}$.
+However, the boundary of $M$ (as a manifold) is $\\{ 0 \\}$.
+
 ## 3
 TODO
