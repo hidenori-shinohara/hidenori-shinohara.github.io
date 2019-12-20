@@ -96,7 +96,20 @@ $$
 \end{align*}
 $$
 
-TODO(Finish the last part)
+For each $i = 1, 2, 3$,
+
+$$
+\begin{align*}
+  ((v \times w) \times z)^i
+    &= (v \times w)^{i + 1}z^{i - 1} - (v \times w)^{i - 1}z^{i + 1} \\
+    &= (v^{i - 1}w^i - v^iw^{i - 1})z^{i - 1} - (v^iw^{i + 1} - v^{i + 1}w^i)z^{i + 1} \\
+    &= (v^{i - 1}z^{i - 1} + v^{i + 1}z^{i + 1})w^i - (w^{i - 1}z^{i - 1} + w^{i + 1}z^{i + 1})v^i \\
+    &= (v^{i - 1}z^{i - 1} + v^iz^i + v^{i + 1}z^{i + 1})w^i - (w^{i - 1}z^{i - 1} + w^iz^i + w^{i + 1}z^{i + 1})v^i \\
+    &= \ev{v, z}w^i - \ev{w, z}v^i.
+\end{align*}
+$$
+
+Similarly,
 
 
 ## 5
