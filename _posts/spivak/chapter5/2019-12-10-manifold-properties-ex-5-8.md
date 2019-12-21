@@ -62,9 +62,14 @@ Therefore, $x \in \partial M$.
 
 Let $x \in \partial M$.
 We will show that $x \in \bd M$.
-TODO(Finish this!)
+Suppose $x \notin \bd M$.
+Then $x$ is an interior point of $M$.
+Since $x \in \partial M$, there exists an open set $U$ containing $x$, an open set $V \subset \mathbb{R}^n$, and a diffeomorphism $h: U \rightarrow V$ such that $h(U \cap M) = V \cap (\mathbb{H}^k \times \\{ 0 \\})$ and the $k$th component of $h(x)$ is 0.
+This implies that $h(x)$ is not an interior point of $V \cap (\mathbb{H}^k \times \\{ 0 \\})$.
+This is a contradiction because $h$ is a homeomorphism.
+Therefore, $x \in \bd M$.
 
-
+Thus $\bd M = \partial M$.
 
 Let $M = [0, 1)$.
 Then $M$ is a 1-dimensional manifold-with-boundary and its point-set-topology-boundary is $\\{ 0, 1 \\}$.
