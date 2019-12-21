@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "$A / a$ is Noetherian if $a$ is the annihilator of a Noetherian $A$-ring(WIP)"
+title:  "$A / a$ is Noetherian if $a$ is the annihilator of a Noetherian $A$-module"
 date:   2019-12-11
 author: Hidenori
 ---
@@ -22,4 +22,13 @@ This implies that $A / \Ann(x_i)$ is Noetherian for every $i$.
 By [Problem 6-3](/2019/12/10/noetherian-ex-6-3.html), $A / (\Ann(x_1) \cap \cdots \cap \Ann(x_n))$ is Noetherian.
 Since $\Ann(M) = \Ann(x_1) \cap \cdots \cap \Ann(x_n)$, $A / \Ann(M) = A / a$ is Noetherian.
 
-TODO: Solve the Artinian case.
+Let $G$ be the subgroup of $\mathbb{Q}/\mathbb{Z}$ consisting of all elements whose order is a power of 2.
+As mentioned on P.74[Atiyah], $G$ satisfies the descending chain condition, so $G$ is an Artinian $Z$-module.
+
+Let $k$ be a nonzero integer.
+Choose a large $m \in \mathbb{N}$ such that $2^m \nmid k$.
+Then $k \cdot \frac{1}{2^m} \ne 0$ in $G$, so $k$ is not an annihilator.
+Therefore, the annihilator $a$ of $G$ is $(0)$.
+
+Then $A / a = \mathbb{Z} / (0) = \mathbb{Z}$ and $\mathbb{Z}$ is not Artinian because $(2) \supsetneq (2^2) \supsetneq (2^3) \supsetneq \cdots$.
+
