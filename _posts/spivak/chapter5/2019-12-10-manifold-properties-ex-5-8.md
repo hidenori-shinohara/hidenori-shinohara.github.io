@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Basic properties of manifolds(WIP)"
+title:  "Basic properties of manifolds"
 date:   2019-12-10
 author: Hidenori
 ---
@@ -76,4 +76,14 @@ Then $M$ is a 1-dimensional manifold-with-boundary and its point-set-topology-bo
 However, the boundary of $M$ (as a manifold) is $\\{ 0 \\}$.
 
 ## 3
-TODO
+Since $M$ is compact, $M$ is closed.
+Thus $\partial M = \bd M$ by Part 2 above.
+
+[As shown before](/2019/12/07/manifold-with-boundary-ex-5-1.html), $\partial M$ is an $(n - 1)$-dimensional manifold.
+
+By Part 1 above, $\partial M$ has measure 0.
+
+Since $M$ is compact, $M$ is bounded.
+Thus $M$ is a bounded set whose boundary has measure 0.
+Therefore, $M$ is Jordan-measurable.
+
