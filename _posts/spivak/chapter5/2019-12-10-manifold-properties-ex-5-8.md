@@ -48,7 +48,23 @@ Therefore, $M$ has measure 0.
 
 ## 2
 
-TODO(Prove the first part)
+Let $x \in \bd M$.
+Then $x \in M$ because $M$ is closed.
+Suppose $x \notin \partial M$.
+By Theorem 5-2[Spivak],  there exists an open set $U$ around $x$ and an open set $W$ in $\mathbb{R}^k$ such that 1-1 differentiable function $f: W \rightarrow U$ such that
+
+* $f(W) = M \cap U$,
+* $f^{-1}: M \cap U \rightarrow W$ is continuous.
+
+This implies that $M \cap U$ is an open subset of $\mathbb{R}^n$.
+However, there cannot be an open neighborhood of $x$ that is contained in $M$ because $x$ is a boundary point.
+Therefore, $x \in \partial M$.
+
+Let $x \in \partial M$.
+We will show that $x \in \bd M$.
+TODO(Finish this!)
+
+
 
 Let $M = [0, 1)$.
 Then $M$ is a 1-dimensional manifold-with-boundary and its point-set-topology-boundary is $\\{ 0, 1 \\}$.
