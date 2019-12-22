@@ -84,7 +84,30 @@ On the other hand, since every prime ideal is a proper ideal, a unit is not cont
 Therefore, $X_f = X$ if and only if $f$ is a unit.
 
 ## 4
-TODO
+
+$$
+\begin{align*}
+  r((f)) = r((g))
+    &\iff \bigcap_{p \in \Spec(A), (f) \subset p} p = \bigcap_{p \in \Spec(A), (g) \subset p} p & \text{(Proposition 1.14)} \\
+    &\iff \bigcap_{p \in \Spec(A), f \in p} p = \bigcap_{p \in \Spec(A), g \in p} p.
+\end{align*}
+$$
+
+On the other hand, $(X_f = X_g \iff V(f) = V(g)) \iff (\forall p \in \Spec(A), f \in p \iff g \in p)$.
+
+We claim that 
+
+$$
+\begin{align*}
+  (\bigcap_{p \in \Spec(A), f \in p} p = \bigcap_{p \in \Spec(A), g \in p} p) \iff \forall p \in \Spec(A), f \in p \iff g \in p.
+\end{align*}
+$$
+
+$\impliedby$ is obvious.
+Suppose that there exists a prime ideal $p$ such that $f \in p$ and $g \notin p$.
+Then $g \notin \bigcap_{p \in \Spec(A), f \in p} p$ and $g \in \bigcap_{p \in \Spec(A), g \in p} p$.
+Using a similar argument for the case that $f \notin p$ and $g \in p$, $\implies$ can be shown.
+
 
 ## 5
 TODO
