@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Jacobson radical and Nakayama's lemma(WIP)"
+title:  "The Jacobson radical and Nakayama's lemma"
 date:   2019-12-20
 author: Hidenori
 ---
