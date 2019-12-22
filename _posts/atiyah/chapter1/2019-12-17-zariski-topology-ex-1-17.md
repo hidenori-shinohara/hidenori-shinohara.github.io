@@ -68,7 +68,20 @@ $$
 $$
 
 ## 3
-TODO
+$$
+\begin{align*}
+  X_f = X
+    &\iff \forall p \in \Spec(A), f \notin p.
+\end{align*}
+$$
+
+Suppose $X_f = X$.
+Every non-unit element is contained in some maximal ideal by Corollary 1.5 [Atiyah].
+Since every maximal ideal is prime, $f$ must be a unit element.
+
+On the other hand, since every prime ideal is a proper ideal, a unit is not contained in any prime ideal.
+
+Therefore, $X_f = X$ if and only if $f$ is a unit.
 
 ## 4
 TODO
