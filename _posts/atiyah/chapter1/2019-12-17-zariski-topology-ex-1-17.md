@@ -56,7 +56,16 @@ $$
 Therefore, $X_f \cap X_g = X_{fg}$.
 
 ## 2
-TODO
+
+$$
+\begin{align*}
+  X_f = \emptyset
+    &\iff \forall p \in \Spec(A), f \in p \\
+    &\iff f \in \cap_{p \in \Spec(A)} p \\
+    &\iff f \in \mathfrak{R} & \text{(By Proposition 1.8[Atiyah])} \\
+    &\iff \text{$f$ is nilpotent}
+\end{align*}
+$$
 
 ## 3
 TODO
