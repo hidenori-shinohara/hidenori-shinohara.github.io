@@ -10,7 +10,13 @@ For each $f \in A$, let $X_f$ denote the complement of $V(f)$ in $X = \Spec(A)$.
 The sets $X_f$ are open.
 Show that they form a basis of open sets for the Zariski topology, and that
 
-1. TODO
+1. $X_f \cap X_g = X_{fg}$;
+1. $X_f = \emptyset \iff f$ is nilpotent;
+1. $X_f = X \iff f$ is a unit;
+1. $X_f = X_g \iff r((f)) = r((g))$;
+1. $X$ is quasi-compact;
+1. More generally, each $X_f$ is quasi-compact.
+1. An open subset of $X$ is quasi-compact if and only if it is a finite union of sets $X_f$.
 
 # Solution
 
@@ -38,4 +44,16 @@ Show that they form a basis of open sets for the Zariski topology, and that
 Hence, $\\{ X_f \mid f \in A \\}$ is a basis for the Zariski topology.
 
 ## 1
+By definition, $X_f = \\{ p \in \Spec(A) \mid f \notin p \\}$ for each $f$.
+Since every set in $\Spec(A)$ is a prime ideal, $\forall p \in \Spec(A), \forall f, g \in A$,
+
+$$
+\begin{align*}
+  fg \notin p \iff f \notin p \text{ and } g \notin p.
+\end{align*}
+$$
+
+Therefore, $X_f \cap X_g = X_{fg}$.
+
+## 2
 TODO
