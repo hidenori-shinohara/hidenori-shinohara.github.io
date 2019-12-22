@@ -57,3 +57,18 @@ Therefore, $X_f \cap X_g = X_{fg}$.
 
 ## 2
 TODO
+
+## 3
+TODO
+
+## 4
+TODO
+
+## 5
+TODO
+
+## 6
+TODO
+
+## 7
+TODO
