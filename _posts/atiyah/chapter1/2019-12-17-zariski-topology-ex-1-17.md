@@ -110,7 +110,8 @@ Using a similar argument for the case that $f \notin p$ and $g \in p$, $\implies
 
 
 ## 5
-TODO
+$X_1 = X$ by Part 3.
+By Part 6, $X$ is quasi-compact.
 
 ## 6
 TODO
