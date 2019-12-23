@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Properties of the Zariski topology(WIP)"
+title:  "Properties of the Zariski topology"
 date:   2019-12-17
 author: Hidenori
 ---
@@ -160,4 +160,13 @@ $$
 $$
 
 ## 7
-TODO
+A finite union of compact sets is compact, so a finite union of sets $X_f$ is compact.
+
+Let $U$ be a compact, open subset of $X$.
+We will show that $U$ is a finite union of sets $X_f$.
+Let $C = \\{ X_f \mid f \in A, X_f \subset U \\}$.
+$C$ is an open cover because $\\{ X_f \mid f \in A \\}$ is a basis, so every open set is the union of basis elements.
+Since $U$ is compact, $U \subset X_{f_1} \cup \cdots \cup X_{f_n}$ for some $X_{f_1}, \cdots, X_{f_n} \in C$.
+On the other hand, $X_{f_1} \cup \cdots \cup X_{f_n} \subset U$.
+Therefore, $U = X_{f_1} \cup \cdots \cup X_{f_n}$.
+
