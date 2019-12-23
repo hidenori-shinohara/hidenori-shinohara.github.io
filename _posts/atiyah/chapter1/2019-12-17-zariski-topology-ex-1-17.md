@@ -114,7 +114,50 @@ $X_1 = X$ by Part 3.
 By Part 6, $X$ is quasi-compact.
 
 ## 6
-TODO
+Let $f \in X$ be given.
+Let $$\{ U_{\alpha} \}_{\alpha \in I}$$ be an open cover of $X_f$.
+Let $V_{\alpha} = U_{\alpha} \cap X_f$ for each $\alpha \in I$.
+Then $\\{ V_{\alpha} \\}$ is an open cover of $X_f$ such that $X_f = \bigcup_{\alpha \in I} V_{\alpha}$.
+We will show that $\\{ V_{\alpha} \\}$ contains a finite cover.
+
+Then $X \setminus V_{\alpha}$ is closed for each $\alpha \in I$.
+By definition, each closed set in the Zariski topology is of the form of $V(a)$ for some ideal $a$.
+Thus there exists an ideal $a_{\alpha}$ such that $X \setminus V_{\alpha} = V(a_{\alpha})$ for each $\alpha \in I$.
+
+$$
+\begin{align*}
+  X_f
+    &= \bigcup_{\alpha \in I} (X \setminus V(a_{\alpha})) \\
+    &= X \setminus (\bigcap_{\alpha \in I} V(a_{\alpha})) \\
+    &= X \setminus V(\bigcup_{\alpha \in I} a_{\alpha}) \\
+    &= X \setminus V(\sum_{\alpha \in I} a_{\alpha}).
+\end{align*}
+$$
+
+This implies that $V(f) = V(\sum a_{\alpha})$, thus
+
+$$
+\begin{align*}
+  \bigcap_{p \in \Spec(A), f \in p} p = \bigcap_{p \in \Spec(A), \sum_{\alpha \in I} a_{\alpha} \subset p} p.
+\end{align*}
+$$
+
+By Proposition 1.8, $r((f)) = r(\sum a_{\alpha})$.
+Then $f \in r((f)) = r(\sum a_{\alpha})$, so $f^m \in \sum a_{\alpha}$.
+This implies the existence of $x_{\alpha_1} \in a_{\alpha_1}, \cdots, x_{\alpha_n} \in a_{\alpha_n}$ for some $\alpha_1, \cdots, \alpha_n \in I$ such that $f^m = x_{\alpha_1} + \cdots + x_{\alpha_n}$.
+
+$$
+\begin{align*}
+  (f^m) \subset (x_{\alpha_1}) + \cdots + (x_{\alpha_n}) \subset a_{\alpha_1} + \cdots + a_{\alpha_n}
+    &\implies V((f^m)) \supset V(a_{\alpha_1} + \cdots + a_{\alpha_n}) \\
+    &\implies V((f)) \supset V(a_{\alpha_1} + \cdots + a_{\alpha_n}) \\
+    &\implies (X \setminus V((f))) \subset (X \setminus V(a_{\alpha_1} + \cdots + a_{\alpha_n})) \\
+    &\implies X_f \subset (X \setminus V(a_{\alpha_1} \cup \cdots \cup a_{\alpha_n})) \\
+    &\implies X_f \subset (X \setminus \cap V(a_{\alpha_i})) \\
+    &\implies X_f \subset \bigcup_{i=1}^n V_{\alpha_i} \\
+    &\implies X_f \subset \bigcup_{i=1}^n U_{\alpha_i}.
+\end{align*}
+$$
 
 ## 7
 TODO
