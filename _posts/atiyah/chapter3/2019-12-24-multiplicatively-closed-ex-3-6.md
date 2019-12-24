@@ -6,7 +6,7 @@ author: Hidenori
 ---
 
 # Proposition
-Let $A$ be a ring $\ne 0$ and let $\Simga$ be the set of all multiplicatively closed subsets $S$ of $A$ such that $0 \notin S$.
+Let $A$ be a ring $\ne 0$ and let $\Sigma$ be the set of all multiplicatively closed subsets $S$ of $A$ such that $0 \notin S$.
 Show that $\Sigma$ has maximal elements, and that $S \in \Sigma$ is maximal if and only if $A \setminus S$ is a minimal prime ideal of $A$.
 
 # Solution
