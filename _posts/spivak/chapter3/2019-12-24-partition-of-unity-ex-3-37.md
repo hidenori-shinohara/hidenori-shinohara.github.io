@@ -29,13 +29,13 @@ By Theorem 3-8[Spivak], $\int_{\epsilon}^{1-\epsilon} f$ exists.
 Similarly, $\forall N \in \mathbb{N}$, $\int_{1/10N}^{1 - 1/10N} f$ exists.
 
 We claim that $\int_{(0, 1)} f$ exists if and only if $\lim_{N \rightarrow \infty} (\int_{1/10N}^{1-1/10N} (\sum_{i=1}^{N} \phi_i) f)$ exists.
-This is because the following conditions are all equivalent.
+This is because:
 
 * $\int_{(0, 1)} f$ exists
 * $\iff \sum_{i \in \mathbb{N}} \int_{(0,1)} \phi_i f$ exists
 * $\iff \sum_{i \in \mathbb{N}} \int_{1/10i}^{1-1/10i} \phi_i f$ exists because each $\phi_i = 0$ outside $(1/10i, 1-1/10i)$
 * $\iff \lim_{N \rightarrow \infty} \sum_{i=1}^{N} \int_{1/10i}^{1-1/10i} \phi_i f$ exists
-* $\iff \lim_{N \rightarrow \infty} \sum_{i=1}^{N} \int_{1/10N}^{1-1/10N} \phi_i f$ exists.
+* $\iff \lim_{N \rightarrow \infty} \sum_{i=1}^{N} \int_{1/10N}^{1-1/10N} \phi_i f$ exists
 * $\iff \lim_{N \rightarrow \infty} \int_{1/10N}^{1-1/10N} (\sum_{i=1}^{N} \phi_i) f$ exists.
 
 Thus it suffices to show that $\lim_{N \rightarrow \infty} \int_{1/10N}^{1-1/10N} (\sum_{i=1}^{N} \phi_i) f$ exists if and only if $\lim_{\epsilon \rightarrow 0} \int_{\epsilon}^{1 - \epsilon} f$ exists.
@@ -51,12 +51,23 @@ $$
 \end{align*}
 $$
 
-Therefore, $\lim_{N \rightarrow \infty} \int_{1/10N}^{1-1/10N} (\sum_{i=1}^{N} \phi_i) f \leq \lim_{\epsilon \rightarrow 0} \int_{\epsilon}^{1 - \epsilon} f$, so 
-$\lim_{N \rightarrow \infty} \int_{1/10N}^{1-1/10N} (\sum_{i=1}^{N} \phi_i) f$ exists.
+Therefore, $\lim_{N \rightarrow \infty} \int_{1/10N}^{1-1/10N} (\sum_{i=1}^{N} \phi_i) f \leq \lim_{\epsilon \rightarrow 0} \int_{\epsilon}^{1 - \epsilon} f$.
+Since $f$ is non-negative, $\lim_{N \rightarrow \infty} \int_{1/10N}^{1-1/10N} (\sum_{i=1}^{N} \phi_i) f$ exists because it is bounded.
 
-TODO(Finish this!)
+Suppose $\lim_{N \rightarrow \infty} \int_{1/10N}^{1-1/10N} (\sum_{i=1}^{N} \phi_i) f$ exists.
+Let $\epsilon \in (0, 1/2)$ be given.
+Choose $N \in \mathbb{N}$ such that $\frac{1}{10N} < \epsilon$.
 
+$$
+\begin{align*}
+  \int_{\epsilon}^{1 - \epsilon} f
+    &= \int_{\epsilon}^{1 - \epsilon} (\sum_{i=1}^{N} \phi_i) f \\
+    &\leq \int_{1/10N}^{1 - 1/10N} (\sum_{i=1}^{N} \phi_i) f \\
+    &\leq \lim_{N \rightarrow \infty} \int_{1/10N}^{1 - 1/10N} (\sum_{i=1}^{N} \phi_i) f.
+\end{align*}
+$$
 
-
+Thus $\int_{\epsilon}^{1 - \epsilon} f$ is bounded as $\epsilon \rightarrow \infty$ and $f$ is non-negative, so the limit exists.
 
 ## 2
+TODO(Finish this!)
