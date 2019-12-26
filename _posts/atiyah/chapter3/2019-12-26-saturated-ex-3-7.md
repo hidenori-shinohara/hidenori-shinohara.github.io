@@ -60,7 +60,15 @@ The argument above shows that, for every $a \in A \setminus S$, there exists a p
 Therefore, $A \setminus S$ is the union of such prime ideals.
 
 ## 2
-TODO
+Let $T$ be the complement of all prime ideals $p \in \Spec(A)$ such that $p \cap S = \emptyset$.
+Then $S \subset T$.
+By Part 1, $T$ is saturated.
+Let $T'$ be a saturated multiplicatively closed subset such that $T' \subsetneq T$.
+By Part 1, $A \setminus T'$ must be a union of some prime ideals.
+Since $T' \subsetneq T$, at least one of the prime ideals that make up $A \setminus T'$ cannot be disjoint from $S$.
+In other words, $S \not\subset T'$.
+Therefore, $T$ is a smallest saturated multiplicatively closed subset.
+Since the intersection of two saturated multiplicatively closed subsets is a saturated multiplicatively closed subset, $T$ must be the unique one.
 
 ## 3
 TODO
