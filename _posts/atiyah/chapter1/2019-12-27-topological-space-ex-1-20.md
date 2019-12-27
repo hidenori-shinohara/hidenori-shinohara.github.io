@@ -8,7 +8,7 @@ author: Hidenori
 # Proposition
 Let $X$ be a topological space.
 1. If $Y$ is an irreducible subspace of $X$, then the closure $\overline{Y}$ of $Y$ in $X$ is irreducible.
-1. TODO
+1. Every irreducible subspace of $X$ is contained in a maximal irreducible subspace.
 1. TODO
 1. TODO
 
@@ -26,8 +26,23 @@ Let $X$ be a topological space.
   Therefore, $U \cap V \ne \emptyset$.
 
 Therefore, $\overline{Y}$ is irreducible.
+
 ## 2
-TODO
+Let $A$ be an irreducible subspace of $X$.
+Let $\Sigma$ be the set of all irreducible subspaces of $X$ containing $A$.
+Let $Y_1 \subset Y_2 \subset \cdots$ be a chain in $\Sigma$.
+Let $Y = \bigcup Y_i$.
+We claim that $Y \in \Sigma$.
+Let $U, V$ be nonempty open subsets of $Y$.
+Let $x \in U, y \in V$.
+Then $x \in Y_i$ and $y \in Y_j$ for some $i, j$.
+Then $x, y \in Y_k$ where $k = \max(i, j)$.
+Then $U \cap Y_k \ne \emptyset$ and $V \cap Y_k \ne \emptyset$.
+Since $U \cap Y_k$ and $V \cap Y_k$ are both open in $Y_k$ and $Y_k$ is irreducible, $(U \cap Y_k) \cap (V \cap Y_k) \ne \emptyset$.
+Thus $U \cap V \ne \emptyset$.
+
+By Zorn's Lemma, $\Sigma$ contains a maximal element.
+In other words, there exists a maximal irreducible subspace of $A$.
 
 ## 3
 TODO
