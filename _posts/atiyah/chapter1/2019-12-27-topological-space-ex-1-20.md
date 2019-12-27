@@ -9,7 +9,8 @@ author: Hidenori
 Let $X$ be a topological space.
 1. If $Y$ is an irreducible subspace of $X$, then the closure $\overline{Y}$ of $Y$ in $X$ is irreducible.
 1. Every irreducible subspace of $X$ is contained in a maximal irreducible subspace.
-1. TODO
+1. The maximal irreducible subspaces of $X$ are closed and cover $X$.
+   What are the irreducible components of a Hausdorff space?
 1. TODO
 
 # Solution
@@ -45,7 +46,15 @@ By Zorn's Lemma, $\Sigma$ contains a maximal element.
 In other words, there exists a maximal irreducible subspace of $A$.
 
 ## 3
-TODO
+Let $Y$ be a maximal irreducible subspace of $X$.
+By 1, $\overline{Y}$ is irreducible.
+Since $Y$ is maximal, $Y = \overline{Y}$, so $Y$ is closed.
+
+Every singleton $\\{ x \\} \subset X$ is clearly irreducible.
+By 2, every singleton is contained in a maximal irreducible subspace.
+Thus the maximal irreducible subspaces cover $X$.
+
+The singletons are the irreducible components of a Hausdorff space.
 
 ## 4
 TODO
