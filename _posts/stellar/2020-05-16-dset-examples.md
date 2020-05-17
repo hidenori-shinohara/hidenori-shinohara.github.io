@@ -54,3 +54,7 @@ Any quorum containing at least one of $v_2, v_3, v_4$ must contain at least two 
 This is because $Q(v_i)^B = \\{ \\{ v_2, v_3, v_4 \\}, \\{ v_i, v_j \\}, \\{ v_i, v_k \\} \\}$ where $\\{ i, j, k \\} = \\{ 2, 3, 4 \\}$.
 
 Therefore, the intersection of any two quorums must contain at least one of $v_2, v_3, v_4$ by the pigeon hole principle.
+
+Next, we need to check if $\ev{V, Q}$ enjoys quorum availability despite $B$.
+$V \setminus B$ is indeed a quorum in $\ev{V, Q}$ because each node in $V \setminus B$ has a quorum slice that doesn't contain $v_1$.
+
