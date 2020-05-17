@@ -10,7 +10,7 @@ If $B_1$ and $B_2$ are DSets in an FBAS $\ev{V, Q}$ enjoying quorum intersection
 
 # Solution
 
-If $B = V$, then we are done.
+If $B_1 = V$ or $B_2 = V$, then we are done.
 Suppose otherwise.
 
 For any $v \in V$,
@@ -50,7 +50,10 @@ Similarly, $(U_b \setminus B_1) \cup (U_b \setminus B_2) \ne \emptyset$.
 
 Without loss of generality, assume that $U_a \setminus B_1 \ne \emptyset$.
 
-* $V \setminus B_2$ is a quorum in $\ev{V, Q}$ because $B_2$ is a DSet.
+* $V \setminus B_1$ is a quorum in $\ev{V, Q}$ because $B_1$ is a DSet.
+  Similarly, $V \setminus B_2$ is a quorum in $\ev{V, Q}$.
+  Because $\ev{V, Q}$ enjoys quorum intersection, $(V \setminus B_1) \cap (V \setminus B_2) \ne \emptyset$.
+  In other words, $(V \setminus B_2) \setminus B_1$ is a quorum.
   [As shown before](https://hidenori-shinohara.github.io/2020/05/17/quorum-subset.html), $(V \setminus B_2) \setminus B_1$ is a quorum in $\ev{V, Q}^{B_1}$.
 * $U_a \setminus B_1$ is a quorum in $(\ev{V, Q}^B)^{B_1} = \ev{V, Q}^{B_1}$ for the same reason.
 
