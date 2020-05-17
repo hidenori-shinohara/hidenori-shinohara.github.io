@@ -5,7 +5,7 @@ date:   2020-05-16
 author: Hidenori
 ---
 
-We will prove the claim made on P.10 of the [Stellar white paper](https://www.stellar.org/papers/stellar-consensus-protocol).
+We will prove some of the claims made on P.9-10 of the [Stellar white paper](https://www.stellar.org/papers/stellar-consensus-protocol).
 
 # Proposition
 The smallest DSet containing $v_5, v_6$ in Figure 3 below is $\\{ v_5, v_6, v_9, v_{10} \\}$.
@@ -38,3 +38,19 @@ Any quorum in $\ev{V, Q}^E$ contain at least three of $v_1, v_2, v_3, v_4$ becau
 Therefore, any intersection contains at least two of $v_1, v_2, v_3, v_4$ by the pigeon hole principle.
 
 Therefore, $E$ is indeed a smallest DSet containing $v_5$ and $v_6$.
+
+# Proposition
+$B = \\{ v_1 \\}$ is a DSet.
+
+![Tiered quorum example](/assets/stellar/tiered_quorum_example.jpeg)
+
+## Proof
+First, we will check if $\ev{V, Q}$ enjoys quorum intersection despite $B$.
+
+Consider $\ev{V, Q}^B$.
+Any quorum containing $v_9$ and/or $v_{10}$ must contain at least two of $v_5, v_6, v_7, v_8$.
+Any quorum containing at least one of $v_5, \cdots, v_8$ must contain at least one of $v_2, v_3, v_4$.
+Any quorum containing at least one of $v_2, v_3, v_4$ must contain at least two of $v_2, v_3, v_4$.
+This is because $Q(v_i)^B = \\{ \\{ v_2, v_3, v_4 \\}, \\{ v_i, v_j \\}, \\{ v_i, v_k \\} \\}$ where $\\{ i, j, k \\} = \\{ 2, 3, 4 \\}$.
+
+Therefore, the intersection of any two quorums must contain at least one of $v_2, v_3, v_4$ by the pigeon hole principle.
