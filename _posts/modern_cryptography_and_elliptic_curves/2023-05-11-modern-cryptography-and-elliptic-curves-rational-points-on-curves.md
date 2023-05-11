@@ -21,7 +21,7 @@ Then $x, y$ can be expressed in the form of $a / c, b / c$ where $a, b, c \in \m
 
 Then $a^n + b^n = c^n$.
 
-If $n$ is even, then $(\abs{a}, \abs{b}, \abs{c}, n$ would be a counterexample to Fermat's Last Theorem.
+If $n$ is even, then $(\abs{a}, \abs{b}, \abs{c}, n)$ would be a counterexample to Fermat's Last Theorem.
 Suppose $n$ is odd.
 If $a, b$ are both positive, then that would be a counterexample.
 If $a < 0$ and $b > 0$, then $b^n = c^n + (-a)^n$, so we have a counterexample as well.
