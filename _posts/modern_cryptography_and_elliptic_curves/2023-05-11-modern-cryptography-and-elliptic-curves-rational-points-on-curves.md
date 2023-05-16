@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rational Points on $x^n + y^n = 1$"
+title:  "Modern Cryptography and Elliptic Curves: Rational Points on $x^n + y^n = 1$"
 date:   2023-05-11
 author: Hidenori
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Proof for Bachet duplication formula"
+title:  "Modern Cryptography and Elliptic Curves: Proof for Bachet duplication formula"
 date:   2023-05-15
 author: Hidenori
 ---

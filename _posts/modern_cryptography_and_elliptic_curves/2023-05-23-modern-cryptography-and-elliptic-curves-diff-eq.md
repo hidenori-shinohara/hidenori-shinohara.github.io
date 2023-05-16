@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Solutions to $y'' - y = 0$"
+title:  "Modern Cryptography and Elliptic Curves: Solutions to $y'' - y = 0$"
 date:   2023-05-12
 author: Hidenori
 ---

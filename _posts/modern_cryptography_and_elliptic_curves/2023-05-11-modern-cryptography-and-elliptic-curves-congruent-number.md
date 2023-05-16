@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "An example of a congruent number"
+title:  "Modern Cryptography and Elliptic Curves: An example of a congruent number"
 date:   2023-05-10
 author: Hidenori
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rational Points on $x^2 + y^2 = 3$"
+title:  "Modern Cryptography and Elliptic Curves: Rational Points on $x^2 + y^2 = 3$"
 date:   2023-05-10
 author: Hidenori
 ---
