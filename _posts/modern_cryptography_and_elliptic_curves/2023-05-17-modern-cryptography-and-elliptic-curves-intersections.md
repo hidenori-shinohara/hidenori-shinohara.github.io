@@ -32,7 +32,7 @@ Examples:
 
 - No intersection: $f(x, y) = (x + y)^2$ and $g(x, y) = x + y - 1$.
 - 1 intersection: $f(x, y) = (x + y)^2$ and $g(x, y) = x$.
-- 2 intersections: $f(x, y) = (x + y)^2 - 1, $g(x, y) = x - y - 1$.
+- 2 intersections: $f(x, y) = (x + y)^2 - 1$, and $g(x, y) = x - y - 1$.
     - At an intersection $(a + 1, a)$, we have $(2a + 1)^2 = 1$. In other words, $a = 0$ or $a = -1$.
 - Infinitely many intersections: $f(x, y) = (x + y)^2$ and $g(x, y) = x + y$.
 
