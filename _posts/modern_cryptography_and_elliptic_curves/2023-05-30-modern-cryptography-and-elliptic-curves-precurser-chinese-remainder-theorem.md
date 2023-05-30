@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Modern Cryptography and Elliptic Curves: Precurser to the Chinese Remainder Theorem"
+title:  "Modern Cryptography and Elliptic Curves: Precursor to the Chinese Remainder Theorem"
 date:   2023-05-12
 author: Hidenori
 ---
