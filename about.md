@@ -18,9 +18,9 @@ I usually go by Hide (pronounced as HEE-Day).
 * I was a software engineer for the Core team at Stellar Development Foundation from 2020 to 2023.
 
 # Interests
-My interests lie in the intersection of software engineering, mathematics and theoretical mathematics.
+My interests lie in the intersection of software engineering, mathematics and theoretical computer science.
 
-My main academic interest was always in mathematics.
+My main academic interest has always been in mathematics.
 I generally prefer finite/countably infinite/algebraic/discrete/combinatorial mathematics like cryptography/number theory to smooth/differential/uncountably infinite mathematics like data science/stats/machine learning.
 
 My programming background is in algorithmic programming contests such as ICPC/CodeForces.
