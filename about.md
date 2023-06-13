@@ -32,7 +32,7 @@ Some of the theories/theorems/algorithms that I have found beautiful are:
 - Segment Tree
 - Group theory
 - Point-set topology
-- $\epsilon-\delta$ definition of a limit
+- $\epsilon\text{-}\delta$ definition of a limit
 - Disjoint set union trees
 - Zero-knowledge proof
 - Category theory
