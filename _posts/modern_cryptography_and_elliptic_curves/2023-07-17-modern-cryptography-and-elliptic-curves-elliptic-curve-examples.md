@@ -30,4 +30,16 @@ By looking at the square and cube of each element in $\mathbb{F}_7$, we can easi
 1. $[0, 1, 0]$
 
 are the elements of the group.
-TODO: Determine the group structure by trying to determine the order of each element or figuring out parts of the multiplication table. Since it's abelian it has to be either $\mathbb{Z}_9$ or $\mathbb{Z}_3 \times \mathbb{Z}_3$.
+Since it's abelian it has to be either $\mathbb{Z}_9$ or $\mathbb{Z}_3 \times \mathbb{Z}_3$.
+I calculated:
+
+- $[0, 3, 1]^2 = [0, 4, 1]$.
+- $[3, 1, 1]^2 = [3, 6, 1]$.
+
+If the square of a non-identity element equals its inverse, its order is 3.
+And the inverse of an element of order 3 has order 3.
+Therefore, we have found at least 4 elements of order 3.
+Hence, it cannot be $\mathbb{Z}_9$, so it has to be $\mathbb{Z}_3 \times \mathbb{Z}_3$.
+
+
+
