@@ -23,7 +23,20 @@ Then $\frac{kn}{d} < m < \frac{(k + 1)n}{d}$ for some $k \in \mathbb{Z}$.
 This implies $kn < dm < (k + 1)n$, so $dm \ne 0$ in $\mathbb{Z}_n$.
 Therefore, $m$ cannot have order dividing $d$.
 
-In other words, $0, nd, \cdots, (d - 1)nd$ are all the elements of order dividing $n$, and it is easy to see that there are exactly $d$ of them.
+In other words, $0, nd, \cdots, (d - 1)nd$ are all the elements of order dividing $d$, and it is easy to see that there are exactly $d$ of them.
 
-Now we go back to the original theorem. As $G = \mathbb{F}^{\times}$ is a finite abelian group,
+Now we go back to the original theorem.
+As $G = F^{\times}$ is a finite abelian group,
+By the fundamental theorem of finitely generated abelian groups, $G$ is isomorphic to
+
+$$
+\begin{align*}
+    \mathbb{Z}_{n_1} \times \cdots \times \mathbb{Z}_{n_k}
+\end{align*}
+$$
+
+where $n_k \mid n_{k - 1}, \cdots, n_2 \mid n_1$.
+
+TODO: Finish this proof!
+
 
