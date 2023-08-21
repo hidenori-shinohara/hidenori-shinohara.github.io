@@ -36,5 +36,24 @@ $$
 as $p - 1$ is an even number.
 Therefore, there are exactly $\frac{p - 1}{2}$ squares.
 
-TODO: Add a section on how we use this to guess the number of points
+Now, we will make a (surprisingly accurate) guess on the number of points on an elliptic curve.
+
+First, we assume $f$ maps numbers uniformly randomly.
+More specifically, we assume $f$ maps $\mathbb{Z}_p$ into itself.
+Then there are exactly $(p - 1) / 2$ $x$'s such that $f(x)$ is a quadratic residue in $U_p$.
+For each $x$ like that, there are two points $(x, \pm y)$ in an elliptic curve.
+
+Then there is exactly one $x$ such that $f(x) = 0$.
+That produces one point $(x, 0)$.
+
+Finally, we have $[0, 0, 1]$.
+
+Combining these, we have $(p - 1) + 1 + 1 = p + 1$.
+
+[Hasse's Theorem](https://en.wikipedia.org/wiki/Hasse%27s_theorem_on_elliptic_curves) shows that this estimate is surprisingly accurate.
+
+
+
+
+
 
