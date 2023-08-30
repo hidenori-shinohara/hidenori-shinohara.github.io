@@ -46,7 +46,7 @@ For each $x$ like that, there are two points $(x, \pm y)$ in an elliptic curve.
 Then there is exactly one $x$ such that $f(x) = 0$.
 That produces one point $(x, 0)$.
 
-Finally, we have $[0, 0, 1]$.
+Finally, we have $[0, 1, 0]$.
 
 Combining these, we have $(p - 1) + 1 + 1 = p + 1$.
 
