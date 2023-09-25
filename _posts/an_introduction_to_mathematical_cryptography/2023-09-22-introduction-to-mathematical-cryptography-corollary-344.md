@@ -38,3 +38,33 @@ $$
 Therefore, at $X = 10$, the inequality holds.
 Furthermore, the derivative of each satisfies the inequality as well for all $X > 10$.
 By the Mean Value Theorem, the inequality holds for all $X > 10$.
+
+# (b)
+
+First, we will simplify $u$.
+
+$$
+\begin{align*}
+    u &= \frac{\ln X}{\ln Y} \\
+      &= \frac{\ln X}{\ln (L(X)^c)} \\
+      &= \frac{\ln X}{c\ln L(X)} \\
+      &= \frac{\ln X}{c\sqrt{\ln X \ln \ln X}} \\
+      &= \frac{1}{c}\sqrt{\frac{\ln X}{\ln \ln X}}.
+\end{align*}
+$$
+
+Note that we are proving this for a large $X$, so we will not care about some corner cases such as $\ln X = 0$.
+
+$$
+\begin{align*}
+    u^{-u} = L(X)^{-\frac{1}{2c}(1 + o(1))}
+        &\iff u \ln u = \frac{1}{2c}(1 + o(1))\ln L(X) \\
+        &\iff \frac{2cu\ln u}{1 + o(1)} = \ln L(X) \\
+        &\iff \frac{2\sqrt{\frac{\ln X}{\ln \ln X}}\ln \big(\frac{1}{c}\sqrt{\frac{\ln X}{\ln \ln X}}\big)}{1 + o(1)} = \sqrt{(\ln L(X))(\ln \ln X)} \\
+        &\iff \frac{2\big[-\ln c + \frac{\ln \ln X}{2} - \frac{\ln \ln \ln X}{2}\big]}{1 + o(1)} = \ln \ln X \\
+        &\iff \frac{-2\ln c + \ln \ln X - \ln \ln \ln X}{\ln \ln X} = 1 + o(1) \\
+        &\iff \frac{-2\ln c + \ln \ln X - \ln \ln \ln X}{\ln \ln X} - 1 = o(1) \\
+        &\iff \lim_{X \rightarrow \infty} \frac{-2\ln c + \ln \ln X - \ln \ln \ln X}{\ln \ln X} - 1 = 0
+\end{align*}
+$$
+
