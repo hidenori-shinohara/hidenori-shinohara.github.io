@@ -74,4 +74,34 @@ Then we now have $a^2 = b^2 \pmod N$ as $a_{i_j}^2 = c_{i_j}$ for each $j$.
 
 Then we calculate $\gcd(N, a - b)$ and $\gcd(N, a + b)$ and hope one of them will give us a nontrivial factor.
 
-TODO: Add clarification
+# Time Complexity Analysis (Step 1)
+
+There are a few assumptions that we make implicitly.
+We mentioned earlier that we want numbers with only small prime factors.
+They're called [$B$-smooth numbers](https://en.wikipedia.org/wiki/Smooth_number).
+Let $B$ be chosen.
+
+1. We assume that, given $i$, the probability that $c_i$ is a $B$-smooth number is $\psi(N, B) / N$.
+   I believe that this is a rough estimate and this could use a careful analysis.
+   For instance, each $c_i$ is a quadratic residue, and the book says nothing about the connection between quadratic residues and $B$-smooth numbers.
+   Maybe we're being hopeful.
+   Or maybe the topic is too advanced to cover in this book.
+1. We need $\pi(B) + 1$ $c_i$'s to find a perfect square.
+   As discussed in the book, $c_i$'s form a system of linear equations where the number of rows is the number of $c_i$'s we have and the number of columns corresponds to $\pi(B)$.
+   Once we have more rows than columns, we can guarantee that there's a nontrivial linear combination that equals 0.
+   For simplicity, we will say that we need $\pi(B)$ $c_i$'s.
+
+How do we choose such $B$?
+Let $L(X) = e^{\sqrt{(\ln X)(\ln \ln X)}}$ and $B = L(N)^{1 / \sqrt{2}}$.
+TODO: Finish this!
+
+# Time Complexity Analysis (Step 2)
+TODO: Finish this!
+
+
+
+
+
+
+
+
