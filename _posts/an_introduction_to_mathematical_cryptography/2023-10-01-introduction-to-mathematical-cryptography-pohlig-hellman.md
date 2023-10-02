@@ -31,7 +31,6 @@ By the CRT, we can find a solution $y$ to this.
 We claim that this $y$ is the solution to the original problem.
 For that, we first use the extended Euclid's algorithm to find $c_i$'s such that $c_1 \frac{N}{q_1^{e_1}} + \cdots + c_t \frac{N}{q_t^{e_t}} = 1$.
 
-TODO:Fix the formatting
 
 $$
 \begin{align*}
