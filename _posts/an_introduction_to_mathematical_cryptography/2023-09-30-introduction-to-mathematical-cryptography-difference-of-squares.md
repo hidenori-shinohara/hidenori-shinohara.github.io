@@ -74,7 +74,7 @@ Then we now have $a^2 = b^2 \pmod N$ as $a_{i_j}^2 = c_{i_j}$ for each $j$.
 
 Then we calculate $\gcd(N, a - b)$ and $\gcd(N, a + b)$ and hope one of them will give us a nontrivial factor.
 
-# Time Complexity Analysis (Step 1)
+# Time Complexity Analysis
 
 There are a few assumptions that we make implicitly.
 We mentioned earlier that we want numbers with only small prime factors.
@@ -91,17 +91,42 @@ Let $B$ be chosen.
    Once we have more rows than columns, we can guarantee that there's a nontrivial linear combination that equals 0.
    For simplicity, we will say that we need $\pi(B)$ $c_i$'s.
 
-How do we choose such $B$?
-Let $L(X) = e^{\sqrt{(\ln X)(\ln \ln X)}}$ and $B = L(N)^{1 / \sqrt{2}}$.
-TODO: Finish this!
+This is the basic idea that we will use.
+However, there is a simple trick that can make this even more efficient.
 
 # Time Complexity Analysis (Step 2)
-TODO: Finish this!
 
+Notice that if we pick $a_i$ from $(\sqrt{N}, \sqrt{N} + K)$ for a small $k$, then $a_i^2 - N \leq 2k\sqrt{N} + k^2$.
+For simplicity, we just assume that the chance that $b_i = a_i^2 - N$ is a $B$-smooth number is $\frac{\psi(\sqrt{N}, B)}{\sqrt{N}}$.
+(Yes, this isn't as rigorous as it can be.)
 
+Let $B = L(\sqrt{N})^c$.
 
+As $N \rightarrow \infty$,
 
+$$
+\begin{align*}
+    \frac{\pi(B)}{\psi(\sqrt{N}, B) / \sqrt{N}}
+        &= \frac{\pi(L(\sqrt{N}))\sqrt{N}}{\psi(\sqrt{N}, L(\sqrt{N})^c)} \\
+        &= \frac{\frac{L(\sqrt{N})^c}{c\ln(L\sqrt{N})}\sqrt{N}}{\psi(\sqrt{N}, L(\sqrt{N})^c)} \\
+        &= \frac{\frac{L(\sqrt{N})^c}{c\ln(L\sqrt{N})}\sqrt{N}}{\frac{\sqrt{N}}{L(\sqrt{N})^{\frac{1}{2c}(1 + o(1))}}} \\
+        &= \frac{L(\sqrt{N})^{c + \frac{1}{2c}(1 + o(1))}}{c\ln(L(\sqrt{N}))} \\
+        &= \frac{L(\sqrt{N})^{c + \frac{1}{2c}}}{c\ln(L(\sqrt{N}))} \\
+\end{align*}
+$$
 
+By checking the derivative of $c + \frac{1}{2c}$, we can determine that it achieves the minimum value at $c = \frac{1}{\sqrt{2}}$.
+By substituting $c = \frac{1}{\sqrt{2}}$ and using the relation found in Exercise 3.32 (b) on P.184, we can simplify the expression above and obtain:
+
+$$
+\begin{align*}
+    \frac{2L(N)}{\ln(L(N))} \approx L(N)
+\end{align*}
+$$
+
+as $\ln(L(N))$ is significantly smaller than $L(N)$.
+
+This improves the efficiency of the algorithm quite a bit.
 
 
 
