@@ -76,6 +76,9 @@ Suppose $x^2 \equiv b \pmod{p^e}$ has two solutions for some $e \in \mathbb{N}$.
 By Lemma 2, we know $x^2 \equiv b \pmod{p^{e + 1}}$ has two distinct solutions $\gamma_1, \gamma_2$ such that $\gamma_i \equiv \alpha_i \pmod{p}$ for $i = 1, 2$.
 As discussed in Lemma 2, any solutions to $x^2 \equiv b \pmod{p^{e + 1}}$ are solutions to $x^2 \equiv b \pmod{p^e}$.
 
+
+# The following is the revised version.
+
 Let $p$ be an odd prime and an integer $1 \leq b \leq p - 1$ be given.
 Let $S_e = \\{ 1 \leq x \leq p^e - 1 \mid x^2 \equiv b \pmod{p^e} \\}$ be the set of solutions for $x^2 \equiv b \pmod{p^e}$.
 
@@ -86,8 +89,6 @@ Let $S_e = \\{ 1 \leq x \leq p^e - 1 \mid x^2 \equiv b \pmod{p^e} \\}$ be the se
 1. $\forall e \in \mathbb{N}$, there exists an injection $G_e: S_{e} \rightarrow S_{e + 1}$.
 1. $\forall e \in \mathbb{N}$, $\abs{S_e} = \abs{S_{e + 1}}$.
 1. $\forall e$, there exists $H_e: S_1 \rightarrow S_e$ such that $H_e(\alpha) \in S_{e}$ and $H_e(\alpha) \equiv \alpha$ for each $\alpha \in S_1$.
-
-TODO: actually solve these
 
 # Lemma 1: $\abs{S_1} \in \\{ 0,2 \\}$
 
@@ -103,7 +104,7 @@ Hence, $\alpha' = \alpha$ or $\alpha' = p - \alpha$.
 
 This implies that if there is a solution, there are exactly two solutions.
 
-# Lemma 2: $F_e$ maps $S_{e + 1}$ into $S_e$.
+# Lemma 2: $F_e$ maps $S_{e + 1}$ to $S_e$.
 
 Let $\gamma \in S_{e + 1}$.
 Since $\gamma^2 \equiv b \pmod{p^{e + 1}}$, $\gamma^2 = kp^{e + 1} + b$ for some $k$.
@@ -135,3 +136,13 @@ $p^{2e}$ is divisible by $p^{e + 1}$, so $p^{e + 1} \mid 2p^e \beta (k - k')$.
 Considering the range of $k, k'$, $k - k'$ cannot be divisible by $p$.
 Thus, we can conclude that $p \mid \beta$.
 However, by Lemma 3, we know that $\beta \in S_e$ cannot be a multiple of $p$.
+
+# Lemma 5: TODO
+
+# Lemma 6: $\abs{S_e} = \abs{S_{e + 1}}$.
+Let $e \in \mathbb{N}$ be given.
+By Lemma 4, $\abs{S_{e + 1}} \leq \abs{S_{e}}$.
+By Lemma 5, $\abs{S_{e}} \leq \abs{S_{e + 1}}$.
+Therefore, $\abs{S_{e}} = \abs{S_{e + 1}}$.
+
+# Lemma 7: TODO
