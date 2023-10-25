@@ -137,7 +137,40 @@ Considering the range of $k, k'$, $k - k'$ cannot be divisible by $p$.
 Thus, we can conclude that $p \mid \beta$.
 However, by Lemma 3, we know that $\beta \in S_e$ cannot be a multiple of $p$.
 
-# Lemma 5: TODO
+# Lemma 5: There exists an injection $G_e: S_{e} \rightarrow S_{e + 1}$.
+Let $e \in \mathbb{N}$ be given.
+Let $\beta \in S_e$.
+Let $\alpha = (F_1 \circ \cdots \circ F_{e - 1})(\beta)$.
+By Lemma 2, $\alpha \in S_1$, so $\alpha^2 \equiv b \pmod p$.
+
+Let $m = \frac{\beta^2 - b}{p^e}$ and $n = \frac{\beta - \alpha}{p}$.
+Note that $m, n$ are both integers as $\beta^2 \equiv b \pmod{p^e}$ and $\beta \equiv \alpha \pmod{p}$.
+
+Let $\gamma = (lp^e + \beta) \pmod{p^e}$ with $l = \frac{-m}{2\alpha} \pmod{p^e}$.
+We don't mean integer division here.
+This means that we will take the inverse of $2\alpha \pmod{p^e}$ and multiply it by $-m$.
+Since $\gcd(\alpha, p) = \gcd(\alpha, 2) = 1$, so the inverse exists.
+Technicall, it suffices to take the inverse $\pmod p$, but for simplicity, we will take the inverse $\pmod{p^e}$.
+
+$$
+\begin{align}
+    \gamma^2
+        &\equiv (lp^e + \beta)^2 \\
+        &\equiv l^2p^{2e} + 2lp^e\beta + \beta^2 \\
+        &\equiv 2lp^e\beta + \beta^2 \\
+        &\equiv 2lp^e(np + \alpha) + (p^em + b) \\
+        &\equiv 2lnp^{e + 1} + 2\alpha lp^e + (p^em + b) \\
+        &\equiv 2\alpha lp^e + (p^em + b) \\
+        &\equiv (2\alpha l + m)p^e + b \\
+        &\equiv (-m + m)p^e + b \\
+        &\equiv b & \pmod {p^{e + 1}}.
+\end{align}
+$$
+
+By setting $G_e(\beta) = \gamma$, we proved the existence of a function $G_e: S_e \rightarrow S_{e + 1}$.
+
+Notice that $F_e \circ G_e$ is the identify map on $S_e$.
+Thus $G_e$ is injective.
 
 # Lemma 6: $\abs{S_e} = \abs{S_{e + 1}}$.
 Let $e \in \mathbb{N}$ be given.
