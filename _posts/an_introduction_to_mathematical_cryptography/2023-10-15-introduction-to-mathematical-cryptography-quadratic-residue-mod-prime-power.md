@@ -19,7 +19,7 @@ We will prove the following series of lemmas:
 1. $\forall e \in \mathbb{N}$, $F_e$ is injective.
 1. $\forall e \in \mathbb{N}$, there exists an injection $G_e: S_{e} \rightarrow S_{e + 1}$.
 1. $\forall e \in \mathbb{N}$, $\abs{S_e} = \abs{S_{e + 1}}$.
-1. $\forall e \in \mathbb{N}$, there exists $H_e: S_1 \rightarrow S_e$ such that $H_e(\alpha) \in S_{e}$ and $H_e(\alpha) \equiv \alpha \pmod{p}$ for each $\alpha \in S_1$.
+1. $\forall e \in \mathbb{N}$, there exists injective $H_e: S_1 \rightarrow S_e$ such that $H_e(\alpha) \in S_{e}$ and $H_e(\alpha) \equiv \alpha \pmod{p}$ for each $\alpha \in S_1$.
 
 # Lemma 1: $\abs{S_1} \in \\{ 0,2 \\}$
 
@@ -109,9 +109,14 @@ By Lemma 4, $\abs{S_{e + 1}} \leq \abs{S_{e}}$.
 By Lemma 5, $\abs{S_{e}} \leq \abs{S_{e + 1}}$.
 Therefore, $\abs{S_{e}} = \abs{S_{e + 1}}$.
 
-# Lemma 7: There exists $H_e: S_1 \rightarrow S_e$ such that $H_e(\alpha) \in S_{e}$ and $H_e(\alpha) \equiv \alpha \pmod{p}$ for each $\alpha \in S_1$.
+# Lemma 7: There exists injective $H_e: S_1 \rightarrow S_e$ such that $H_e(\alpha) \in S_{e}$ and $H_e(\alpha) \equiv \alpha \pmod{p}$ for each $\alpha \in S_1$.
 
 Let $H_e = G_{e - 1} \circ G_{e - 2} \circ \cdots G_2 \circ G_1$.
 By Lemma 5, $H_e(\alpha) \in S_e$.
 Furthermore, $(F_1 \circ F_2 \circ \cdots \circ F_{e - 2} \circ F_{e - 1}) \circ H_e$ is the identify function on $S_1$.
 Since $F_1 \circ \cdots \circ F_{e - 1}: S_{e} \rightarrow S_1$ simply takes $\pmod p$, this proves that $H_e(\alpha) \equiv \alpha \pmod{p}$.
+
+Furthermore, the composition of injections is an injection.
+
+Lemma 7 implies part (a), (b) and (c) of the problem.
+Lemma 1 and 6 combined imply part (d) of the problem.
