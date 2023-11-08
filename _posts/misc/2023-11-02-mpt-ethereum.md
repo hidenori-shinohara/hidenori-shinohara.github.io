@@ -150,6 +150,35 @@ However, the chance that `A_1, ..., A_k` share the last two letters of the prefi
 The chance that _no other account_ share that prefix is even lower, and the chance that the extension node has a path longer than 2 letters is even lower.
 Therefore, if you ever encounter an extenion node, chances are, only a small number of values (likely 2 or 3) are under it and the path in the extenion node is likely extremely short (likely 2 or 3 letters long).
 
+# Can there be nested nodes?
+Earlier, we discussed that a non-`NULL` node may be embedded inside another node if the RLP-encoding of the node is less than 32 bytes.
+How common is that?
+We claim that it is possible if and only if we allow a `value` that is <= 28 bytes.
+
+Suppose such a node exists.
+Let $N_0$ be a node that has another non-`NULL` node embedded inside it.
+Let $N_1$ be a non-`NULL` node that is embedded inside $N$.
+We can recursively check if $N_i$ has a non-`NULL` node that is embedded inside $N_i$, and if so, pick one and call it $N_{i + 1}$.
+As this process cannot be infinite, we will eventually arrive at a node $M = N_k$ that has no non-`NULL` node embedded in it.
+Since $M$ is embedded, the RLP-encoding of $M$ must be < 32 bytes.
+As $M$ is a node, it could be:
+
+- A branch node.
+    - A branch node must refer to at least two nodes.
+      Since we assume that no non-`NULL` node is embedded in $M$, $M$ has at least two 32-byte hashes.
+      Therefore, the RLP-encoding of $M$ cannot be less than 32 bytes.
+- An extension node
+    - An extension node must have a non-empty path and also refer to a node.
+      Since we assume that no non-`NULL` node is embedded, it must refer to the node using a 32-byte hash.
+      Therefore, the RLP-encoding of $M$ must be at least 32 bytes.
+- A leaf node
+    - $M$ must be a leaf node since it can't be other types.
+
+
+As a leaf node's structure is `[path, value]`, the encoding would be `0x{prefix byte}{prefix byte for path}path{prefix byte for value}value` assuming `value` is small.
+Therefore, it takes `3 + [path len] + [value len] >= 4 + [value len]`
+For this to be less than 32, the length of `value` must be <= 28.
+
 
 # More references
 - I filed a bug as I found a few typos in the blog post: https://github.com/ethereum/ethereum-org-website/issues/11635
