@@ -85,6 +85,8 @@ It decodes into:
 ```
 
 This corresponds to: nonce, balance, storage hash, code hash.
+Note that `0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470` is the keccak256 of the empty string.
+
 
 After decoding everything, we can see that the node is:
 
