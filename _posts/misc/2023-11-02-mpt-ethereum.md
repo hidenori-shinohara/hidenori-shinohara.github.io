@@ -46,6 +46,8 @@ Let `v` be a node represented as `RLPEncodableItem` that a branch or extension n
 - A branch node may not have `>= 15 NULL`'s.
   It's explicitly prohibited in the yellow paper.
   _no branch nodes may exist that contain only a single non-zero entry_.
+- The path in an extention node has to have at least two nibbles.
+  The yellow paper states: _A two-item structure whose first item corresponds to a series of nibbles of size greater than one that are shared by at least two distinct keys past the accumulation of the keys of nibbles and the keys of branches as traversed from the root._
 
 # How big is an MPT node?
 1. Each `v_i` and `v_t` in a branch node and also the `key` in an extension node is either `String(hash_32_bytes)` or `List` whose RLP-encoding is <= 32 bytes.
@@ -132,7 +134,21 @@ This makes sense as this path has exactly 7 branch nodes, which adds 7 letters a
 # What does a typical path look like?
 
 Let `A` be an account and we are interested in the proof for that.
+We have a 64-character (=32-byte) path.
+The chance that a certain other node (call it `B`) shares the first character is $\frac{1}{16}`.
+The chance that `B` shares the first two characters is `\frac{1}{16^2}`.
+In general, the chance that `B` shares the first $N$ characters is `\frac{1}{16^N}`.
+Once `A` does not share the prefix with anybody, the rest of the path becomes the `path` field in the leaf node.
 
+In general, the path would typically contain 6-8 branch nodes.
+This is because $[16^6, 16^8] = [16 \cdot 10^6, 4 \cdot 10^9]$, and Ethereum, as of the time of writing this, has around 250 million accounts.
+The length of the path typically doesn't change much as it becomes exponentially difficult to make it shorter or longer.
+
+Finally, an extension node is relatively rare.
+For an extenion node to exist, there has to be multiple accounts `A_1, ..., A_k` that have the same `n`-letter prefix `P` and no other accounts share no more than `n - 2` letters.
+However, the chance that `A_1, ..., A_k` share the last two letters of the prefix `P[n - 1]` and `P[n - 2]` is already $\frac{1}{256^{k - 1}}`.
+The chance that _no other account_ share that prefix is even lower, and the chance that the extension node has a path longer than 2 letters is even lower.
+Therefore, if you ever encounter an extenion node, chances are, only a small number of values (likely 2 or 3) are under it and the path in the extenion node is likely extremely short (likely 2 or 3 letters long).
 
 
 # More references
