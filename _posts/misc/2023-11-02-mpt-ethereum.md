@@ -146,7 +146,7 @@ The length of the path typically doesn't change much as it becomes exponentially
 
 Finally, an extension node is relatively rare.
 For an extenion node to exist, there has to be multiple accounts `A_1, ..., A_k` that have the same `n`-letter prefix `P` and no other accounts share no more than `n - 2` letters.
-However, the chance that `A_1, ..., A_k` share the last two letters of the prefix `P[n - 1]` and `P[n - 2]` is already $\frac{1}{256^{k - 1}}`.
+However, the chance that `A_1, ..., A_k` share the last two letters of the prefix `P[n - 1]` and `P[n - 2]` is already $\frac{1}{256^{k - 1}}$.
 The chance that _no other account_ share that prefix is even lower, and the chance that the extension node has a path longer than 2 letters is even lower.
 Therefore, if you ever encounter an extenion node, chances are, only a small number of values (likely 2 or 3) are under it and the path in the extenion node is likely extremely short (likely 2 or 3 letters long).
 
