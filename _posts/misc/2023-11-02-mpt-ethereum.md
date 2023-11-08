@@ -179,6 +179,12 @@ As a leaf node's structure is `[path, value]`, the encoding would be `0x{prefix 
 Therefore, it takes `3 + [path len] + [value len] >= 4 + [value len]`
 For this to be less than 32, the length of `value` must be <= 28.
 
+Finally, more practically, it's statistically impossible for a path to be short as it implies the existence of another path with a long prefix.
+
+In general, we can expect that a leaf node's path will be at least 32 letters = 16 bytes long.
+This is because the chance that two random keys sharing the first 16 bytes is exactly the same probability that two UUIDs collide.
+Therefore, for practical purposes (not necessarily cryptographically secure), one can assume that there's no nesting unless a value can be <= 12 bytes.
+
 
 # More references
 - I filed a bug as I found a few typos in the blog post: https://github.com/ethereum/ethereum-org-website/issues/11635
