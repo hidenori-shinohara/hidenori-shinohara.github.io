@@ -135,9 +135,9 @@ This makes sense as this path has exactly 7 branch nodes, which adds 7 letters a
 
 Let `A` be an account and we are interested in the proof for that.
 We have a 64-character (=32-byte) path.
-The chance that a certain other node (call it `B`) shares the first character is $\frac{1}{16}`.
-The chance that `B` shares the first two characters is `\frac{1}{16^2}`.
-In general, the chance that `B` shares the first $N$ characters is `\frac{1}{16^N}`.
+The chance that a certain other node (call it `B`) shares the first character is $\frac{1}{16}$.
+The chance that `B` shares the first two characters is $\frac{1}{16^2}$.
+In general, the chance that `B` shares the first $N$ characters is $\frac{1}{16^N}$.
 Once `A` does not share the prefix with anybody, the rest of the path becomes the `path` field in the leaf node.
 
 In general, the path would typically contain 6-8 branch nodes.
