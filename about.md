@@ -16,6 +16,7 @@ I usually go by Hide (pronounced as HEE-Day).
 * I was a software engineer at Google from 2016 to 2019.
 * A PhD student in mathematics at Duke from 2019 to 2020. (dropped out)
 * I was a software engineer for the Core team at Stellar Development Foundation from 2020 to 2023.
+* I am currently a software engineer at Succinct Labs (October 2023 - Present)
 
 # Interests
 My interests lie in the intersection of software engineering, mathematics and theoretical computer science.
@@ -25,9 +26,7 @@ I generally prefer finite/countably infinite/algebraic/discrete/combinatorial ma
 
 My programming background is in algorithmic programming contests such as ICPC/CodeForces.
 
-Some of the theories/theorems/algorithms that I have found beautiful are:
-(Note: Not necessarily something that I'm an expert in)
-
+Some of the theories/theorems/algorithms that I enjoy thinking about are:
 
 - Math
     - Group theory
@@ -40,12 +39,12 @@ Some of the theories/theorems/algorithms that I have found beautiful are:
     - Abel–Ruffini theorem: A polynomial of degree 5 or above has no radical solution in general
         - I first heard this in high school,
           and proving this theorem in college/grad school was one of the most satisfying moments I've had in math.
-    - $\epsilon\text{-}\delta$ definition of a limit
-        - I disliked calculus with passion for not having any rigorous argument,
-          but this fixed that problem for me.
+    - Cryptography
+        - Currently reading _An Introduction to Mathematical Cryptography_.
 - Algorithms/data structures
     - Segment Tree
         - The versatility in this data structure, especially in programming contest problems, brought me a lot of joy.
+        - Recently, I have come to learn that a lot of those ideas are actually used in Merkle trees in practice!
     - Disjoint set union trees
         - It's simple yet so powerful.
     - Amortized analysis
@@ -54,7 +53,7 @@ Some of the theories/theorems/algorithms that I have found beautiful are:
     - Floyd-Warshall algorithm
         - It's simple yet so powerful.
     - Miller–Rabin primality test
-        - So counter-intutive in the beginning, yet it makes so much sense once you learn it.
+        - So counter-intuitive in the beginning, yet it makes so much sense once you learn it.
 - Misc
     - Zero-knowledge proof
     - Formal verification of distributed system protocols
@@ -69,4 +68,3 @@ Some of the theories/theorems/algorithms that I have found beautiful are:
 
 # Contact
 My email address is whisper.pairing-0z@icloud.com.
-
